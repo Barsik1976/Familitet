@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <title>Familitet</title>
-    <link rel="preload" href="fonts/opensans.woff2" as="font">
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
-    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="fonts/antiquasi_regular-webfont.woff2" as="font">
+    <link rel="preload" href="fonts/helios-bold-webfont.woff2" as="font">
+    <link rel="preload" href="fonts/helioslight-webfont.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -15,16 +15,19 @@
       <div class="travel">
         <p class="travel__number">+7 (4912) <span>95-24-55</span><br> +7 (4912) <span>99-51-36</span></p>
         <p class="travel__adress-scheme"><a href="#">Адрес и схема проезда</a>
-      </p></div>
+        </p>
+      </div>
       <section class="page-header__nav">
         <h2 class="visually-hidden">Навигация сайта</h2>
         <nav class="main-nav">
+          <div class="main-nav__logo-wrap">
           <a class="main-nav__logo-link" href="main_familitet.html" title="логотип фамилитет">
             <svg class="main-nav__logo-img">
               <use xlink:href="img/symbols.svg#............."></use>
             </svg>
           </a>
-          <p class="main-nav__center">Центр семейного развития</p>
+          <p class="main-nav__center">Центр семейного<br> развития</p>
+          </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="about_familitet.html">Всё о нас</a>
@@ -32,7 +35,7 @@
             </li>
             <li class="site-list__item">
               <a href="program_familitet.html">Программы</a>
-              <p class="site-list__content">Беременность, роды, материнство</p>
+              <p class="site-list__content">Беременность, роды,<br> материнство</p>
             </li>
             <li class="site-list__item">
               <a href="schedule_familitet.html">Расписание</a>
@@ -47,14 +50,17 @@
         <section class="information__content">
           <h1 class="information__title">Для своего ребёнка вы — самые лучшие мама и папа на свете!</h1>
             <p class="information__text">Вы хотите, чтобы он родился здоровым, рос сильным, был умным, талантливым и счастливым. Это действительно в ваших руках.</p>
-            <p class="information__text">Вместе с "Фамилитетом" познавайте увлекательную науку и самое важное из искусств – бьть родителями!</p>
+            <p class="information__text">Вместе с «Фамилитетом» познавайте увлекательную науку и самое важное из искусств – бьть родителями!</p>
             <a class="information__link" href="about_familitet.html">Подробно о нашем центре</a>
-            <p class="information__text"><a class="information__link" href="https://vk.com">ВКонтакте</a> и <a class="information__link" href="https://www.instagram.com/?hl=ru">Инстаграме</a>
+            <p class="information__text">Подписывайтесь: <a class="information__link" href="https://vk.com">ВКонтакте</a> и <a class="information__link" href="https://www.instagram.com/?hl=ru">Инстаграме</a>
             </p>
         </section>
         <div class="calendar">
           <article class="calendar__list">
-            <p class=""> <span>29</span> сентября</p>
+            <div>
+              <p class="calendar__data">29</p>
+              <p class="calendar__month">сентября</p>
+            </div>
               <section class="calendar__item meeting">
                 <h4 class="meeting__title">Встреча с неонатологом</h4>
                 <svg class="calendar__img">
@@ -64,7 +70,10 @@
               </section>
           </article>
           <article class="calendar__list">
-            <p class=""> <span>1</span> октября</p>
+            <div>
+              <p class="calendar__data">1</p>
+              <p class="calendar__month calendar__month--october">октября</p>
+            </div>
               <section class="calendar__item meeting">
                 <h4 class="meeting__title">Женский круг с Татьяной Гшвенд</h4>
                 <svg class="calendar__img">
