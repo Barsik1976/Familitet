@@ -119,11 +119,16 @@
               <p class="features__text">Вместе с мамой<br> Чудеса в ладошках<br> Песочная терапия<br>Подготовка к школе<br> Психолог<br> Логопед<br>Логопедическая группа<br> Логопедический массаж<br> Нейрокроррекция<br> КСТ-терапия</p>
             </div>
         </article>
-        <article class="progress__list">
+        <article class="progress__list progress__list--diploma">
           <p class="progress__lead"><span>576</span> дипломов выдано будущим мамам!</p>
           <svg class="progress__icon">
             <use xlink:href="img/symbols.svg#............."></use>
           </svg>
+          <picture>
+          <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+          <img class="progress__diploma" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="панорама дня" width="653" height="802">
+        </picture>
         </article>
       </div>
       <article class="discount">
@@ -138,26 +143,26 @@
     </main>
     <footer class="page-footer">
       <div class="contact">
-        <p class="contact__text">© 2011-2019. Фамилитет Россия, Рязань, ул. Есенина, 45</p>
+        <p class="contact__text">© 2011-2019. Фамилитет<br> Россия, Рязань, ул. Есенина, 45</p>
         <a class="contact__information" href="#contact">Контактная информация</a>
-        <ul class="contact__list">
-          <li class="contact__item social">
-            <a class="social__link social__link--vkontakte" href="#vkontakte">
+        <ul class="contact__social-list">
+          <li class="contact__social-item">
+            <a class="contact__social-link contact__social-link--vkontakte" href="#vkontakte">
               <span class="visually-hidden">Мы в контакте</span>
               <svg>
               </svg>
             </a>
           </li>
-          <li class="contact__item social">
-            <a class="social__link social__link--instagram" href="#instagram">
+          <li class="contact__social-item">
+            <a class="contact__social-link contact__social-link--instagram" href="#instagram">
               <span class="visually-hidden">Мы в инстаграм</span>
               <svg>
               </svg>
             </a>
           </li>
         </ul>
-        <p class="contact__text contact__text--right">В вашем бизнесе всё
-          <a class="contact__information" href="">работает само</a>
+        <p class="contact__text contact__text--our-business">В вашем бизнесе всё
+          <a class="contact__information contact__information--our-business" href="">работает само</a>
         </p>
       </div>
     </footer>
