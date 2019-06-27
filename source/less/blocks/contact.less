@@ -1,7 +1,9 @@
 .contact {
   position: relative;
+  width: 1140px;
   margin-left: 223px;
   margin-top: 45px;
+  margin-bottom: 109px;
 }
 
 .contact__text {
@@ -17,19 +19,19 @@
   display: block;
   position: absolute;
   top: 0;
-  right: 220px;
+  right: 0;
 }
 
 .contact__social-list {
-  display: flex;
-  flex-direction: row;
+  position: relative;
+  margin: 0;
   margin-top: 10px;
   padding: 0;
   list-style-type: none;
-
 }
 
 .contact__social-item {
+  display: inline-block;
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -38,9 +40,24 @@
 }
 
 .contact__social-link {
+  position: absolute;
+}
+
+.contact__social-img {
 
 }
 
+.contact__social-img--vkontakte {
+  width: 22px;
+  height: 13px;
+  fill: red;
+}
+
+.contact__social-img--instagram {
+  width: 19px;
+  height: 19px;
+  fill: red;
+}
 
 .contact__information {
   font-size: 13px;
