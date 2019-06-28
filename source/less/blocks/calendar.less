@@ -1,5 +1,6 @@
 .calendar {
   width: 540px;
+  margin-top: 45px;
   margin-left: 40px;
 }
 
@@ -15,13 +16,39 @@
 }
 
 .calendar__data {
+  position: relative;
   font-family: AntiQuasi;
   font-size: 40px;
   line-height: 45px;
   text-align: center;
-  color: green;
+  color: #ffffff;
   margin: 0;
   margin-top: 30px;
+}
+
+.calendar__data--data1 {
+
+
+}
+
+.calendar__data--data1::after {
+  position: absolute;
+  top: -30px;
+  left: 4px;
+  content: url("../img/flower_29.png");
+  width: 95px;
+  height: 95px;
+  z-index: -1;
+}
+
+.calendar__data--data2::after {
+  position: absolute;
+  top: -30px;
+  left: 5;
+  content: url("../img/flower_1.png");
+  width: 100px;
+  height: 100px;
+  z-index: -1;
 }
 
 .calendar__item {
@@ -35,6 +62,7 @@
   color: #d71c6d;
   text-align: center;
   margin: 0;
+  margin-top: 25px;
 }
 
 .calendar__month--october {
@@ -44,4 +72,3 @@
 .calendar__img {
   margin-bottom: 15px;
 }
-

@@ -1,9 +1,16 @@
 .page-header {
+  position: relative;
   background-color: #fffce4;
 }
 
+.page-header::before {
+  position: absolute;
+  top: 177px;
+  content: url("../img/volna_header.png");
+  height: 98px;
+  z-index: -1;
+}
+
 .page-header__nav {
-  width: 1092px;
-  margin-left: 223px;
-  margin-top: -45px;
-  }
+
+}
