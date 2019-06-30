@@ -1,10 +1,33 @@
 .discount {
-  position: relative;
-  width: 593px;
+  display: flex;
+  width: 600px;
   text-align: left;
   margin: 0 auto;
   margin-top: 77px;
   margin-bottom: 27px;
+  margin-left: calc(25% - 100px);
+}
+
+@media (max-width: @tablet-width) {
+  .discount {
+    display: inline-block;
+    text-align: center;
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .discount {
+    margin-top: 370px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .discount__wrap {
+
+
+  }
 }
 
 .discount__percent {
@@ -37,10 +60,22 @@
 }
 
 .discount__btn {
-  position: absolute;
-  top: -3px;
-  left: 230px;
+  display: block;
   width: 362px;
+  height: 70px;
   color: #ffffff;
   background-color: #d71c6d;
+}
+
+@media (max-width: @tablet-width) {
+  .discount__btn {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .discount__btn {
+    width: 280px;
+
+  }
 }

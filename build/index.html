@@ -21,11 +21,12 @@
         </div>
         <nav class="main-nav__wrapper">
         <div class="main-nav__logo-wrap">
-          <a class="main-nav__logo-link" href="main_familitet.html" title="логотип фамилитет">
+          <a class="main-nav__logo-link" href="index.html" title="логотип фамилитет">
             <img class="main-nav__logo-img" src="img/logo_familitet.png" alt="логотип фамилитета" width="300" height="130">
           </a>
           <p class="main-nav__center">Центр семейного<br> развития</p>
           </div>
+          <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Открыть меню"></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="about_familitet.html">Всё о нас</a>
@@ -49,8 +50,8 @@
           <h1 class="information__title">Для своего ребёнка вы — самые лучшие мама и папа на свете!</h1>
             <p class="information__text">Вы хотите, чтобы он родился здоровым, рос сильным, был умным, талантливым и счастливым. Это действительно в ваших руках.</p>
             <p class="information__text">Вместе с «Фамилитетом» познавайте увлекательную науку и самое важное из искусств – бьть родителями!</p>
-            <a class="information__link" href="about_familitet.html">Подробно о нашем центре</a>
-            <p class="information__text">Подписывайтесь: <a class="information__link" href="https://vk.com">ВКонтакте</a> и <a class="information__link" href="https://www.instagram.com/?hl=ru">Инстаграме</a>
+            <a class="information__link information__link--desc" href="about_familitet.html">Подробно о нашем центре</a>
+            <p class="information__text information__text--subscription">Подписывайтесь: <a class="information__link" href="https://vk.com">ВКонтакте</a> и <a class="information__link" href="https://www.instagram.com/?hl=ru">Инстаграме</a>
             </p>
         </section>
         <div class="calendar">
@@ -80,6 +81,7 @@
       </div>
       <div class="progress">
         <div class="progress__wrapper">
+          <div class="progress__block-1">
         <article class="progress__list">
           <p class="progress__lead"><span>8 лет</span> отвечаем на вопрос:<br> «Как родить без боли?»</p>
              <img class="progress__icon" src="img/beremen.png" alt="блок для беременных" width="190" height="218">
@@ -98,6 +100,8 @@
               <p class="features__text">Мамин класс<br> Йога после родов<br> Слинг в помощь<br> Грудное вскармливание<br> Прокат молокоотсосов<br> Послеродовое пеленание<br> Ребозо-релакс<br> Ребозо-релакс<br> Психолог<br> Женский круг<br> КСТ-терапия<br></p>
             </div>
         </article>
+      </div>
+      <div class="progress__block-2">
         <article class="progress__list">
           <p class="progress__lead"><span>468</span> человек повзрослели вместе с нами</p>
             <img class="progress__icon" src="img/malisham.png" alt="блок для малышей" width="187" height="218">
@@ -109,12 +113,19 @@
         </article>
         <article class="progress__list progress__list--diploma">
           <p class="progress__lead"><span>576</span> дипломов выдано будущим мамам!</p>
-        </article>
-          <img class="progress__diploma" src="img/diplom.png" alt="блок для мам" width="653" height="802">
-      </div>
+           <picture>
+            <source media="(max-width: 480px)" srcset="img/diplom.png">
+            <source media="(max-width: 768px)" srcset="img/diplom.png">
+            <img class="progress__diploma" src="img/diplom.png" alt="блок для мам" width="653" height="802">
+        </picture>
+         </article>
+       </div>
+     </div>
       <article class="discount">
+        <div class="discount__wrap">
         <p class="discount__percent"> <span>15%</span> скидка</p>
         <p class="discount__desc">Многодетным семьям, одиноким мамам и родителям-студентам на группов</p>
+      </div>
         <a class="discount__btn button button--writeus" href="">Записаться!</a>
       </article>
     </div>
@@ -122,29 +133,31 @@
     </main>
     <footer class="page-footer">
       <div class="contact">
+        <div class="contact__item">
         <p class="contact__text">© 2011-2019. Фамилитет<br> Россия, Рязань, ул. Есенина, 45</p>
+        <p class="contact__text contact__text--our-business">В вашем бизнесе всё
+          <a class="contact__information contact__information--our-business" href="">работает само</a>
+        </p>
+      </div>
         <a class="contact__information" href="#contact">Контактная информация</a>
         <ul class="contact__social-list">
           <li class="contact__social-item">
             <a class="contact__social-link contact__social-link--vkontakte" href="#vkontakte">
               <span class="visually-hidden">Мы в контакте</span>
-                <svg class="contact__social-img contact__social-img--vkontakte" width="22" height="13">
-                  <use xlink:href="img/symbols.svg#logo_vkontakte-white"></use>
+                <svg width="22" height="13">
+                  <use xlink:href="img/symbols.svg#vk"></use>
                 </svg>
             </a>
           </li>
           <li class="contact__social-item">
             <a class="contact__social-link contact__social-link--instagram" href="#instagram">
               <span class="visually-hidden">Мы в инстаграм</span>
-                <svg class="contact__social-img contact__social-img--instagram" width="19" height="19">
-                  <use xlink:href="img/symbols.svg#logo-instagram"></use>
+                <svg width="19" height="19">
+                  <use xlink:href="img/symbols.svg#instagram"></use>
                 </svg>
             </a>
           </li>
         </ul>
-        <p class="contact__text contact__text--our-business">В вашем бизнесе всё
-          <a class="contact__information contact__information--our-business" href="">работает само</a>
-        </p>
       </div>
     </footer>
     <script src="js/svg4everybody.min.js"></script>

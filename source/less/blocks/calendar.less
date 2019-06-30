@@ -4,15 +4,34 @@
   margin-left: 40px;
 }
 
+@media (max-width: @tablet-width) {
+  .calendar {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .calendar {
+    position: relative;
+  }
+}
+
 .calendar__list {
   display: flex;
   flex-direction: row;
   margin-bottom: 55px;
 }
 
+@media (max-width: @mobile-width) {
+  .calendar__list {
+    display: block;
+  }
+}
+
 .calendar__list > div {
   display: block;
   width: 105px;
+  padding-top: 10px;
 }
 
 .calendar__data {

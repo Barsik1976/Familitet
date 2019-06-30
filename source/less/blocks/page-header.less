@@ -3,6 +3,12 @@
   background-color: #fffce4;
 }
 
+@media (max-width: @tablet-width) {
+  .page-header {
+    padding-bottom: px;
+  }
+}
+
 .page-header::before {
   position: absolute;
   top: 177px;
@@ -12,6 +18,8 @@
   z-index: -1;
 }
 
-.page-header__nav {
-
+@media (max-width: @tablet-width) {
+  .page-header::before {
+    top: 545px;
+  }
 }

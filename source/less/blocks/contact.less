@@ -1,9 +1,22 @@
 .contact {
   position: relative;
   width: 1140px;
-  margin-left: 223px;
+  margin: 0 auto;
   margin-top: 45px;
   margin-bottom: 109px;
+  padding: 0 40px;
+}
+
+@media (max-width: @tablet-width) {
+  .contact {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .contact {
+    padding: 0 20px;
+  }
 }
 
 .contact__text {
@@ -15,15 +28,36 @@
   margin-bottom: 14px;
 }
 
+.contact__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1140px;
+}
+
+@media (max-width: @tablet-width) {
+  .contact__item {
+    display: block;
+  }
+}
+
 .contact__text--our-business {
   display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
+}
+
+@media (max-width: @tablet-width) {
+  .contact__text--our-business {
+
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .contact__text--our-business {
+    position: relative;
+  }
 }
 
 .contact__social-list {
-  position: relative;
   margin: 0;
   margin-top: 10px;
   padding: 0;
@@ -37,30 +71,24 @@
   border-radius: 50%;
   margin-right: 5px;
   background-color: #59361b;
+  text-align: center;
 }
 
 .contact__social-link {
-  position: absolute;
-}
-
-.contact__social-img {
-
+  display: inline-block;
+  vertical-align: middle;
+  fill: #ffffff;
+  margin-top: 6px;
 }
 
 .contact__social-link--vkontakte {
   width: 22px;
   height: 13px;
-  fill: #ffffff;
 }
 
-.contact__social-link--vkontakte:hover {
-    fill: red;
-}
-
-.contact__social-img--instagram {
+.contact__social-link--instagram {
   width: 19px;
   height: 19px;
-  fill: #ffffff;
 }
 
 .contact__information {
