@@ -4,40 +4,53 @@
   margin: 0 auto;
   margin-top: 45px;
   margin-bottom: 109px;
-  padding: 0 40px;
+  padding: 0;
 }
 
 @media (max-width: @tablet-width) {
   .contact {
-    padding: 0 40px;
+    padding: 0;
+    text-align: center;
+
   }
 }
 
 @media (max-width: @mobile-width) {
   .contact {
-    padding: 0 20px;
+
   }
 }
 
 .contact__text {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 18px;
   text-align: left;
   color: #59361b;
   margin: 0;
   margin-bottom: 14px;
 }
 
+@media (max-width: @tablet-width) {
+  .contact__text {
+
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .contact__text {
+
+  }
+}
+
 .contact__item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1140px;
 }
 
 @media (max-width: @tablet-width) {
   .contact__item {
-    display: block;
+    flex-direction: column;
   }
 }
 
