@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: ;
   margin-top: -45px;
 }
 
@@ -40,14 +40,17 @@
   }
 }
 
-
 .main-nav p {
   margin: 0;
   padding: 0;
 }
 
-.main-nav__logo-wrap {
+.main-nav__logo-link {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
   margin-right: 75px;
+  margin-bottom: 7px;
 }
 
 .main-nav__communication {
@@ -68,6 +71,7 @@
 }
 
 .main-nav__center {
+  display: block;
   font-size: 18px;
   line-height: 25px;
   font-weight: 300;
