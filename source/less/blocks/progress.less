@@ -17,22 +17,26 @@
   }
 }
 
-.progress__wave {
-  background-image: url("../img/volna.png");
+.progress::before {
+  position: absolute;
+  content:"";
+  top: -20px;
+  background: url("../img/volna.png");
   background-repeat: repeat-x;
   width: 100%;
   height: 98px;
   z-index: -1;
 }
 
-.progress__wave-1 {
+.progress::after {
   position: absolute;
-  top: -20px;
-}
-
-.progress__wave-2 {
-  position: absolute;
+  content:"";
   bottom: -75px;
+  background: url("../img/volna.png");
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 98px;
+  z-index: -1;
 }
 
 .progress__wrapper {
@@ -162,12 +166,4 @@
   position: absolute;
   top: 100px;
   left: -80px;
-}
-
-.progress__pattern {
-  position: relative;
-  width: 100%;
-  height: 235px;
-  background-image: url(../img/pattern_bottom.jpg);
-  z-index: -2;
 }
