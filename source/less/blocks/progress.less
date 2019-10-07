@@ -48,6 +48,8 @@
 @media (max-width: @tablet-width) {
   .progress__wrapper {
     width: 564px;
+    padding: 0 110px;
+    margin: 0;
   }
 }
 
@@ -64,20 +66,9 @@
   justify-content: space-between;
 }
 
-.progress__wrapp-blocks::after {
-  position: absolute;
-  top: 57px;
-  left: 820px;
-  width: 530px;
-  height: 802px;
-  content: url(../img/diplom.png);
-}
-
 @media (max-width: @tablet-width) {
   .progress__wrapp-blocks {
-    display: block;
-    width: 64px;
-    padding-top: 15px;
+    flex-wrap: wrap;
     margin: 0;
   }
 }
@@ -88,13 +79,35 @@
   }
 }
 
+.progress__wrapp-blocks::after {
+  position: absolute;
+  top: 57px;
+  left: 820px;
+  width: 530px;
+  height: 802px;
+  content: url(../img/diplom.png);
+}
+
+@media (max-width: @tablet-width) {
+  .progress__wrapp-blocks::after {
+    top: 1000px;
+    left: 200px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .progress__wrapp-blocks::after {
+
+  }
+}
+
 .progress__list {
   width: 260px;
 }
 
 @media (max-width: @tablet-width) {
   .progress__list {
-    margin-top: 75px;
+    margin-top: 55px;
   }
 }
 
@@ -102,10 +115,6 @@
   .progress__list {
     display: block;
   }
-}
-
-.progress__list--diploma {
-
 }
 
 .progress__lead {
