@@ -1,12 +1,11 @@
 .main-nav {
   position: relative;
-  width: 1580px;
   margin: 0 auto;
 }
 
 @media (max-width: @tablet-width) {
   .main-nav {
-    display: block;
+    padding: 0 110px;
   }
 }
 
@@ -18,19 +17,21 @@
 
 .main-nav__wrapper {
   display: flex;
-  position: absolute;
+  position: relative;
   width: 1093px;
   flex-wrap: wrap;
   align-items: center;
-  left: 224px;
-  top: 42px;
+  margin: 0 auto;
+  padding-top: 42px;
+  justify-content: flex-start;
 }
 
 @media (max-width: @tablet-width) {
   .main-nav__wrapper {
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 45px;
+    width: 547px;
+    margin: 0;
   }
 }
 
@@ -53,7 +54,7 @@
 .main-nav__communication {
   position: absolute;
   top: 23px;
-  left: 1125px;
+  right: 20px;
 }
 
 
@@ -71,7 +72,7 @@
 
 .main-nav__center {
   position: absolute;
-  top: 139px;
+  top: 185px;
   left: 39px;
   font-size: 21px;
   line-height: 25px;
@@ -104,7 +105,7 @@
 
   @media (max-width: @tablet-width) {
   .main-nav__toggle {
-    display: block;
+    display: none;
     top: 43px;
     right: calc(50% - 310px);
     position: absolute;

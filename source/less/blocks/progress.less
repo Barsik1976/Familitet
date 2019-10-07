@@ -64,6 +64,15 @@
   justify-content: space-between;
 }
 
+.progress__wrapp-blocks::after {
+  position: absolute;
+  top: 57px;
+  left: 820px;
+  width: 530px;
+  height: 802px;
+  content: url(../img/diplom.png);
+}
+
 @media (max-width: @tablet-width) {
   .progress__wrapp-blocks {
     display: block;
@@ -107,6 +116,7 @@
   text-align: left;
   color: #d71c6d;
   margin: 0;
+  margin-bottom: 38px;
 }
 
 .progress__lead span {
@@ -118,11 +128,4 @@
 .progress__icon {
   margin-top: 38px;
   margin-bottom: 20px;
-}
-
-.progress__diploma {
-  display: block;
-  position: absolute;
-  top: 57px;
-  left: 810px;
 }
