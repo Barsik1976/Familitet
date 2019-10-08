@@ -48,8 +48,9 @@
 @media (max-width: @tablet-width) {
   .progress__wrapper {
     width: 564px;
-    padding: 0 110px;
-    margin: 0;
+    margin-left: 110px;
+    margin-right: 110px;
+    padding-top: 0;
   }
 }
 
@@ -85,13 +86,15 @@
   left: 820px;
   width: 530px;
   height: 802px;
-  content: url(../img/diplom.png);
+  content: url(../img/diplom-full.png);
+  overflow: hidden;
 }
 
 @media (max-width: @tablet-width) {
   .progress__wrapp-blocks::after {
     top: 1000px;
-    left: 200px;
+    left: 223px;
+    width: 410px;
   }
 }
 
