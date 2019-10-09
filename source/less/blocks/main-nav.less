@@ -12,7 +12,11 @@
 
 @media (max-width: @mobile-width) {
   .main-nav {
-    padding: 0 20px;
+    box-sizing: border-box;
+    margin-left: 55px;
+    margin-right: 55px;
+    background-color: #fffce4;
+    padding-bottom: 20px;
   }
 }
 
@@ -38,7 +42,7 @@
 
 @media (max-width: @mobile-width) {
   .main-nav__wrapper {
-
+    padding-top: 120px;
   }
 }
 
@@ -67,7 +71,7 @@
 
 @media (max-width: @mobile-width) {
   .main-nav__communication {
-
+    left: 0;
   }
 }
 
@@ -84,20 +88,19 @@
   margin-left: 38px;
 }
 
+@media (max-width: @mobile-width) {
+  .main-nav__center {
+    top: 250px;
+  }
+}
+
 .main-nav__toggle {
   display: none;
 }
 
   @media (max-width: @tablet-width) {
   .main-nav__toggle {
-    display: none;
-    top: 43px;
-    right: calc(50% - 310px);
-    position: absolute;
-    margin: 0;
-    font-size: 0;
-    border: none;
-    cursor: pointer;
+
   }
 }
 
@@ -105,9 +108,9 @@
 .main-nav__toggle {
   display: block;
   position: absolute;
-  top: 23px;
-  right: calc(50% - 140px);
-  margin: 0;
+  width: 50px;
+  top: 350px;
+  left: 0;
   font-size: 0;
   border: none;
   cursor: pointer;

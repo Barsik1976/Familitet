@@ -86,7 +86,7 @@
   left: 820px;
   width: 530px;
   height: 802px;
-  content: url(../img/diplom-full.png);
+  content: url("../img/diplom-full.png");
   overflow: hidden;
 }
 
@@ -100,7 +100,15 @@
 
 @media (max-width: @mobile-width) {
   .progress__wrapp-blocks::after {
+    top: 2690px;
+    left: -55px;
+    width: 400px;
+  }
+}
 
+@media (max-width: @mobile-width) {
+  .progress__wrapp-blocks {
+    width: ;
   }
 }
 
@@ -116,7 +124,13 @@
 
 @media (max-width: @mobile-width) {
   .progress__list {
-    display: block;
+    margin-top: 75px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .progress__list:first-of-type {
+    margin-top: 55px;
   }
 }
 

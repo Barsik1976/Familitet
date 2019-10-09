@@ -7,13 +7,15 @@
   .calendar {
     margin-top: 45px;
     margin-left: 0;
-
   }
 }
 
 @media (max-width: @mobile-width) {
   .calendar {
-    position: relative;
+    width: 370px;
+    margin: 0 auto;
+    margin-top: 45px;
+
   }
 }
 
@@ -25,7 +27,8 @@
 
 @media (max-width: @mobile-width) {
   .calendar__list {
-    display: block;
+    flex-direction: column;
+    margin-bottom: 30px;
   }
 }
 
@@ -58,6 +61,14 @@
   width: 100px;
   height: 100px;
   z-index: -1;
+}
+
+
+@media (max-width: @mobile-width) {
+  .calendar__data::after {
+    top: -28px;
+    left: calc(50% - 95px / 2);
+  }
 }
 
 .calendar__item {
