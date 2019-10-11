@@ -1,7 +1,6 @@
 .progress {
   position: relative;
   background-color: #f7f8e2;
-  margin: 0 auto;
   margin-top: 25px;
 }
 
@@ -40,23 +39,28 @@
 }
 
 .progress__wrapper {
-  width: 1140px;
+  box-sizing: border-box;
+  width: 1580px;
   margin: 0 auto;
   padding-top: 55px;
+  padding-left: 220px;
+  padding-right: 220px;
 }
 
 @media (max-width: @tablet-width) {
   .progress__wrapper {
-    width: 564px;
-    margin-left: 110px;
-    margin-right: 110px;
+    width: 780px;
+    padding-left: 110px;
+    padding-right: 110px;
     padding-top: 0;
   }
 }
 
 @media (max-width: @mobile-width) {
   .progress__wrapper {
-    width: 260px;
+    width: 480px;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 }
 
@@ -77,6 +81,7 @@
 @media (max-width: @mobile-width) {
   .progress__wrapp-blocks {
     width: 260px;
+    margin: 0 auto;
   }
 }
 
@@ -101,14 +106,8 @@
 @media (max-width: @mobile-width) {
   .progress__wrapp-blocks::after {
     top: 2690px;
-    left: -55px;
-    width: 400px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .progress__wrapp-blocks {
-    width: ;
+    left: 0;
+    width: 480px;
   }
 }
 
