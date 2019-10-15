@@ -1,15 +1,19 @@
 .page-header {
   position: relative;
-  background-color: #fffce4;
-  min-height: 254px;
+  background: red url("../img/volna_header.png");
+  background-repeat: repeat-x;
+  background-position: 0 180px;
+  min-height: 280px;
 }
 
 @media (max-width: @tablet-width) {
   .page-header {
-
+    min-height: 615px;
+    background-position: 0 510px;
   }
 }
 
+/*
 .page-header::after {
   position: absolute;
   content:"";
@@ -32,6 +36,8 @@
     top: 590px;
   }
 }
+
+*/
 
 
 
