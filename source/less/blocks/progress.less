@@ -1,23 +1,24 @@
 .progress {
   position: relative;
-  background: green url("../img/volna.png"), url("../img/volna.png"), url("../img/pattern-crop.jpg");
+  background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 93%, transparent);
   background-repeat: repeat-x, repeat-x, repeat-x;
-  background-position: 0 0, 0 1125px, 0 1176px;
-  min-height: 1440px;
+  background-position: 0 0, 0 1150px, 0 1200px, 0 0;
+  min-height: 1470px;
 }
 
 @media (max-width: @tablet-width) {
   .progress {
-    background:  url("../img/volna.png"), url("../img/volna.png"), url("../img/pattern-crop.jpg");
+    background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 97%, transparent);
     background-repeat: repeat-x, repeat-x, repeat-x;
-    background-position: 0 0, 0 1990px, 0 2045px;
-    min-height: 2310px;
+    background-position: 0 0, 0 2030px, 0 2085px, 0 0;
+    min-height: 2350px;
   }
 }
 
 @media (max-width: @mobile-width) {
   .progress {
-
+    background-position: 0 0, 0 3855px, 0 3910px, 0 0;
+    min-height: 4173px;
   }
 }
 
@@ -48,10 +49,8 @@
 .progress__wrapper {
   width: 1140px;
   margin: 0 auto;
-  margin-top: 55px;
   padding-left: 20px;
   padding-right: 20px;
-  border: 2px solid blue;
 }
 
 @media (max-width: @tablet-width) {
@@ -65,7 +64,7 @@
 
 @media (max-width: @mobile-width) {
   .progress__wrapper {
-    width: 480px;
+    width: 370px;
   }
 }
 
@@ -74,12 +73,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 65px;
 }
 
 @media (max-width: @tablet-width) {
   .progress__wrapp-blocks {
     flex-wrap: wrap;
     margin: 0;
+    padding-top: 15px;
   }
 }
 
@@ -92,27 +93,27 @@
 
 .progress__wrapp-blocks::after {
   position: absolute;
-  top: 55px;
-  left: 832px;
+  top: 120px;
+  left: 800px;
   width: 325px;
   height: 802px;
   content: url("../img/diplom-full.png");
   overflow: hidden;
-  border: 2px solid orange;
 }
 
 @media (max-width: @tablet-width) {
   .progress__wrapp-blocks::after {
-    top: 1000px;
-    left: 200px;
+    top: 1020px;
+    left: 220px;
+    width: 447px;
   }
 }
 
 @media (max-width: @mobile-width) {
   .progress__wrapp-blocks::after {
-    top: 2690px;
-    left: 0;
-    width: 480px;
+    top: 2710px;
+    left: -45px;
+    width: 415px;
   }
 }
 

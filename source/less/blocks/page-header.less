@@ -1,15 +1,22 @@
 .page-header {
   position: relative;
-  background: red url("../img/volna_header.png");
+  background: linear-gradient(to bottom, #fffce4 80%, transparent), url("../img/wave-top.png");
   background-repeat: repeat-x;
-  background-position: 0 180px;
-  min-height: 280px;
+  background-position: 0 0, 0 190px;
+  min-height: 290px;
 }
 
 @media (max-width: @tablet-width) {
   .page-header {
+    background-position: 0 0, 0 510px;
     min-height: 615px;
-    background-position: 0 510px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .page-header {
+    background-position: 0 0, 0 580px;
+    min-height: 680px;
   }
 }
 
@@ -37,17 +44,18 @@
   }
 }
 
+
 */
 
 
 
 
 body > * {
-  border: 2px solid red;
+  border:  ;
 }
 
 body > * > * {
-  border: 2px solid green;
+  border:  ;
 }
 
 

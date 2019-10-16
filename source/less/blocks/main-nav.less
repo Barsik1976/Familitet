@@ -1,6 +1,4 @@
-
-
-.main-nav__wrapper {
+.main-nav {
   display: flex;
   position: relative;
   width: 1140px;
@@ -11,11 +9,10 @@
   padding-left: 20px;
   padding-right: 20px;
   justify-content: flex-start;
-  border: 2px solid blue;
 }
 
 @media (max-width: @tablet-width) {
-  .main-nav__wrapper {
+  .main-nav {
     flex-direction: column;
     align-items: flex-start;
     width: 560px;
@@ -23,7 +20,8 @@
 }
 
 @media (max-width: @mobile-width) {
-  .main-nav__wrapper {
+  .main-nav {
+    width: 370px;
     padding-top: 120px;
   }
 }
@@ -53,7 +51,7 @@
 
 @media (max-width: @mobile-width) {
   .main-nav__communication {
-    left: 0;
+    left: 20px;
   }
 }
 
