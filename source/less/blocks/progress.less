@@ -4,6 +4,7 @@
   background-repeat: repeat-x, repeat-x, repeat-x;
   background-position: 0 0, 0 1150px, 0 1200px, 0 0;
   min-height: 1470px;
+  overflow-x: hidden;
 }
 
 @media (max-width: @tablet-width) {
@@ -98,7 +99,6 @@
   width: 325px;
   height: 802px;
   content: url("../img/diplom-full.png");
-  overflow: hidden;
 }
 
 @media (max-width: @tablet-width) {
@@ -119,6 +119,10 @@
 
 .progress__list {
   width: 260px;
+}
+
+.progress__list:last-of-type {
+
 }
 
 @media (max-width: @tablet-width) {
