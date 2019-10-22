@@ -11,8 +11,8 @@
   .progress {
     background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 97%, transparent);
     background-repeat: repeat-x, repeat-x, repeat-x;
-    background-position: 0 0, 0 2030px, 0 2085px, 0 0;
-    min-height: 2350px;
+    background-position: 0 0, 0 2060px, 0 2115px, 0 0;
+    min-height: 2380px;
   }
 }
 
@@ -56,10 +56,9 @@
 
 @media (max-width: @tablet-width) {
   .progress__wrapper {
-    width: 560px;
+    width: 520px;
     padding-top: 0;
     padding-bottom: 20px;
-    margin-top: 0;
   }
 }
 
@@ -71,16 +70,18 @@
 
 .progress__wrapp-blocks {
   position: relative;
+  width: 1140px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 65px;
+  margin: 0 auto;
 }
 
 @media (max-width: @tablet-width) {
   .progress__wrapp-blocks {
+    width: 520px;
     flex-wrap: wrap;
-    margin: 0;
     padding-top: 15px;
   }
 }
@@ -88,7 +89,6 @@
 @media (max-width: @mobile-width) {
   .progress__wrapp-blocks {
     width: 260px;
-    margin: 0 auto;
   }
 }
 
@@ -103,7 +103,7 @@
 
 @media (max-width: @tablet-width) {
   .progress__wrapp-blocks::after {
-    top: 1020px;
+    top: 1045px;
     left: 220px;
     width: 447px;
   }
@@ -127,12 +127,14 @@
 
 @media (max-width: @tablet-width) {
   .progress__list {
+    width: 240px;
     margin-top: 55px;
   }
 }
 
 @media (max-width: @mobile-width) {
   .progress__list {
+    width: 260px;
     margin-top: 75px;
   }
 }
@@ -152,6 +154,18 @@
   color: #d71c6d;
   margin: 0;
   margin-bottom: 38px;
+}
+
+@media (max-width: @tablet-width) {
+  .progress__lead {
+    min-height: 130px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .progress__lead {
+    min-height: 92px;
+  }
 }
 
 .progress__lead span {
