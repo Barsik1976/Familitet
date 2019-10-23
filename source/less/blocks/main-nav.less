@@ -11,11 +11,17 @@
   justify-content: flex-start;
 }
 
-@media (max-width: @tablet-width) {
+@media (max-width: 1196px) and (min-width: 768px) {
+  .main-nav {
+    width: 720px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
   .main-nav {
     flex-direction: column;
     align-items: flex-start;
-    width: 560px;
+    width: 520px;
   }
 }
 
@@ -39,12 +45,18 @@
 .main-nav__communication {
   position: absolute;
   top: 23px;
-  right: 85px;
+  right: 35px;
 }
 
-
-@media (max-width: @tablet-width) {
+@media (max-width: 1196px) and (min-width: 768px) {
   .main-nav__communication {
+    right: 37px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .main-nav__communication {
+    right: 30px;
     margin: 0;
   }
 }

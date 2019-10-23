@@ -48,7 +48,7 @@
 */
 
 .progress__wrapper {
-  width: 1140px;
+  min-width: 1140px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -56,7 +56,8 @@
 
 @media (max-width: @tablet-width) {
   .progress__wrapper {
-    width: 520px;
+    width: 64%;
+    min-width: 520px;
     padding-top: 0;
     padding-bottom: 20px;
   }
@@ -64,7 +65,8 @@
 
 @media (max-width: @mobile-width) {
   .progress__wrapper {
-    width: 370px;
+    width: 70%;
+    min-width: 370px;
   }
 }
 

@@ -1,5 +1,5 @@
 .information {
-  width: 1140px;
+  min-width: 1140px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -10,7 +10,13 @@
   padding-right: 20px;
 }
 
-@media (max-width: @tablet-width) {
+@media (max-width: 1200px) and (min-width: 768px) {
+  .information {
+    width: 720px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
   .information {
     flex-direction: column;
     width: 520px;
