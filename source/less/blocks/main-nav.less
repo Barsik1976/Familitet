@@ -21,14 +21,16 @@
   .main-nav {
     flex-direction: column;
     align-items: flex-start;
-    width: 520px;
+    width: 480px;
   }
 }
 
 @media (max-width: @mobile-width) {
   .main-nav {
-    width: 370px;
+    width: 300px;
     padding-top: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -40,6 +42,17 @@
 .main-nav__logo-link {
   display: block;
   width: 300px;
+}
+
+.main-nav__logo-img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: @mobile-width) {
+  .main-nav__logo-img {
+    width: 280px;
+  }
 }
 
 .main-nav__communication {

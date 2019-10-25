@@ -8,7 +8,14 @@
   margin-bottom: 27px;
 }
 
-@media (max-width: @tablet-width) {
+@media (max-width: 1196px) and (min-width: 768px) {
+  .discount {
+    margin-left: 0;
+    margin-top: 145px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
   .discount {
     width: 520px;
     margin: 0 auto;
@@ -18,9 +25,10 @@
 
 @media (max-width: @mobile-width) {
   .discount {
-    width: 370px;
+    width: 300px;
     flex-direction: column;
     align-items: center;
+    margin: 0;
     margin-top: 760px;
   }
 }
@@ -78,6 +86,7 @@
 
 @media (max-width: @mobile-width) {
   .discount__btn {
+    width: 280px;
     margin-top: 20px;
   }
 }
