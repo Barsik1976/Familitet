@@ -5,34 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <title>Familitet</title>
-    <link rel="preload" href="fonts/opensans.woff2" as="font">
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
-    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="fonts/antiquasi_regular-webfont.woff2" as="font">
+    <link rel="preload" href="fonts/helios-bold-webfont.woff2" as="font">
+    <link rel="preload" href="fonts/helioslight-webfont.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="page-header">
-      <div class="travel">
-        <p class="travel__number">+7 (4912) <span>95-24-55</span><br> +7 (4912) <span>99-51-36</span></p>
-        <p class="travel__adress-scheme"><a href="#">Адрес и схема проезда</a>
-      </p></div>
-      <section class="page-header__nav">
-        <h2 class="visually-hidden">Навигация сайта</h2>
-        <nav class="main-nav">
-          <a class="main-nav__logo-link" href="main_familitet.html" title="логотип фамилитет">
-            <svg class="main-nav__logo-img">
-              <use xlink:href="img/symbols.svg#............."></use>
-            </svg>
+       <nav class="main-nav">
+        <div class="main-nav__communication communication">
+        <p class="communication__number">+7 (4912) <span>95-24-55</span><br> +7 (4912) <span>99-51-36</span></p>
+        <p class="communication__adress-scheme"><a href="#">Адрес и схема проезда</a>
+        </p>
+        </div>
+          <a class="main-nav__logo-link" href="index.html" title="логотип фамилитет">
+        <!--
+        <picture>
+          <source type="image/webp" media="(max-width: 480px)" srcset="img/logo_familitet-mobile@1x.webp 1x, img/logo_familitet-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 768px)" srcset="img/logo_familitet-tablet@1x.webp 1x, img/logo_familitet-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo_familitet@1x.webp 1x, img/logo_familitet@2x.webp 2x">
+          <source media="(max-width: 480px)" srcset="img/logo_familitet-mobile@1x.png 1x, img/logo_familitet-mobile@2x.png 2x">
+          <source media="(max-width: 768px)" srcset="img/logo_familitet-tablet@1x.png 1x, img/logo_familitet-tablet@2x.png 2x">
+        </picture>
+      -->
+          <img class="main-nav__logo-img" src="img/logo_familitet.png" srcset="img/logo_familitet.png 2x" alt="логотип фамилитета" width="300" height="130">
           </a>
-          <p class="main-nav__center">Центр семейного развития</p>
+          <p class="main-nav__center">Центр семейного<br> развития</p>
+          <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Открыть меню"></button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Всё о нас</a>
+            <li class="site-list__item">
+              <a class="site-list__item-active">Всё о нас</a>
               <p class="site-list__content">Работаем с 2011 года</p>
             </li>
             <li class="site-list__item">
               <a href="program_familitet.html">Программы</a>
-              <p class="site-list__content">Беременность, роды, материнство</p>
+              <p class="site-list__content">Беременность, роды,<br> материнство</p>
             </li>
             <li class="site-list__item">
               <a href="schedule_familitet.html">Расписание</a>
@@ -40,22 +47,27 @@
             </li>
           </ul>
         </nav>
-      </section>
     </header>
     <main class="page-main">
       <div class="information">
-        <section class="information__content">
+        <section class="information__content information__content--history">
           <h1 class="information__title">Исторический день</h1>
-            <p class="information__text">17 июля 2011 года центр семейного развития «Фамилитет» открыл свои двери в Рязани. Праздничный день прошёл в формате презентации: наши специалисты предложили гостям протестировать некоторые <a class="information__link" href="#">программы</a> центра</p>
+            <p class="information__text">17 июля 2011 года центр семейного развития «Фамилитет» открыл свои двери в Рязани. Праздничный день прошёл в формате презентации: наши специалисты предложили гостям протестировать некоторые <a class="information__link" href="#">программы</a> центра.</p>
             <p class="information__text">«Дегустацию» прошли: лекция по <a class="information__link" href="#">грудному вскармливанию</a> для будущих родителей, <a class="information__link" href="#">фитнес для беременных</a> и «<a class="information__link" href="#">Мягкая школа</a>» для мам с малышами.
             </p>
+
+            <!--
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="панорама дня" width="320" height="137">
+                <img class="information__image-history" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="панорама дня" width="320" height="137">
               </picture>
-            <p class="information__text">В этот день в адрес центра прозвучало немало прекрасных пожеланий, и, чтобы всё исполнялось с лёгкостью и настроением, мы пускали мыльные пузыри!</p>
-            <p class="information__title information__title--subtitle">И вот что из этого получилось:</p>
+            -->
+
+                <img class="information__image-history" src="img/history-index.jpg" alt="панорама дня" width="792" height="528">
+
+            <p class="information__text information__text--history">В этот день в адрес центра прозвучало немало прекрасных пожеланий, и, чтобы всё исполнялось с лёгкостью и настроением, мы пускали мыльные пузыри!</p>
+            <p class="information__title">И вот что из этого получилось:</p>
         </section>
         <div class="navigation-aside">
           <ul class="navigation-aside__list">
@@ -110,44 +122,57 @@
       </div>
       <div class="progress">
         <div class="progress__wrapper">
-          <p class="progress__lead"><span>8 лет</span> отвечаем на вопрос: «Как родить без боли?»</p>
-          <p class="progress__lead"><span>1447</span> молодых семей научили быть родителями</p>
-          <p class="progress__lead"><span>468</span> человек повзрослели вместе с нами</p>
-          <p class="progress__lead"><span>576</span> дипломов выдано будущим мамам!</p>
-        </div>
-        <article class="discount">
-          <p class="discount__percent"> <span>15%</span> скидка</p>
-          <p class="discount__desc">Многодетным семьям, одиноким мамам и родителям-студентам на группов</p>
-          <a class="discount__btn button button--writeus" href="">Записаться!</a>
+        <div class="progress__wrapp-blocks">
+        <article class="progress__list">
+          <p class="progress__lead"><span>8 лет</span> отвечаем на вопрос:<br> «Как родить без боли?»</p>
         </article>
-        <svg class="progress__pattern">
-          <use xlink:href="img/symbols.svg#............."></use>
-        </svg>
+        <article class="progress__list">
+          <p class="progress__lead"><span>1447</span> молодых семей научили быть родителями</p>
+        </article>
+        <article class="progress__list">
+          <p class="progress__lead"><span>468</span> человек повзрослели вместе с нами</p>
+        </article>
+        <article class="progress__list">
+          <p class="progress__lead"><span>576</span> дипломов выдано будущим мамам!</p>
+         </article>
       </div>
+      <article class="discount discount--page-about">
+        <div class="discount__wrap">
+        <p class="discount__percent"> <span>15%</span> скидка</p>
+        <p class="discount__desc">Многодетным семьям, одиноким мамам и родителям-студентам на группов</p>
+      </div>
+        <a class="discount__btn button button--writeus" href="">Записаться!</a>
+      </article>
+    </div>
+  </div>
     </main>
     <footer class="page-footer">
       <div class="contact">
-        <p class="contact__text">© 2011-2019. Фамилитет Россия, Рязань, ул. Есенина, 45</p>
+        <div class="contact__item">
+        <p class="contact__text">© 2011-2019. Фамилитет<br> Россия, Рязань, ул. Есенина, 45</p>
+        <p class="contact__text contact__text--our-business">В вашем бизнесе всё
+          <a class="contact__information contact__information--our-business" href="">работает само</a>
+        </p>
+      </div>
         <a class="contact__information" href="#contact">Контактная информация</a>
-        <ul class="contact__list">
-          <li class="contact__item social">
-            <a class="social__link social__link--vkontakte" href="#vkontakte">
+        <ul class="contact__social-list">
+          <li class="contact__social-item">
+            <a class="contact__social-link contact__social-link--vkontakte" href="#vkontakte">
               <span class="visually-hidden">Мы в контакте</span>
-              <svg>
-              </svg>
+                <svg width="22" height="13">
+                  <use xlink:href="img/symbols.svg#vk"></use>
+                </svg>
             </a>
           </li>
-          <li class="contact__item social">
-            <a class="social__link social__link--instagram" href="#instagram">
+          <li class="contact__social-item">
+            <a class="contact__social-link contact__social-link--instagram" href="#instagram">
               <span class="visually-hidden">Мы в инстаграм</span>
-              <svg>
-              </svg>
+                <svg width="19" height="19">
+                  <use xlink:href="img/symbols.svg#instagram"></use>
+                </svg>
             </a>
           </li>
         </ul>
-        <p class="contact__text contact__text--right">В вашем бизнесе всё
-          <a class="contact__information" href="">работает само</a>
-        </p>
       </div>
     </footer>
     <script src="js/svg4everybody.min.js"></script>
