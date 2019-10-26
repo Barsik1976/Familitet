@@ -1,39 +1,50 @@
 .discount {
   display: flex;
-  width: 600px;
-  text-align: left;
-  margin: 0 auto;
+  justify-content: space-between;
+  width: 590px;
+  text-align: ;
+  margin-left: 158px;
   margin-top: 77px;
   margin-bottom: 27px;
-  margin-left: calc(25% - 100px);
 }
 
-@media (max-width: @tablet-width) {
+@media (max-width: 1196px) and (min-width: 768px) {
   .discount {
-    display: inline-block;
-    text-align: center;
-    padding: 0 40px;
+    margin-left: 0;
+    margin-top: 145px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .discount {
+    width: 520px;
+    margin: 0 auto;
+    margin-top: 120px;
   }
 }
 
 @media (max-width: @mobile-width) {
   .discount {
-    margin-top: 370px;
-    padding: 0 20px;
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 760px;
   }
 }
 
 @media (max-width: @tablet-width) {
   .discount__wrap {
-
+    display: block;
 
   }
 }
 
 .discount__percent {
   font-family: AntiQuasi;
-  font-size: 24px;
+  font-size: 33px;
   line-height: 40px;
+  letter-spacing: -0.1px;
   text-align: left;
   text-transform: uppercase;
   color: #d73c2c;
@@ -42,7 +53,7 @@
 
 .discount__percent span {
   display: block;
-  font-size: 60px;
+  font-size: 75px;
   font-weight: 400;
   letter-spacing: -2px;
   color: #59361b;
@@ -51,8 +62,9 @@
 
 .discount__desc {
   width: 190px;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 20px;
+  letter-spacing: - 0.5px;
   text-align: left;
   color: #59361b;
   margin: 0;
@@ -60,7 +72,6 @@
 }
 
 .discount__btn {
-  display: block;
   width: 362px;
   height: 70px;
   color: #ffffff;
@@ -69,13 +80,13 @@
 
 @media (max-width: @tablet-width) {
   .discount__btn {
-    margin-top: 25px;
+
   }
 }
 
 @media (max-width: @mobile-width) {
   .discount__btn {
     width: 280px;
-
+    margin-top: 20px;
   }
 }

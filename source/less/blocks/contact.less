@@ -1,43 +1,83 @@
 .contact {
-  position: relative;
   width: 1140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0 auto;
-  margin-top: 45px;
   margin-bottom: 109px;
-  padding: 0 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 45px;
 }
 
-@media (max-width: @tablet-width) {
+@media (max-width: 1196px) and (min-width: 768px) {
   .contact {
-    padding: 0 40px;
+    width: 720px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .contact {
+    width: 520px;
+    text-align: center;
   }
 }
 
 @media (max-width: @mobile-width) {
   .contact {
-    padding: 0 20px;
+    width: 300px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
 .contact__text {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 16px;
+  letter-spacing: -0.5px;
   text-align: left;
   color: #59361b;
   margin: 0;
   margin-bottom: 14px;
 }
 
+@media (max-width: @tablet-width) {
+  .contact__text {
+    text-align: center;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .contact__text {
+  }
+}
+
 .contact__item {
+  width: 1140px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1140px;
 }
 
-@media (max-width: @tablet-width) {
+@media (max-width: 1196px) and (min-width: 768px) {
   .contact__item {
-    display: block;
+    width: 720px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .contact__item {
+    width: 520px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .contact__item {
+    flex-direction: column;
+    width: 300px;
   }
 }
 
@@ -53,7 +93,7 @@
 
 @media (max-width: @mobile-width) {
   .contact__text--our-business {
-    position: relative;
+
   }
 }
 
@@ -62,6 +102,12 @@
   margin-top: 10px;
   padding: 0;
   list-style-type: none;
+}
+
+@media (max-width: @mobile-width) {
+  .contact__social-list {
+
+  }
 }
 
 .contact__social-item {
@@ -77,8 +123,11 @@
 .contact__social-link {
   display: inline-block;
   vertical-align: middle;
+}
+
+.contact__social-link svg {
+  vertical-align: middle;
   fill: #ffffff;
-  margin-top: 6px;
 }
 
 .contact__social-link--vkontakte {
@@ -89,13 +138,16 @@
 .contact__social-link--instagram {
   width: 19px;
   height: 19px;
+  margin-top: 2px;
 }
 
 .contact__information {
-  font-size: 13px;
+  display: block;
+  font-size: 16px;
   color: #59a8dd;
-  margin-bottom: 35px;
   cursor: pointer;
+  margin-left: 0;
+
 }
 
 .contact__information--our-business {

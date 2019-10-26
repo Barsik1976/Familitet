@@ -1,12 +1,40 @@
-.features {
 
+@media (max-width: @mobile-width) {
+  .features a
+  .features p {
+    text-align: center;
+  }
+}
+
+
+.features::before {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.features--pregnant::before {
+  width: 190px;
+  height: 218px;
+  content: url(../img/beremen.png);
+}
+
+.features--young-mother::before {
+  width: 230px;
+  height: 218px;
+  content: url(../img/mamam.png);
+}
+
+.features--kids::before {
+  width: 187px;
+  height: 218px;
+  content: url(../img/malisham.png);
 }
 
 .features__title {
   display: block;
   font-family: AntiQuasi;
-  font-size: 25px;
-  line-height: 28px;
+  font-size: 33px;
+  line-height: 33px;
   text-align: left;
   color: #59361b;
   text-decoration: none;
@@ -18,11 +46,18 @@
 }
 
 .features__text {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: 300;
+  letter-spacing: -0.3px;
   text-align: left;
   color: #59361b;
   margin: 0;
   margin-top: 30px;
+}
+
+@media (max-width: @mobile-width) {
+  .features__text {
+    text-align: ;
+  }
 }

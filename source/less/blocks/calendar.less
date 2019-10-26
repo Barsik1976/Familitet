@@ -1,43 +1,46 @@
 .calendar {
-  width: 540px;
-  margin-top: 45px;
-  margin-left: 40px;
+  width: 535px;
 }
 
 @media (max-width: @tablet-width) {
   .calendar {
+    width: 480px;
+    margin-top: 45px;
     margin-left: 0;
+    padding-right: 20px;
   }
 }
 
 @media (max-width: @mobile-width) {
   .calendar {
-    position: relative;
+    width: 300px;
+    padding-right: 0;
+
   }
 }
 
 .calendar__list {
   display: flex;
   flex-direction: row;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: @tablet-width) {
+  .calendar__list {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: @mobile-width) {
   .calendar__list {
-    display: block;
+    flex-direction: column;
   }
-}
-
-.calendar__list > div {
-  display: block;
-  width: 105px;
-  padding-top: 10px;
 }
 
 .calendar__data {
   position: relative;
   font-family: AntiQuasi;
-  font-size: 40px;
+  font-size: 42px;
   line-height: 45px;
   text-align: center;
   color: #ffffff;
@@ -45,15 +48,10 @@
   margin-top: 30px;
 }
 
-.calendar__data--data1 {
-
-
-}
-
 .calendar__data--data1::after {
   position: absolute;
   top: -30px;
-  left: 4px;
+  left: 5px;
   content: url("../img/flower_29.png");
   width: 95px;
   height: 95px;
@@ -63,11 +61,19 @@
 .calendar__data--data2::after {
   position: absolute;
   top: -30px;
-  left: 5;
+  left: 0;
   content: url("../img/flower_1.png");
   width: 100px;
   height: 100px;
   z-index: -1;
+}
+
+
+@media (max-width: @mobile-width) {
+  .calendar__data::after {
+    top: -28px;
+    left: calc(50% - 95px / 2);
+  }
 }
 
 .calendar__item {
@@ -75,19 +81,16 @@
 }
 
 .calendar__month {
+  display: block;
   font-family: AntiQuasi;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 30px;
   color: #d71c6d;
   text-align: center;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 23px;
 }
 
 .calendar__month--october {
   color: #70b4a7;
-}
-
-.calendar__img {
-  margin-bottom: 15px;
 }

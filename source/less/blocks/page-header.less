@@ -1,25 +1,71 @@
 .page-header {
   position: relative;
-  background-color: #fffce4;
+  background: linear-gradient(180deg, #fffce4 90%, transparent 90%), url("../img/wave-top.png");
+  background-repeat: repeat-x;
+  background-position: 0 0, 0 190px;
+  min-height: 290px;
 }
 
-@media (max-width: @tablet-width) {
+@media (max-width: 1196px) and (min-width: 768px) {
   .page-header {
-    padding-bottom: px;
+    background-position: 0 0, 0 300px;
+    min-height: 400px;
   }
 }
 
-.page-header::before {
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .page-header {
+    background-position: 0 0, 0 510px;
+    min-height: 615px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .page-header {
+    background-position: 0 0, 0 580px;
+    min-height: 680px;
+  }
+}
+
+/*
+.page-header::after {
   position: absolute;
-  top: 177px;
-  left: 0;
-  content: url("../img/volna_header.png");
+  content:"";
+  top: 185px;
+  background: url("../img/volna_header.png");
+  background-repeat: repeat-x;
+  width: 100%;
   height: 98px;
   z-index: -1;
 }
 
 @media (max-width: @tablet-width) {
-  .page-header::before {
-    top: 545px;
+  .page-header::after {
+    top: 500px;
   }
 }
+
+@media (max-width: @mobile-width) {
+  .page-header::after {
+    top: 590px;
+  }
+}
+
+
+*/
+
+
+
+
+body > * {
+  border:  ;
+}
+
+body > * > * {
+  border:  ;
+}
+
+
+
+
+

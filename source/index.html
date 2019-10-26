@@ -12,24 +12,29 @@
   </head>
   <body>
     <header class="page-header">
-      <section class="main-nav">
-        <h2 class="visually-hidden">Навигация сайта</h2>
+       <nav class="main-nav">
         <div class="main-nav__communication communication">
         <p class="communication__number">+7 (4912) <span>95-24-55</span><br> +7 (4912) <span>99-51-36</span></p>
         <p class="communication__adress-scheme"><a href="#">Адрес и схема проезда</a>
         </p>
         </div>
-        <nav class="main-nav__wrapper">
-        <div class="main-nav__logo-wrap">
           <a class="main-nav__logo-link" href="index.html" title="логотип фамилитет">
-            <img class="main-nav__logo-img" src="img/logo_familitet.png" alt="логотип фамилитета" width="300" height="130">
+        <!--
+        <picture>
+          <source type="image/webp" media="(max-width: 480px)" srcset="img/logo_familitet-mobile@1x.webp 1x, img/logo_familitet-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 768px)" srcset="img/logo_familitet-tablet@1x.webp 1x, img/logo_familitet-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo_familitet@1x.webp 1x, img/logo_familitet@2x.webp 2x">
+          <source media="(max-width: 480px)" srcset="img/logo_familitet-mobile@1x.png 1x, img/logo_familitet-mobile@2x.png 2x">
+          <source media="(max-width: 768px)" srcset="img/logo_familitet-tablet@1x.png 1x, img/logo_familitet-tablet@2x.png 2x">
+        </picture>
+      -->
+          <img class="main-nav__logo-img" src="img/logo_familitet.png" srcset="img/logo_familitet.png 2x" alt="логотип фамилитета" width="300" height="130">
           </a>
           <p class="main-nav__center">Центр семейного<br> развития</p>
-          </div>
           <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Открыть меню"></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="about_familitet.html">Всё о нас</a>
+              <a class="site-list__item-active" href="about_familitet.html">Всё о нас</a>
               <p class="site-list__content">Работаем с 2011 года</p>
             </li>
             <li class="site-list__item">
@@ -42,50 +47,40 @@
             </li>
           </ul>
         </nav>
-      </section>
     </header>
     <main class="page-main">
       <div class="information">
         <section class="information__content">
           <h1 class="information__title">Для своего ребёнка вы — самые лучшие мама и папа на свете!</h1>
             <p class="information__text">Вы хотите, чтобы он родился здоровым, рос сильным, был умным, талантливым и счастливым. Это действительно в ваших руках.</p>
-            <p class="information__text">Вместе с «Фамилитетом» познавайте увлекательную науку и самое важное из искусств – бьть родителями!</p>
+            <p class="information__text">Вместе с «Фамилитетом» познавайте увлекательную науку и самое важное<br> из искусств – быть родителями!</p>
             <a class="information__link information__link--desc" href="about_familitet.html">Подробно о нашем центре</a>
             <p class="information__text information__text--subscription">Подписывайтесь: <a class="information__link" href="https://vk.com">ВКонтакте</a> и <a class="information__link" href="https://www.instagram.com/?hl=ru">Инстаграме</a>
             </p>
         </section>
         <div class="calendar">
           <article class="calendar__list">
-            <div>
-              <p class="calendar__data calendar__data--data1">29</p>
-              <p class="calendar__month">сентября</p>
-            </div>
+              <p class="calendar__data calendar__data--data1">29 <span class="calendar__month">сентября</span> </p>
               <section class="calendar__item meeting">
-                <h4 class="meeting__title">Встреча с неонатологом</h4>
-                 <img class="calendar__img" src="img/pattern_circle.png" alt="паттерн" width="290" height="130">
-                <p class="meeting__text">Приглашаем всех желающих на однодневный семинар, который проведёт кандидат медицинских наук, практикующий неонатолог Наталья Римская. Начало в 17.00.</p>
+                <h4 class="meeting__title meeting__title--title1">Встреча с неонатологом</h4>
+                 <p class="meeting__text">Приглашаем всех желающих на однодневный семинар, который проведёт кандидат медицинских наук, практикующий неонатолог Наталья Римская. Начало в 17.00.</p>
               </section>
           </article>
           <article class="calendar__list">
-            <div>
-              <p class="calendar__data calendar__data--data2">1</p>
-              <p class="calendar__month calendar__month--october">октября</p>
-            </div>
-              <section class="calendar__item meeting">
-                <h4 class="meeting__title">Женский круг с Татьяной Гшвенд</h4>
-                 <img class="calendar__img" src="img/pattern_circle-long.png" alt="паттерн" width="412" height="13">
-                <p class="meeting__text">Теория йогатерапевтические приёмы для здоровья молочных желёз. Начало в 11.00.</p>
+              <p class="calendar__data calendar__data--data2">1 <span class="calendar__month calendar__month--october">октября</span> </p>
+              <section class="calendar__item meeting meeting--october">
+                <h4 class="meeting__title meeting__title--title2">Женский круг с Татьяной Гшвенд</h4>
+                 <p class="meeting__text">Теория йогатерапевтические приёмы для здоровья молочных желёз. Начало в 11.00.</p>
               </section>
           </article>
         </div>
       </div>
       <div class="progress">
         <div class="progress__wrapper">
-          <div class="progress__block-1">
+        <div class="progress__wrapp-blocks">
         <article class="progress__list">
           <p class="progress__lead"><span>8 лет</span> отвечаем на вопрос:<br> «Как родить без боли?»</p>
-             <img class="progress__icon" src="img/beremen.png" alt="блок для беременных" width="190" height="218">
-            <div class="features">
+            <div class="features features--pregnant">
               <a class="features__title" href="#">Беременным</a>
               <p class="features__subtitle subtitle">Подготовка к родам</p>
               <p class="features__text">Базовый курс. Теория<br> Экспресс-курс Теория<br> Тренинг «Мягкие роды»<br> Тренинг партнёрских родов<br> Мини-курс «2х2». Теория<br> Фитбол для беременных<br> Йога для беременных<br> Психолог<br> КСТ-терапия</p>
@@ -93,19 +88,15 @@
         </article>
         <article class="progress__list">
           <p class="progress__lead"><span>1447</span> молодых семей научили быть родителями</p>
-            <img class="progress__icon" src="img/mamam.png" alt="блок для мам" width="230" height="218">
-            <div class="features">
+            <div class="features features--young-mother">
               <a class="features__title" href="#">Молодым<br> мамам</a>
               <p class="features__subtitle subtitle">Поддержка материнства</p>
               <p class="features__text">Мамин класс<br> Йога после родов<br> Слинг в помощь<br> Грудное вскармливание<br> Прокат молокоотсосов<br> Послеродовое пеленание<br> Ребозо-релакс<br> Ребозо-релакс<br> Психолог<br> Женский круг<br> КСТ-терапия<br></p>
             </div>
         </article>
-      </div>
-      <div class="progress__block-2">
         <article class="progress__list">
           <p class="progress__lead"><span>468</span> человек повзрослели вместе с нами</p>
-            <img class="progress__icon" src="img/malisham.png" alt="блок для малышей" width="187" height="218">
-            <div class="features">
+            <div class="features features--kids">
               <a class="features__title" href="#">Малышам</a>
               <p class="features__subtitle subtitle">Развивающие занятия</p>
               <p class="features__text">Вместе с мамой<br> Чудеса в ладошках<br> Песочная терапия<br>Подготовка к школе<br> Психолог<br> Логопед<br>Логопедическая группа<br> Логопедический массаж<br> Нейрокроррекция<br> КСТ-терапия</p>
@@ -113,14 +104,8 @@
         </article>
         <article class="progress__list progress__list--diploma">
           <p class="progress__lead"><span>576</span> дипломов выдано будущим мамам!</p>
-           <picture>
-            <source media="(max-width: 480px)" srcset="img/diplom.png">
-            <source media="(max-width: 768px)" srcset="img/diplom.png">
-            <img class="progress__diploma" src="img/diplom.png" alt="блок для мам" width="653" height="802">
-        </picture>
          </article>
-       </div>
-     </div>
+      </div>
       <article class="discount">
         <div class="discount__wrap">
         <p class="discount__percent"> <span>15%</span> скидка</p>
@@ -129,7 +114,7 @@
         <a class="discount__btn button button--writeus" href="">Записаться!</a>
       </article>
     </div>
-    <div class="progress__pattern"></div>
+  </div>
     </main>
     <footer class="page-footer">
       <div class="contact">

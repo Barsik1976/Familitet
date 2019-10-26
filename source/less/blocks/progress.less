@@ -1,134 +1,223 @@
 .progress {
   position: relative;
-  background-color: #f7f8e2;
-  margin: 0 auto;
-  margin-top: 25px;
+  background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 98%, transparent);
+  background-repeat: repeat-x, repeat-x, repeat-x;
+  background-position: 0 0, 0 1150px, 0 1200px, 0 0;
+  min-height: 1465px;
+  overflow-x: hidden;
 }
 
+@media (max-width: 1196px) and (min-width: 768px) {
+  .progress {
+    background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 98%, transparent);
+    background-repeat: repeat-x, repeat-x, repeat-x;
+    background-position: 0 0, 0 2070px, 0 2123px, 0 0;
+    min-height: 2387px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .progress {
+    background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 98%, transparent);
+    background-repeat: repeat-x, repeat-x, repeat-x;
+    background-position: 0 0, 0 2060px, 0 2115px, 0 0;
+    min-height: 2380px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .progress {
+    background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 98%, transparent);
+    background-repeat: repeat-x, repeat-x, repeat-x;
+    background-position: 0 0, 0 3855px, 0 3910px, 0 0;
+    min-height: 4173px;
+  }
+}
+
+/*
 .progress::before {
   position: absolute;
+  content:"";
   top: -20px;
-  content: url("../img/volna.png");
+  background: url("../img/volna.png");
+  background-repeat: repeat-x;
+  width: 100%;
   height: 98px;
+  z-index: -1;
 }
 
 .progress::after {
   position: absolute;
+  content:"";
   bottom: -75px;
-  content: url("../img/volna.png");
+  background: url("../img/volna.png");
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 98px;
   z-index: -1;
 }
+*/
 
 .progress__wrapper {
+  width: 1140px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 1196px) and (min-width: 768px) {
+  .progress__wrapper {
+    width: 720px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .progress__wrapper {
+    width: 520px;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .progress__wrapper {
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.progress__wrapp-blocks {
   position: relative;
   width: 1140px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 65px;
   margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 45px;
 }
 
-@media (max-width: @tablet-width) {
-  .progress__wrapper {
-    display: block;
-    width: 570px;
+@media (max-width: 1196px) and (min-width: 768px) {
+  .progress__wrapp-blocks {
+    flex-wrap: wrap;
+    width: 620px;
     padding-top: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: 0;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .progress__wrapp-blocks {
+    width: 520px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 15px;
   }
 }
 
 @media (max-width: @mobile-width) {
-  .progress__wrapper {
-    width: 255px;
-    padding-left: 20px;
-    padding-right: 20px;
+  .progress__wrapp-blocks {
+    width: 260px;
+    flex-direction: column;
+    padding-top: 15px;
   }
 }
 
-.progress__block-1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 550px;
+.progress__wrapp-blocks::after {
+  position: absolute;
+  top: 120px;
+  left: 800px;
+  width: 325px;
+  height: 802px;
+  content: url("../img/diplom-full.png");
 }
 
-@media (max-width: @mobile-width) {
-  .progress__block-1 {
-    display: block;
+@media (max-width: 1196px) and (min-width: 768px) {
+  .progress__wrapp-blocks::after {
+    top: 1030px;
+    left: 215px;
   }
 }
 
-.progress__block-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 550px;
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .progress__wrapp-blocks::after {
+    top: 1045px;
+    left: 220px;
+  }
 }
 
 @media (max-width: @mobile-width) {
-  .progress__block-2 {
-    display: block;
-    margin: 0;
+  .progress__wrapp-blocks::after {
+    top: 2710px;
+    left: 0;
+    width: 200px;
+    height: auto;
   }
 }
 
 .progress__list {
-  width: 255px;
+  width: 260px;
 }
 
-@media (max-width: @tablet-width) {
+.progress__list:last-of-type {
+
+}
+
+@media (max-width: 1196px) and (min-width: 768px) {
   .progress__list {
+    margin-top: 55px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .progress__list {
+    width: 240px;
+    margin-top: 55px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .progress__list {
+    width: 260px;
     margin-top: 75px;
   }
 }
 
 @media (max-width: @mobile-width) {
-  .progress__list {
-    display: block;
+  .progress__list:first-of-type {
+    margin-top: 55px;
   }
 }
 
-.progress__list--diploma {
-  position: relative;
-}
-
 .progress__lead {
-  width: 220px;
   font-family: AntiQuasi;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.3px;
   text-align: left;
   color: #d71c6d;
   margin: 0;
+  margin-bottom: 38px;
+}
+
+@media (max-width: @tablet-width) {
+  .progress__lead {
+    min-height: 130px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .progress__lead {
+    min-height: 92px;
+  }
 }
 
 .progress__lead span {
   display: block;
-  font-size: 58px;
+  font-size: 75px;
   margin-bottom: 30px;
 }
 
 .progress__icon {
   margin-top: 38px;
   margin-bottom: 20px;
-}
-
-.progress__diploma {
-  display: block;
-  position: absolute;
-  top: 100px;
-  left: -80px;
-}
-
-.progress__pattern {
-  position: relative;
-  width: 100%;
-  height: 235px;
-  background-image: url(../img/pattern.png);
-  z-index: -2;
 }

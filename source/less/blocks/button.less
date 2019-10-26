@@ -1,14 +1,23 @@
 .button {
   display: block;
+  min-height: 94px;
   font-family: AntiQuasi;
-  font-size: 40px;
+  font-size: 50px;
+  line-height: 94px;
   text-align: center;
   text-decoration: none;
   border-radius: 50px;
-  padding-top: 24px;
   cursor: pointer;
 }
 
-.button--writeus {
+@media (max-width: @tablet-width) {
+  .button--writeus {
+    font-size: 45px;
+  }
+}
 
+@media (max-width: @mobile-width) {
+  .button--writeus {
+    font-size: 35px;
+  }
 }
