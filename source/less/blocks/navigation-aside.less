@@ -1,3 +1,67 @@
 .navigation-aside {
-  width: 247px;
+  display: flex;
+  flex-direction: column;
+  width: 235px;
+  margin-left: 20px;
 }
+
+@media (max-width: 1196px) and (min-width: 768px) {
+  .navigation-aside {
+    margin-bottom: 60px;
+    order: 1;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .navigation-aside {
+    margin-bottom: 60px;
+    order: 1;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .navigation-aside {
+    margin-bottom: 60px;
+    order: 1;
+  }
+}
+
+.navigation-aside__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-aside__item {
+  position: relative;
+  list-style-type: none;
+  margin-top: 12px;
+}
+
+.navigation-aside__item > a {
+  font-family: AntiQuasi;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: -0.1px;
+  text-align: left;
+  margin: 0;
+  text-decoration: none;
+  color: #59361b;
+}
+
+.navigation-aside__link--active::after {
+  display: block;
+  content: "";
+  width: 245px;
+  height: 13px;
+  background: url("../img/pattern_circle-3.png");
+  background-repeat: no-repeat;
+  margin-top: 7px;
+  margin-left: -12px;
+  margin-bottom: 15px;
+}
+
+.navigation-aside__item:active {
+
+}
+

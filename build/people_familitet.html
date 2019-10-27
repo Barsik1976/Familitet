@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--people">
        <nav class="main-nav">
         <div class="main-nav__communication communication">
         <p class="communication__number">+7 (4912) <span>95-24-55</span><br> +7 (4912) <span>99-51-36</span></p>
@@ -48,36 +48,34 @@
           </ul>
         </nav>
     </header>
-    <main class="page-main">
-      <div class="information information--people">
-        <section class="information__content">
+    <main class="page-main page-main--people">
+      <div class="information">
+        <section class="information__content information__content--people">
           <h1 class="information__title">Специалисты «Фамилитета»</h1>
-          <div class="information__people-block">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-              <img class="" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="панорама дня" width="320" height="137">
-            </picture>
-            <section class="information__people-item">
-              <h4 class="information__name"><span>Татьяна</span> Гшвенд <a class="information__name information__name--mail" href="#gschwend.ru">gschwend.ru</a></h4>
+          <div class="information__person">
+             <section class="information__person-item">
+              <h4 class="information__person-name"><span>Татьяна</span> Гшвенд <a class="information__name information__name--mail" href="#gschwend.ru">gschwend.ru</a></h4>
               <p class="information__profession subtitle">Учредитель и идейный вдохновитель центра семейного развития «Фамилитет»</p>
-              <ul class="information__people-list">
-                <li class="information__text information__text--description">Образование высшее педагогическое, перинатальный педагог.</li>
-                <li class="information__text information__text--description">Консультант по ГВ, сертифицированный ВОЗ/ЮНИСЕФ.</li>
-                <li class="information__text information__text--description">Специалист по психологическому сопровождению беременности и родов.</li>
-                <li class="information__text information__text--description">Сертифицированный инструктор йоги для беременных и после родов Birthlight.</li>
-                <li class="information__text information__text--description">Сертифицированный инструктор танцевального фитнеса Dancing For Birth.</li>
-                <li class="information__text information__text--description">Мама четырех сыновей.</li>
+              <ul class="information__person-list">
+                <li class="information__text information__text--person-description">Образование высшее педагогическое, перинатальный педагог.</li>
+                <li class="information__text information__text--person-description">Консультант по ГВ, сертифицированный ВОЗ/ЮНИСЕФ.</li>
+                <li class="information__text information__text--person-description">Специалист по психологическому сопровождению беременности и родов.</li>
+                <li class="information__text information__text--person-description">Сертифицированный инструктор йоги для беременных и после родов Birthlight.</li>
+                <li class="information__text information__text--person-description">Сертифицированный инструктор танцевального фитнеса Dancing For Birth.</li>
+                <li class="information__text information__text--person-description">Мама четырех сыновей.</li>
               </ul>
+
               <p class="information__text">Направления работы в центре:</p>
+
               <ul class="information__people-list">
-                <li class="information__text information__text--description">лекции из курса по подготовке к родам;</li>
-                <li class="information__text information__text--description">тренинг «Мягкие роды» в группах и индивидуальная работа с парой при подготовке к партнёрским родам;</li>
-                <li class="information__text information__text--description">групповые и индивидуальные уроки йоги для будущих мам и после родов;</li>
-                <li class="information__text information__text--description">психологическое сопровождение в родах (доула);</li>
-                <li class="information__text information__text--description">послеродовое пеленание женщины.</li>
+                <li class="information__text information__text--person-description">лекции из курса по подготовке к родам;</li>
+                <li class="information__text information__text--person-description">тренинг «Мягкие роды» в группах и индивидуальная работа с парой при подготовке к партнёрским родам;</li>
+                <li class="information__text information__text--person-description">групповые и индивидуальные уроки йоги для будущих мам и после родов;</li>
+                <li class="information__text information__text--person-description">психологическое сопровождение в родах (доула);</li>
+                <li class="information__text information__text--person-description">послеродовое пеленание женщины.</li>
               </ul>
             </section>
+
             <section class="information__people-item">
               <h4 class="information__name"><span>Ирина</span> Тишина</h4>
               <p class="information__profession subtitle">Директор центра семейного развития «Фамилитет»</p>
@@ -157,10 +155,7 @@
         <div class="navigation-aside">
           <ul class="navigation-aside__list">
             <li class="navigation-aside__item">
-              <a href="index.html">Фамилитет</a>
-                <svg class="navigation-aside__pattern">
-                  <use xlink:href="img/symbols.svg#............."></use>
-                </svg>
+              <a class="navigation-aside__link" href="index.html">Фамилитет</a>
                 <ul class="inner-aside">
                   <li class="inner-aside__item">
                     <a href="history_familitet.html">История центра</a>
@@ -173,34 +168,22 @@
           </ul>
           <ul class="navigation-aside__list">
             <li class="navigation-aside__item">
-              <a class="" href="people_familitet.html">Специалисты</a>
-                <svg class="navigation-aside__pattern">
-                  <use xlink:href="img/symbols.svg#............."></use>
-                </svg>
+              <a class="navigation-aside__link navigation-aside__link--active">Специалисты</a>
             </li>
           </ul>
           <ul class="navigation-aside__list">
             <li class="navigation-aside__item">
               <a href="useful-article.html">Полезные статьи</a>
-                <svg class="navigation-aside__pattern">
-                  <use xlink:href="img/symbols.svg#............."></use>
-                </svg>
             </li>
           </ul>
           <ul class="navigation-aside__list">
             <li class="navigation-aside__item">
               <a href="video-material.html">Видео-материалы</a>
-                <svg class="navigation-aside__pattern">
-                  <use xlink:href="img/symbols.svg#............."></use>
-                </svg>
             </li>
           </ul>
           <ul class="navigation-aside__list">
             <li class="navigation-aside__item">
               <a href="contacts_familitet.html">Контактная информация</a>
-                <svg class="navigation-aside__pattern">
-                  <use xlink:href="img/symbols.svg#............."></use>
-                </svg>
             </li>
           </ul>
         </div>
@@ -232,28 +215,32 @@
   </div>
     </main>
     <footer class="page-footer">
-      <div class="contact">
-        <p class="contact__text">© 2011-2019. Фамилитет Россия, Рязань, ул. Есенина, 45</p>
+      <div class="contact contact--page-about">
+        <div class="contact__item">
+        <p class="contact__text">© 2011-2019. Фамилитет<br> Россия, Рязань, ул. Есенина, 45</p>
+        <p class="contact__text contact__text--our-business">В вашем бизнесе всё
+          <a class="contact__information contact__information--our-business" href="">работает само</a>
+        </p>
+      </div>
         <a class="contact__information" href="#contact">Контактная информация</a>
-        <ul class="contact__list">
-          <li class="contact__item social">
-            <a class="social__link social__link--vkontakte" href="#vkontakte">
+        <ul class="contact__social-list">
+          <li class="contact__social-item">
+            <a class="contact__social-link contact__social-link--vkontakte" href="#vkontakte">
               <span class="visually-hidden">Мы в контакте</span>
-              <svg>
-              </svg>
+                <svg width="22" height="13">
+                  <use xlink:href="img/symbols.svg#vk"></use>
+                </svg>
             </a>
           </li>
-          <li class="contact__item social">
-            <a class="social__link social__link--instagram" href="#instagram">
+          <li class="contact__social-item">
+            <a class="contact__social-link contact__social-link--instagram" href="#instagram">
               <span class="visually-hidden">Мы в инстаграм</span>
-              <svg>
-              </svg>
+                <svg width="19" height="19">
+                  <use xlink:href="img/symbols.svg#instagram"></use>
+                </svg>
             </a>
           </li>
         </ul>
-        <p class="contact__text contact__text--right">В вашем бизнесе всё
-          <a class="contact__information" href="">работает само</a>
-        </p>
       </div>
     </footer>
     <script src="js/svg4everybody.min.js"></script>
