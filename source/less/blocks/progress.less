@@ -1,6 +1,6 @@
 .progress {
   position: relative;
-  background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 93%, transparent);
+  background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 98%, transparent);
   background-repeat: repeat-x, repeat-x, repeat-x;
   background-position: 0 0, 0 1150px, 0 1200px, 0 0;
   min-height: 1465px;
@@ -9,7 +9,7 @@
 
 @media (max-width: 1196px) and (min-width: 768px) {
   .progress {
-    background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 97%, transparent);
+    background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 98%, transparent);
     background-repeat: repeat-x, repeat-x, repeat-x;
     background-position: 0 0, 0 2070px, 0 2123px, 0 0;
     min-height: 2387px;
@@ -27,12 +27,91 @@
 
 @media (max-width: @mobile-width) {
   .progress {
-    background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 99%, transparent);
+    background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 98%, transparent);
     background-repeat: repeat-x, repeat-x, repeat-x;
     background-position: 0 0, 0 3855px, 0 3910px, 0 0;
     min-height: 4173px;
   }
 }
+
+.progress--page-history {
+  position: relative;
+  background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 90%, transparent);
+  background-repeat: repeat-x, repeat-x, repeat-x;
+  background-position: 0 0, 0 420px, 0 475px, 0 0;
+  min-height: 738px;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1196px) and (min-width: 768px) {
+  .progress--page-history {
+    background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 90%, transparent);
+    background-repeat: repeat-x, repeat-x, repeat-x;
+    background-position: 0 0, 0 620px, 0 680px, 0 0;
+    min-height: 940px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .progress--page-history {
+    background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 90%, transparent);
+    background-repeat: repeat-x, repeat-x, repeat-x;
+    background-position: 0 0, 0 620px, 0 680px, 0 0;
+    min-height: 945px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .progress--page-history {
+    background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 98%, transparent);
+    background-repeat: repeat-x, repeat-x, repeat-x;
+    background-position: 0 0, 0 1100px, 0 1160px, 0 0;
+    min-height: 1425px;
+  }
+}
+
+.progress--people {
+  position: relative;
+  background: url("../img/wave-center-people.png"), url("../img/wave-center-people.png"), url("../img/background-circles.png"), linear-gradient(to top, #f6f0f7 90%, transparent);
+  background-repeat: repeat-x, repeat-x, repeat-x;
+  background-position: 0 0, 0 420px, 0 495px, 0 0;
+  min-height: 755px;
+}
+
+@media (max-width: 1196px) and (min-width: 768px) {
+  .progress--people {
+    background: url("../img/wave-center-people.png"), url("../img/wave-center-people.png"), url("../img/background-circles.png"), linear-gradient(to top, #f6f0f7 90%, transparent);
+    background-repeat: repeat-x, repeat-x, repeat-x;
+    background-position: 0 0, 0 567px, 0 645px, 0 0;
+    min-height: 830px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .progress--people {
+    position: relative;
+    background: url("../img/wave-center-people.png"), url("../img/wave-center-people.png"), url("../img/background-circles.png"), linear-gradient(to top, #f6f0f7 90%, transparent);
+    background-repeat: repeat-x, repeat-x, repeat-x;
+    background-position: 0 0, 0 670px, 0 745px, 0 0;
+    min-height: 930px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .progress--people {
+    position: relative;
+    background: url("../img/wave-center-people.png"), url("../img/wave-center-people.png"), url("../img/background-circles.png"), linear-gradient(to top, #f6f0f7 98%, transparent);
+    background-repeat: repeat-x, repeat-x, repeat-x;
+    background-position: 0 0, 0 1085px, 0 1160px, 0 0;
+    min-height: 1340px;
+  }
+}
+
+
+
+
+
+
 
 /*
 .progress::before {
@@ -122,7 +201,19 @@
   }
 }
 
-.progress__wrapp-blocks::after {
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .progress__wrapp-blocks--page-history {
+    padding-top: 45px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .progress__wrapp-blocks--page-history {
+
+  }
+}
+
+.progress__wrapp-blocks--diplom::after {
   position: absolute;
   top: 120px;
   left: 800px;
@@ -132,21 +223,21 @@
 }
 
 @media (max-width: 1196px) and (min-width: 768px) {
-  .progress__wrapp-blocks::after {
+  .progress__wrapp-blocks--diplom::after {
     top: 1030px;
     left: 215px;
   }
 }
 
 @media (max-width: @tablet-width) and (min-width: 480px) {
-  .progress__wrapp-blocks::after {
+  .progress__wrapp-blocks--diplom::after {
     top: 1045px;
     left: 220px;
   }
 }
 
 @media (max-width: @mobile-width) {
-  .progress__wrapp-blocks::after {
+  .progress__wrapp-blocks--diplom::after {
     top: 2710px;
     left: 0;
     width: 200px;
@@ -156,10 +247,6 @@
 
 .progress__list {
   width: 260px;
-}
-
-.progress__list:last-of-type {
-
 }
 
 @media (max-width: 1196px) and (min-width: 768px) {
@@ -185,6 +272,27 @@
 @media (max-width: @mobile-width) {
   .progress__list:first-of-type {
     margin-top: 55px;
+  }
+}
+
+@media (max-width: 1196px) and (min-width: 768px) {
+  .progress__list--page-history,
+  .progress__list--person {
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .progress__list--page-history {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .progress__list--page-history,
+  .progress__list--person {
+    width: 260px;
+    margin-top: 35px;
   }
 }
 

@@ -1,6 +1,6 @@
 .page-header {
   position: relative;
-  background: linear-gradient(to bottom, #fffce4 80%, transparent), url("../img/wave-top.png");
+  background: linear-gradient(180deg, #fffce4 90%, transparent 90%), url("../img/wave-top.png");
   background-repeat: repeat-x;
   background-position: 0 0, 0 190px;
   min-height: 290px;
@@ -26,6 +26,20 @@
     min-height: 680px;
   }
 }
+
+.page-header--people {
+  background: #ffffff;
+  background-position: 0 0, 0 190px;
+  min-height: 290px;
+}
+
+@media (max-width: 1196px) and (min-width: 768px) {
+  .page-header--people {
+    background-position: 0 0, 0 300px;
+    min-height: 400px;
+  }
+}
+
 
 /*
 .page-header::after {
