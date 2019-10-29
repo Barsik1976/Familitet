@@ -15,19 +15,73 @@
 .features--pregnant::before {
   width: 190px;
   height: 218px;
-  content: url(../img/beremen.png);
+  content: "";
+  background: url(../img/beremen.png);
+  background-repeat: no-repeat;
 }
 
 .features--young-mother::before {
   width: 230px;
   height: 218px;
-  content: url(../img/mamam.png);
+  content: "";
+  background: url(../img/mamam.png);
+  background-repeat: no-repeat;
 }
 
 .features--kids::before {
   width: 187px;
   height: 218px;
-  content: url(../img/malisham.png);
+  content: "";
+  background: url(../img/malisham.png);
+  background-repeat: no-repeat;
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .features--pregnant::before {
+    background: url(../img/beremen.png);
+    background-size: 85% 85%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .features--young-mother::before {
+    background: url(../img/mamam.png);
+    background-size: 85% 85%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .features--kids::before {
+    background: url(../img/malisham.png);
+    background-size: 85% 85%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .features--pregnant::before {
+    background: url(../img/beremen.png);
+    background-size: 85% 85%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .features--young-mother::before {
+    background: url(../img/mamam.png);
+    background-size: 85% 85%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .features--kids::before {
+    background: url(../img/malisham.png);
+    background-size: 85% 85%;
+    background-repeat: no-repeat;
+  }
 }
 
 .features__title {

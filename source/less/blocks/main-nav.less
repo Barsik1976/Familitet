@@ -21,7 +21,9 @@
   .main-nav {
     flex-direction: column;
     align-items: flex-start;
-    width: 480px;
+    width: 440px;
+    padding-top: 120px;
+
   }
 }
 
@@ -69,7 +71,7 @@
 
 @media (max-width: @tablet-width) and (min-width: 480px) {
   .main-nav__communication {
-    right: 30px;
+    left: 20px;
     margin: 0;
   }
 }
@@ -91,6 +93,12 @@
   text-align: left;
   color: #59361b;
   margin-left: 38px;
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .main-nav__center {
+    top: 250px;
+  }
 }
 
 @media (max-width: @mobile-width) {
