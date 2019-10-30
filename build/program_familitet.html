@@ -12,121 +12,165 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="travel">
-        <p class="travel__number">+7 (4912) <span>95-24-55</span><br> +7 (4912) <span>99-51-36</span></p>
-        <p class="travel__adress-scheme"><a href="#">Адрес и схема проезда</a>
-      </p></div>
-      <section class="page-header__nav">
-        <h2 class="visually-hidden">Навигация сайта</h2>
-        <nav class="main-nav">
-          <a class="main-nav__logo-link" href="main_familitet.html" title="логотип фамилитет">
-            <svg class="main-nav__logo-img">
-              <use xlink:href="img/symbols.svg#............."></use>
-            </svg>
+       <nav class="main-nav">
+        <div class="main-nav__communication communication">
+        <p class="communication__number">+7 (4912) <span>95-24-55</span><br> +7 (4912) <span>99-51-36</span></p>
+        <p class="communication__adress-scheme"><a href="#">Адрес и схема проезда</a>
+        </p>
+        </div>
+          <a class="main-nav__logo-link" href="index.html" title="логотип фамилитет">
+        <!--
+        <picture>
+          <source type="image/webp" media="(max-width: 480px)" srcset="img/logo_familitet-mobile@1x.webp 1x, img/logo_familitet-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 768px)" srcset="img/logo_familitet-tablet@1x.webp 1x, img/logo_familitet-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo_familitet@1x.webp 1x, img/logo_familitet@2x.webp 2x">
+          <source media="(max-width: 480px)" srcset="img/logo_familitet-mobile@1x.png 1x, img/logo_familitet-mobile@2x.png 2x">
+          <source media="(max-width: 768px)" srcset="img/logo_familitet-tablet@1x.png 1x, img/logo_familitet-tablet@2x.png 2x">
+        </picture>
+      -->
+          <img class="main-nav__logo-img" src="img/logo_familitet.png" srcset="img/logo_familitet.png 2x" alt="логотип фамилитета" width="300" height="130">
           </a>
-          <p class="main-nav__center">Центр семейного развития</p>
+          <p class="main-nav__center">Центр семейного<br> развития</p>
+          <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Открыть меню"></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="about_familitet.html">Всё о нас</a>
+              <a class="site-list__link" href="about_familitet.html">Всё о нас</a>
               <p class="site-list__content">Работаем с 2011 года</p>
             </li>
             <li class="site-list__item">
-              <a>Программы</a>
-              <p class="site-list__content">Беременность, роды, материнство</p>
+              <a class="site-list__link site-list__link--active">Программы</a>
+              <p class="site-list__content">Беременность, роды,<br> материнство</p>
             </li>
             <li class="site-list__item">
-              <a href="schedule_familitet.html">Расписание</a>
+              <a class="site-list__link" href="schedule_familitet.html">Расписание</a>
               <p class="site-list__content">Групповых занятий</p>
             </li>
           </ul>
         </nav>
-      </section>
     </header>
     <main class="page-main">
       <div class="features features--page-baza">
         <article class="">
-          <a class="features__title" href="#">Беременным</a>
+          <a class="features__title">Беременным</a>
           <p class="features__subtitle subtitle">Подготовка к родам</p>
         </article>
         <article class="">
-          <a class="features__title">Молодым мамам</a>
+          <a class="features__title" href="#">Молодым мамам</a>
           <p class="features__subtitle subtitle">Поддержка материнства</p>
         </article>
         <article class="">
           <a class="features__title" href="#">Малышам</a>
-          <p class="features__subtitle">Развивающие занятия</p>
+          <p class="features__subtitle subtitle">Развивающие занятия</p>
         </article>
       </div>
       <div class="information">
         <section class="information__content">
-          <h1 class="information__title">Йога после родов</h1>
+          <h1 class="information__title">В ожидании малыша. Базовый курс</h1>
             <picture>
               <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
               <img class="" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="панорама дня" width="320" height="137">
             </picture>
-            <p class="information__text">9 месяцев наше тело меняется — примерно столько же времени необходимо на восстановление организма после родов. Речь не столько о том, чтобы вернуть талию, сколько о здоровье. Известно, что из-за растущего животика смещается центр тяжести и нарушается осанка, поэтому после родов важно позаботиться о позвоночнике и мышцах, окружающих его. Кроме того, растягиваются мышцы тазового дна, словно в гамаке удерживающие малыша; их слабость может привести к недержанию мочи, а в дальнейшем — к опущению и даже выпадению внутренних органов.</p>
-            <p class="information__text">Тазовые кости во время родов совершают движения, пропуская кроху, но не всегда возвращаются в исходное положение, отсюда — боли в суставах, изменение походки. А еще спутниками молодой мамы могут стать варикоз, геморрой, диастаз, эмоциональная нестабильность... </p>
-            <p class="information__text">Все это не в лучшую сторону меняет качество жизни, омрачает материнство и порождает недовольство собой.</p>
-            <p class="information__text">Постнатальная йога Birthlight предлагает последовательный подход для грамотного восстановления. Она подходит как для девушек, которые практиковали йогу во время беременности, так и для новичков.</p>
-            <h2 class="information__title information__title--list">Программа направлена на:</h2>
-            <p class="information__text information__text--item1">укрепление мышц тазового дна</p>
-            <p class="information__text information__text--item2">решение проблемы диастаза (расхождения прямых мышц пресса);</p>
-            <p class="information__text information__text--item3">стабилизацию тазобедренных суставов и укрепление позвоночника;</p>
-            <p class="information__text information__text--item4">развитие гибкости и силы;</p>
-            <p class="information__text information__text--item5">улучшение кровообращения;</p>
-            <p class="information__text information__text--item6">расслабление и гармонизацию эмоционального состояния;</p>
-            <p class="information__text information__text--item7">профилактику послеродовой депрессии и недостатка молока.</p>
-            <p class="information__text">Послеродовые упражнения Birthlight сочетают в себе специальное дыхание и небольшие по амплитуде медленные движения и вытяжения. Этот подход учитывает анатомию и физиологию женского организма после родов и безопасен для женщин, перенёсших любые роды.</p>
-            <p class="information__text">Заниматься можно и нужно вместе с малышом, сохраняя столь важный контакт с ребёнком и развивая его!</p>
+            <p class="information__text">Базовый курс лекций состоит из 9-ти встреч, содержащих как практическую, так и теоретическую части. Также занятия можно посещать выборочно и платить за каждую лекцию отдельно.</p>
+            <p class="information__text">В течение курса вы получаете информационные материалы в печатном виде. Заинтересованные в освоении родительской науки папы, бабушки и дедушки приветствуются и участвуют в семинарах без доплаты.
+            </p>
+            <p class="information__text">В этот день в адрес центра прозвучало немало прекрасных пожеланий, и, чтобы всё исполнялось с лёгкостью и настроением, мы пускали мыльные пузыри!</p>
+            <p class="information__text">Продолжительность занятия — <span>2 часа</span>. </p>
+        </section>
+        <section class="information__content information__content--full">
+          <h2 class="visually-hidden">Краткое содержание базового курса</h2>
+            <article class="information__list">
+              <h4 class="information__title information__title--small">Рождение как чудо</h4>
+              <p class="information__text">Во время своего рождения ребенок переживает необыкновенно сильные эмоции, которые оказывают серьезное влияние на дальнейшую жизнь. Помочь ему пройти это испытание, правильно настроиться маме на роды и познакомиться с приёмами самообезболивания предлагает эта встреча.</p>
+              <a class="information__text information__link information__link--content-link" href="#">Практика: дыхание во время родов.</a>
+            </article>
+            <article class="information__list">
+              <h4 class="information__title information__title--small">Пора в роддом</h4>
+              <p class="information__text">Как не ошибиться, что роды начались, когда ехать в клинику, сколько вообще все это продлится? Ответим на все вопросы, а также расскажем о грамотном поведении в родах, возможном и еобходимом медицинском вмешательстве.</p>
+              <a class="information__text information__link information__link--content-link" href="#">Видеофильм о родах.</a>
+            </article>
+            <article class="information__list">
+              <h4 class="information__title information__title--small">Грудное вскармливание</h4>
+              <p class="information__text">Чем полезно грудное молоко, как определить, хватает ли его малышу, каковы секреты успешной лактации, что особенного в питании кормящей мамы и портит ли кормление форму груди? Не менее важно быть готовыми к временным трудностям и знать, как их разрешить, будь то застой молока или его нехватка.</p>
+              <a class="information__text information__link information__link--content-link" href="#">Демонстрация: удобные позы для кормления и техника сцеживания. Видеофильм о грудном вскармливании. Уход за новорожденным.</a>
+            </article>
+            <article class="information__list">
+              <h4 class="information__title information__title--small">Уход за новорожденным</h4>
+              <p class="information__text">Обработать пупок, подстричь крохотные ноготки, ловко искупать малыша и чувствовать себя при этом уверенно — задача этой встречи. Также педиатр расскажет, по каким поводам нужно обращаться к врачу, а что является физиологической нормой для крохи.</p>
+              <a class="information__text information__link information__link--content-link" href="#">Демонстрация: гигиена малыша и адаптационное купание.</a>
+            </article>
+            <article class="information__list">
+              <h4 class="information__title information__title--small">Первичное здоровье ребенка</h4>
+              <p class="information__text">Закладывается во время беременности, в родах и в период грудного вскармливания, убежден известный акушер-гинеколог Мишель Оден. На встрече вы узнаете о влиянии стресса на здоровье малыша и о том, какие методики, влияющие на развитие ребенка, можно использовать уже в период ожидания, а также познакомитесь с исследованиями о влиянии родов на здоровье крохи.</p>
+            </article>
+            <article class="information__list">
+              <h4 class="information__title information__title--small">Восстановление после родов</h4>
+              <p class="information__text">Расскажем о трудностях, физических и эмоциональных, с которыми сталкиваемся после родов, и о том, как с ними справляться. Поговорим о диете и фитнесе без вреда и покажем первые упражнения для восстановления фигуры.</p>
+              <a class="information__text information__link information__link--content-link" href="#">Демонстрация: Дыхательные практики для здоровья животика, упражнения от диастаза.</a>
+            </article>
+            <article class="information__list">
+              <h4 class="information__title information__title--small">Стратегия молодой мамы</h4>
+              <p class="information__text">Каждый новорожденный имеет свой ритм жизни, и с ним нужно считаться. А каждой молодой маме нужно делать домашние дела и находить время на отдых. Компромисс возможен! Знакомимся со способами успокоения крохи, грамотно планируем время в декрете и берем на вооружение опыт мам, которые через все это прошли, порой не один раз.</p>
+              <a class="information__text information__link information__link--content-link" href="#">Практика: пеленание и ношение на руках.</a>
+            </article>
+            <article class="information__list">
+              <h4 class="information__title information__title--small">Мама — мой первый учитель</h4>
+              <p class="information__text">Как развивается малыш в первый год жизни и чему месяц за месяцем учится? Календарь развития вашего крохи, первые развивающие игры и игрушки для грудничка и важные воспитательные моменты — тема этой встречи.</p>
+              <a class="information__text information__link information__link--content-link" href="#">Практика: пестовальная гимнастика для грудничка.</a>
+            </article>
+            <article class="information__list">
+              <h4 class="information__title information__title--small">Уже дом</h4>
+              <p class="information__text">Всё о том, что поможет молодым родителям организовать жизнь с малышом: купания, прогулки, визиты в поликлинику, поход по магазинам... Что должно быть под рукой и какой может быть реакция ребенка, а также — как уменьшить для него стресс современной жизни и оставаться маме активной.</p>
+            </article>
+            <p class="information__text information__text--notice">— занятия рекомендуем посетить с будущим папой.</p>
         </section>
         <section class="information__pay">
           <h2 class="visually-hidden">Условия оплаты курса</h2>
-          <p class="information__text information__text--pay">Разовое занятие в группе (1 час) — <span>330 рублей</span> </p>
-          <p class="information__text information__text--pay">Абонемент (8 раз) — <span>2 200 рублей</span> </p>
-          <p class="information__text information__text--pay">Индивидуальная работа в «Фамилитете» — <span>1 500 рублей</span> </p>
-          <p class="information__text information__text--pay">Индивидуальная работа с выездом на дом — <span>2 000 рублей</span> </p>
-        <article class="discount">
-          <p class="discount__percent"> <span>15%</span> скидка</p>
-          <p class="discount__desc">Многодетным семьям, одиноким мамам и родителям-студентам на группов</p>
-          <a class="discount__btn button button--writeus" href="">Записаться!</a>
-        </article>
-      </section></div>
+          <p class="information__text information__text--pay">Абонемент на 9 занятий  по 2 часа — <span>5 700 рублей</span> </p>
+          <p class="information__text information__text--pay">Одна лекция по выбору — <span>700 рублей</span> </p>
+          <p class="information__text information__text--pay">Возможна оплата в два этапа: 50% стоимости курса лекций необходимо внести в день первого занятия, оставшиеся 50% доплатить на шестой встрече.</p>
+          <p class="information__text information__text--pay">При покупке курса «В ожидании малыша» скидка на абонемент на <a class="information__link information__link--pay-link" href="program_familitet.html">фитнес-программы</a> для будущих мам составляет 10%.</p>
+        </section>
+      <article class="discount discount--page-program">
+        <div class="discount__wrap">
+        <p class="discount__percent"> <span>15%</span> скидка</p>
+        <p class="discount__desc">Многодетным семьям, одиноким мамам и родителям-студентам на группов</p>
+      </div>
+        <a class="discount__btn button button--writeus" href="">Записаться!</a>
+      </article>
+      </div>
         <div class="navigation-aside">
           <ul class="navigation-aside__list">
             <li class="navigation-aside__item">
-              <a href="people_familitet.html">Молодым мамам</a>
-              <p class="navigation-aside__subtitle subtitle">Поддержка материнства</p>
+              <a href="people_familitet.html">Беременным</a>
+              <p class="navigation-aside__subtitle subtitle">Подготовка к родам</p>
                 <svg class="navigation-aside__pattern">
                   <use xlink:href="img/symbols.svg#............."></use>
                 </svg>
                 <ul class="inner-aside">
                   <li class="inner-aside__item">
-                    <a href="">Мамин класс</a>
+                    <a href="">Базовый курс. Теория</a>
                   </li>
                   <li class="inner-aside__item">
-                    <a href="">Йога после родов</a>
+                    <a href="">Экспресс-курс. Теория</a>
                   </li>
                   <li class="inner-aside__item">
-                    <a href="">Слинг в помощь</a>
+                    <a href="">Тренинг «Мягкие роды»</a>
                   </li>
                   <li class="inner-aside__item">
-                    <a href="">Грудное вскармливание</a>
+                    <a href="">Тренинг партнёрских родов</a>
                   </li>
                   <li class="inner-aside__item">
-                    <a href="">Прокат молокоотсосов</a>
+                    <a href="">Мини-курс «2х2». Теория</a>
                   </li>
                   <li class="inner-aside__item">
-                    <a href="">Послеродовое пеленание</a>
+                    <a href="">Фитбол для беременных</a>
                   </li>
                   <li class="inner-aside__item">
-                    <a href="">Ребозо-релакс</a>
+                    <a href="">Йога для беременных</a>
                   </li>
                   <li class="inner-aside__item">
                     <a href="">Психолог</a>
-                  </li>
-                  <li class="inner-aside__item">
-                    <a href="">Женский круг</a>
                   </li>
                   <li class="inner-aside__item">
                     <a href="">КСТ-терапия</a>
@@ -142,19 +186,28 @@
                 </svg>
                 <ul class="inner-aside">
                   <li class="inner-aside__item">
-                    <p class="">Вторник, 16 апреля <span>12.30</span> </p>
+                    <p class="">Понедельник, 15 апреля <span>14.00</span> </p>
+                    <a href="">Грудное вскармливание</a>
                   </li>
                   <li class="inner-aside__item">
-                    <p class="">Четверг, 18 апреля <span>12.30</span> </p>
+                    <p class="">Среда, 17 апреля <span>17.00</span> </p>
+                    <a href="">Стратегия молодой мамы</a>
                   </li>
                   <li class="inner-aside__item">
-                    <p class="">Вторник, 23 апреля <span>12.30</span> </p>
+                    <p class="">Пятница, 19 апреля <span>17.00</span> </p>
+                    <a href="">Первичное здоровье ребёнка</a>
                   </li>
                   <li class="inner-aside__item">
-                    <p class="">Четверг, 25 апреля <span>12.30</span> </p>
+                    <p class="">Понедельник, 22 апреля <span>17.00</span> </p>
+                    <a href="">Восстановление после родов</a>
                   </li>
                   <li class="inner-aside__item">
-                    <p class="">Вторник, 30 апреля <span>12.30</span> </p>
+                    <p class="">Среда, 24 апреля <span>17.00</span> </p>
+                    <a href="">Мама — мой первый учитель</a>
+                  </li>
+                  <li class="inner-aside__item">
+                    <p class="">Пятница, 26 апреля <span>17.00</span> </p>
+                    <a href="">Уже дома</a>
                   </li>
                 </ul>
             </li>
@@ -171,6 +224,9 @@
                   </li>
                   <li class="inner-aside__item">
                     <a href="people_familitet.html"><span>Лилия</span> Виноградова</a>
+                  </li>
+                  <li class="inner-aside__item">
+                    <a href="people_familitet.html"><span>Наталья</span> Сидорина</a>
                   </li>
                 </ul>
             </li>
@@ -201,44 +257,56 @@
           </ul>
         </div>
 
-      <div class="progress">
+      <div class="progress progress--page-history">
         <div class="progress__wrapper">
-          <p class="progress__lead"><span>8 лет</span> отвечаем на вопрос: «Как родить без боли?»</p>
+        <div class="progress__wrapp-blocks progress__wrapp-blocks--page-history">
+        <article class="progress__list progress__list--page-history">
+          <p class="progress__lead"><span>8 лет</span> отвечаем на вопрос:<br> «Как родить без боли?»</p>
+        </article>
+        <article class="progress__list progress__list--page-history">
           <p class="progress__lead"><span>1447</span> молодых семей научили быть родителями</p>
+        </article>
+        <article class="progress__list progress__list--page-history">
           <p class="progress__lead"><span>468</span> человек повзрослели вместе с нами</p>
+        </article>
+        <article class="progress__list progress__list--page-history">
           <p class="progress__lead"><span>576</span> дипломов выдано будущим мамам!</p>
-        </div>
-        <svg class="progress__pattern">
-          <use xlink:href="img/symbols.svg#............."></use>
-        </svg>
+         </article>
       </div>
+    </div>
+  </div>
+    </main>
     <footer class="page-footer">
-      <div class="contact">
-        <p class="contact__text">© 2011-2019. Фамилитет Россия, Рязань, ул. Есенина, 45</p>
+      <div class="contact contact--page-about">
+        <div class="contact__item">
+        <p class="contact__text">© 2011-2019. Фамилитет<br> Россия, Рязань, ул. Есенина, 45</p>
+        <p class="contact__text contact__text--our-business">В вашем бизнесе всё
+          <a class="contact__information contact__information--our-business" href="">работает само</a>
+        </p>
+      </div>
         <a class="contact__information" href="#contact">Контактная информация</a>
-        <ul class="contact__list">
-          <li class="contact__item social">
-            <a class="social__link social__link--vkontakte" href="#vkontakte">
+        <ul class="contact__social-list">
+          <li class="contact__social-item">
+            <a class="contact__social-link contact__social-link--vkontakte" href="#vkontakte">
               <span class="visually-hidden">Мы в контакте</span>
-              <svg>
-              </svg>
+                <svg width="22" height="13">
+                  <use xlink:href="img/symbols.svg#vk"></use>
+                </svg>
             </a>
           </li>
-          <li class="contact__item social">
-            <a class="social__link social__link--instagram" href="#instagram">
+          <li class="contact__social-item">
+            <a class="contact__social-link contact__social-link--instagram" href="#instagram">
               <span class="visually-hidden">Мы в инстаграм</span>
-              <svg>
-              </svg>
+                <svg width="19" height="19">
+                  <use xlink:href="img/symbols.svg#instagram"></use>
+                </svg>
             </a>
           </li>
         </ul>
-        <p class="contact__text contact__text--right">В вашем бизнесе всё
-          <a class="contact__information" href="">работает само</a>
-        </p>
       </div>
     </footer>
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody()</script>
     <script src="js/picturefill.min.js"></script>
-  </main></body>
+  </body>
 </html>
