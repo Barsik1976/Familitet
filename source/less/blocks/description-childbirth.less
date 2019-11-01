@@ -5,6 +5,18 @@
   padding-left: 53px;
 }
 
+@media (max-width: 1196px) and (min-width: 768px) {
+  .description-childbirth {
+    width: 667px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .description-childbirth {
+    width: 387px;
+  }
+}
+
 .description-childbirth__list {
   position: relative;
   margin-bottom: 30px;
@@ -69,6 +81,14 @@
   text-align: left;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .description-childbirth__title {
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: normal;
+  }
 }
 
 .description-childbirth__title::after {
