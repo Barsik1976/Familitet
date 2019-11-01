@@ -103,7 +103,6 @@
 }
 
 .features__list {
-  position: relative;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -131,11 +130,15 @@
   color: #59361b;
 }
 
+.features__item {
+  position: relative;
+}
+
 .features__item--active a {
   color: #d71c6d;
 }
 
-.features__item--active::before {
+.features__item--active a::before {
   display: inline-block;
   position: absolute;
   content: "";
@@ -151,7 +154,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 830px;
+  width: 820px;
   margin-bottom: 35px;
 }
 
@@ -166,6 +169,12 @@
 .features--pregnant-baza {
   position: absolute;
   right: 0;
+  top: 35px;
+}
+
+.features--young-mother-program {
+  position: absolute;
+  right: 20px;
   top: 35px;
 }
 

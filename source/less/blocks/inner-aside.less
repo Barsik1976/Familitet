@@ -8,6 +8,7 @@
 }
 
 .inner-aside__item {
+  position: relative;
   margin-top: 10px;
   list-style: none;
   font-family: HeliosLight;
@@ -33,11 +34,11 @@
   color: #d71c6d;
 }
 
-.inner-aside__item--active::before {
+.inner-aside__item--active a::before {
   display: inline-block;
   position: absolute;
   content: "";
-  top: 67px;
+  top: 5px;
   left: -20px;
   width: 10px;
   height: 10px;
@@ -45,6 +46,91 @@
   background-color: #d71c6d;
 }
 
+.inner-aside--baza,
+.inner-aside--program {
+  display: block;
+  margin-top: 23px;
+}
 
+.inner-aside--baza .information__person-name {
+  display: block;
+  font-size: 16px;
+}
+
+.inner-aside--baza a {
+  display: block;
+}
+
+.inner-aside__item-baza {
+  position: relative;
+  margin-top: 160px;
+}
+
+.inner-aside__item-baza::before {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  left: 0;
+  bottom: 30px;
+}
+
+.inner-aside__item-baza--1::before {
+  content: "";
+  background: url(../img/tishina.jpg);
+  background-position: 50% 0;
+  background-size: 120% 120%;
+}
+
+.inner-aside__item-baza--2::before {
+  content: "";
+  background: url(../img/liliya_vinogradova.png);
+  background-position: 50% 0;
+  background-size: 120% 120%;
+}
+
+.inner-aside__item-baza--3::before {
+  content: "";
+  background: url(../img/sidorina.jpg);
+  background-position: 50% 0;
+  background-size: 120% 120%;
+}
+
+.inner-aside__item--timetable {
+  width: 240px;
+  font-family: AntiQuasi;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  text-align: left;
+  border-bottom: 1px #d71c6d solid;
+}
+
+.inner-aside__item--timetable > p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #59361b;
+  margin: 0;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 20px;
+}
+
+.inner-aside__item--timetable > a {
+  display: inline-block;
+  font-family: HeliosLight;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #d71c6d;
+  text-decoration: none;
+  padding-left: 7px;
+  padding-bottom: 10px;
+}
+
+.inner-aside--program .inner-aside__item--timetable {
+  padding-bottom: 10px;
+}
 
 

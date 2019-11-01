@@ -107,6 +107,42 @@
   }
 }
 
+.progress--page-baza {
+  position: relative;
+  background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 90%, transparent);
+  background-repeat: repeat-x, repeat-x, repeat-x;
+  background-position: 0 0, 0 150px, 0 205px, 0 0;
+  min-height: 470px;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1196px) and (min-width: 768px) {
+  .progress--page-baza {
+    background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 90%, transparent);
+    background-repeat: repeat-x, repeat-x, repeat-x;
+    background-position: 0 0, 0 620px, 0 680px, 0 0;
+    min-height: 940px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .progress--page-maza {
+    background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 90%, transparent);
+    background-repeat: repeat-x, repeat-x, repeat-x;
+    background-position: 0 0, 0 730px, 0 800px, 0 0;
+    min-height: 1060px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .progress--page-baza {
+    background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 96%, transparent);
+    background-repeat: repeat-x, repeat-x, repeat-x;
+    background-position: 0 0, 0 1100px, 0 1160px, 0 0;
+    min-height: 1425px;
+  }
+}
+
 
 /*
 .progress::before {
