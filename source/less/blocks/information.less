@@ -1,4 +1,5 @@
 .information {
+  position: relative;
   width: 1140px;
   display: flex;
   flex-direction: row;
@@ -12,6 +13,7 @@
 }
 
 @media (max-width: 1196px) and (min-width: 768px) {
+<<<<<<< HEAD
   .information {
     width: 720px;
   }
@@ -21,6 +23,17 @@
   .information {
     flex-direction: column;
     width: 520px;
+=======
+  .information {
+    width: 720px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .information {
+    flex-direction: column;
+    width: 440px;
+>>>>>>> c5ffe58064a066e8d016d6ab1268f4a18f16a2cf
   }
 }
 
@@ -30,6 +43,22 @@
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 45px;
+<<<<<<< HEAD
+=======
+    padding-top: 0;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .information--history {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .information__page-people {
+    padding-top: 45px;
+>>>>>>> c5ffe58064a066e8d016d6ab1268f4a18f16a2cf
   }
 }
 
@@ -44,6 +73,7 @@
 }
 
 @media (max-width: 1196px) and (min-width: 768px) {
+<<<<<<< HEAD
   .information__content {
     width: 720px;
   }
@@ -52,6 +82,16 @@
 @media (max-width: @tablet-width) and (min-width: 480px) {
   .information__content {
     width: 520px;
+=======
+  .information__content {
+    width: 720px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .information__content {
+    width: 440px;
+>>>>>>> c5ffe58064a066e8d016d6ab1268f4a18f16a2cf
   }
 }
 
@@ -68,6 +108,13 @@
   width: 800px;
 }
 
+<<<<<<< HEAD
+=======
+.information__content--page-baza {
+  width: 820px;
+}
+
+>>>>>>> c5ffe58064a066e8d016d6ab1268f4a18f16a2cf
 @media (max-width: 1196px) and (min-width: 768px) {
   .information__content--history,
   .information__content--people {
@@ -79,7 +126,11 @@
 @media (max-width: @tablet-width) and (min-width: 480px) {
   .information__content--history,
   .information__content--people {
+<<<<<<< HEAD
     width: 520px;
+=======
+    width: 440px;
+>>>>>>> c5ffe58064a066e8d016d6ab1268f4a18f16a2cf
     order: 2;
   }
 }
@@ -89,6 +140,29 @@
   .information__content--people {
     width: 300px;
     order: 2;
+<<<<<<< HEAD
+=======
+  }
+}
+
+@media (max-width: 1196px) and (min-width: 768px) {
+  .information__content--page-baza {
+    width: 720px;
+    margin-top: 600px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .information__content--page-baza {
+    width: 440px;
+    margin-top: 530px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .information__content--page-baza {
+    width: ;
+>>>>>>> c5ffe58064a066e8d016d6ab1268f4a18f16a2cf
   }
 }
 
@@ -96,6 +170,32 @@
   font-family: AntiQuasi;
   font-size: 42px;
   line-height: 45px;
+  font-weight: normal;
+  letter-spacing: -0.1px;
+  text-align: left;
+  color: #59361b;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+@media (max-width: @mobile-width) {
+  .information__title {
+    font-size: 38px;
+    line-height: 42px;
+    margin-bottom: 27px;
+  }
+}
+
+@media (max-width: 1196px) and (min-width: 768px) {
+  .information__title--baza-tablet {
+    width: 550px;
+  }
+}
+
+.information__subtitle {
+  font-family: AntiQuasi;
+  font-size: 38px;
+  line-height: 42px;
   letter-spacing: -0.1px;
   text-align: left;
   color: #59361b;
@@ -116,6 +216,24 @@
 
 .information__text--history {
   margin-bottom: 62px;
+<<<<<<< HEAD
+=======
+}
+
+.information__text--baza,
+.information__text--program {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.information__text--baza span {
+  font-weight: 700;
+}
+
+.information__text--pay span {
+  font-weight: 700;
+  color: #d71c6d;
+>>>>>>> c5ffe58064a066e8d016d6ab1268f4a18f16a2cf
 }
 
 .information__link {
@@ -135,19 +253,47 @@
   }
 }
 
+<<<<<<< HEAD
 .information__image-history {
   margin-top: 20px;
+=======
+.information__image {
+>>>>>>> c5ffe58064a066e8d016d6ab1268f4a18f16a2cf
   margin-bottom: 50px;
 }
 
 .information__person {
+<<<<<<< HEAD
 
+=======
+  margin-top: 18px;
+}
+
+@media (max-width: 1196px) and (min-width: 768px) {
+  .information__person {
+    width: 720px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .information__person {
+    width: 480px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .information__person {
+    margin: 0;
+  }
+>>>>>>> c5ffe58064a066e8d016d6ab1268f4a18f16a2cf
 }
 
 .information__person-item {
   position: relative;
   width: 520px;
   margin-left: 300px;
+<<<<<<< HEAD
 }
 
 .information__person-item::before {
@@ -162,6 +308,40 @@
 }
 
 .information__person-list {
+=======
+  margin-bottom: 40px;
+  padding-top: 7px;
+}
+
+@media (max-width: 1196px) and (min-width: 768px) {
+  .information__person-item {
+    width: 720px;
+    margin-left: 0;
+    margin-top: 250px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .information__person-item {
+    width: 440px;
+    margin-left: 0;
+    margin-top: 250px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .information__person-item {
+    width: 280px;
+    margin-top: 225px;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.information__person-list {
+  position: relative;
+>>>>>>> c5ffe58064a066e8d016d6ab1268f4a18f16a2cf
   margin: 0;
   padding: 0;
   list-style: none;
@@ -171,6 +351,10 @@
   font-family: AntiQuasi;
   font-size: 25px;
   line-height: 25px;
+<<<<<<< HEAD
+=======
+  font-weight: normal;
+>>>>>>> c5ffe58064a066e8d016d6ab1268f4a18f16a2cf
   letter-spacing: -0.1px;
   text-align: left;
   color: #59361b;
@@ -181,6 +365,7 @@
   text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 .information__text--person-description {
   font-family: HeliosLight;
   font-size: 18px;
@@ -192,3 +377,231 @@
 }
 
 
+=======
+.information__person-name--mail {
+  font-size: 25px;
+  color: #59a8dd;
+  cursor: pointer;
+}
+
+.information__person-work {
+  font-family: AntiQuasi;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: left;
+  color: #d73c2c;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: @mobile-width) {
+  .information__subtitle,
+  .information__subtitle--person-subtitle {
+    font-size: 34px;
+    line-height: 36px;
+  }
+}
+
+.information__text--person-description1 {
+  font-family: HeliosLight;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #59361b;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.information__text--person-description1::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f7a93b;
+  left: 0;
+  margin-top: 6px;
+}
+
+.information__text--direction {
+  font-size: 17px;
+  line-height: 24px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.information__text--person-description2 {
+  font-family: HeliosLight;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #59361b;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.information__text--person-description2::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f4a699;
+  left: 0;
+  margin-top: 6px;
+}
+
+.information__person-item::before {
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  left: -300px;
+  top: -7px;
+}
+
+.information__person-item--item1::before {
+  content: "";
+  background: url("../img/gschwend.jpg");
+  background-repeat: no-repeat;
+}
+
+.information__person-item--item2::before {
+  content: "";
+  background: url("../img/tishina.jpg");
+  background-repeat: no-repeat;
+}
+
+.information__person-item--item3::before {
+  content: "";
+  background: url("../img/olga_xoxlova.png");
+  background-repeat: no-repeat;
+}
+
+.information__person-item--item4::before {
+  content: "";
+  background: url("../img/mariya_safonova.png");
+  background-repeat: no-repeat;
+}
+
+.information__person-item--item5::before {
+  content: "";
+  background: url("../img/liliya_vinogradova.png");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1196px) and (min-width: 768px) {
+  .information__person-item::before {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    left: 0;
+    top: -215px;
+    background-position: 50% 20%;
+    background-size: 110% 110%;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .information__person-item::before {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    left: 0;
+    top: -215px;
+    background-position: 50% 20%;
+    background-size: 110% 110%;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .information__person-item::before {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    left: 0;
+    top: -210px;
+    background-position: 50% 20%;
+    background-size: 110% 110%;
+  }
+}
+
+.information__title--subtitle-program {
+  font-size: 33px;
+  margin-bottom: 23px;
+}
+
+.information__list-program {
+  position: relative;
+  font-size: 20px;
+  line-height: 24px;
+  color: #59361b;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 30px;
+  padding-left: 25px;
+}
+
+.information__program::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  border-radius: 50%;
+  margin-top: 7px;
+}
+
+.information__program--1::before {
+  width: 9px;
+  height: 9px;
+  background-color: #f7a93b;
+}
+
+.information__program--2::before {
+  width: 11px;
+  height: 11px;
+  background-color: #c4d985;
+}
+
+.information__program--3::before {
+  width: 14px;
+  height: 14px;
+  background-color: #59a8dd;
+}
+
+.information__program--4::before {
+  width: 14px;
+  height: 14px;
+  background-color: #d71c6d;
+}
+
+.information__program--5::before {
+  width: 14px;
+  height: 14px;
+  background-color: #f7a93b;
+}
+
+.information__program--6::before {
+  width: 11px;
+  height: 11px;
+  background-color: #59a8dd;
+}
+
+.information__program--7::before {
+  width: 11px;
+  height: 11px;
+  background-color: #c4d985;
+}
+>>>>>>> c5ffe58064a066e8d016d6ab1268f4a18f16a2cf

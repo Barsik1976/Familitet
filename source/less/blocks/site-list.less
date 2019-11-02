@@ -20,7 +20,11 @@
 
 @media (max-width: @tablet-width) and (min-width: 480px) {
   .site-list {
+<<<<<<< HEAD
     width: 520px;
+=======
+    width: 100%;
+>>>>>>> c5ffe58064a066e8d016d6ab1268f4a18f16a2cf
     flex-direction: column;
     margin-left: 0;
   }
@@ -43,7 +47,7 @@
   }
 }
 
-.site-list__item a {
+.site-list__link {
   font-family: AntiQuasi;
   font-size: 33px;
   line-height: 50px;
@@ -53,11 +57,19 @@
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 .site-list__item a:hover {
   color: #a51b57;
 }
 
 .site-list__item-active:active {
+=======
+.site-list__link:hover {
+  color: #a51b57;
+}
+
+.site-list__link--active {
+>>>>>>> c5ffe58064a066e8d016d6ab1268f4a18f16a2cf
   color: #d71c6d;
 }
 
