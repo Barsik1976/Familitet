@@ -17,9 +17,15 @@
   }
 }
 
+@media (max-width: @mobile-width) {
+  .description-childbirth {
+    width: 300px;
+  }
+}
+
 .description-childbirth__list {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   color: #59361b;
 }
 
@@ -92,8 +98,31 @@
 }
 
 .description-childbirth__title::after {
-  content: url("../img/two-men.png");
+  display: inline-block;
+  content: "";
+  width: 42px;
+  height: 35px;
+  background: url("../img/two-men.png");
+  background-repeat: no-repeat;
   margin-left: 20px;
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .description-childbirth__title::after {
+    background-size: 90% 90%;
+    background-position: 0 80%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .description-childbirth__title::after {
+    display: block;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 0;
+  }
 }
 
 .description-childbirth__text {
@@ -129,7 +158,24 @@
 
 .description-childbirth__text--notice::before {
   display: inline-block;
-  content: url("../img/two-men.png");
-  padding-right: 10px;
+  content: "";
+  width: 42px;
+  height: 35px;
+  background: url("../img/two-men.png");
+  background-repeat: no-repeat;
   margin-left: -55px;
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .description-childbirth__text--notice::before {
+    background-size: 90% 90%;
+    background-position: 0 70%;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .description-childbirth__text--notice::before {
+    background-size: 80% 80%;
+    background-position: 0 80%;
+  }
 }
