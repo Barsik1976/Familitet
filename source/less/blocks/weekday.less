@@ -5,6 +5,24 @@
   margin-top: 10px;
 }
 
+@media (max-width: 1196px) and (min-width: 768px) {
+  .weekday {
+    width: 720px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .weekday {
+    width: 440px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .weekday {
+    width: 300px;
+  }
+}
+
 .weekday__wrapper {
 
 }
@@ -20,39 +38,65 @@
   list-style: none;
 }
 
+@media (max-width: 1196px) and (min-width: 768px) {
+  .weekday__list {
+    width: 500px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .weekday__list {
+    width: 220px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .weekday__list {
+    width: 220px;
+  }
+}
+
 .weekday__item {
 
 }
 
-
 .weekday__day {
   display: block;
+  width: 168px;
   font-family: AntiQuasi;
   font-size: 25px;
   line-height: 17px;
   font-weight: normal;
   color: #59361b;
   text-align: center;
-  margin-right: px;
-}
-
-.weekday__day {
-  width: 180px;
   text-decoration: none;
   margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 23px;
   padding-bottom: 17px;
   background: transparent;
+  cursor: pointer;
 }
 
 .weekday__day--active {
   color: #ffffff;
   padding-top: 23px;
   padding-bottom: 17px;
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: #d71c6d;
   border-radius: 50px;
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .weekday__day {
+
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .weekday__day {
+    width: 168px;
+  }
 }
 
 .weekday__month {

@@ -9,6 +9,13 @@
   margin-bottom: 90px;
 }
 
+@media (max-width: @mobile-width) {
+  .user {
+    width: 180px;
+    flex-direction: column;
+  }
+}
+
 .user__print,
 .user__download {
   font-family: AntiQuasi;
@@ -20,6 +27,12 @@
   color: #59361b;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (max-width: @mobile-width) {
+  .user__print {
+    margin-bottom: 20px;
+  }
 }
 
 .user img {

@@ -19,7 +19,7 @@
 
 @media (max-width: @mobile-width) {
   .description-childbirth {
-    width: 300px;
+    width: 242px;
   }
 }
 
@@ -78,6 +78,13 @@
   content: "9";
 }
 
+@media (max-width: @mobile-width) {
+  .description-childbirth__list::before {
+    font-size: 50px;
+    top: -10px;
+  }
+}
+
 .description-childbirth__title {
   font-family: AntiQuasi;
   font-size: 25px;
@@ -126,22 +133,32 @@
 }
 
 .description-childbirth__text {
-  font-family: HeliosLight;
+  font-family: Helios;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 300;
   margin: 0;
 }
 
 .description-childbirth__link {
   display: inline-block;
-  font-family: HeliosLight;
+  font-family: Helios;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 300;
   letter-spacing: -0.3px;
   text-align: left;
   color: #d71c6d;
   text-decoration: none;
   margin: 0;
+}
+
+@media (max-width: @mobile-width) {
+  .description-childbirth__text,
+  .description-childbirth__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .description-childbirth__link--pay {
