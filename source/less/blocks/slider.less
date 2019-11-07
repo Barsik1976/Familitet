@@ -33,10 +33,11 @@
   font-size: 0;
   cursor: pointer;
   margin-top: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#weekday-item-1:checked ~ .weekday__list .slider__group-no-js--group1,
- {
+#weekday-item-1:checked ~ .weekday__list .slider__group-no-js--group1 {
   display: block;
 }
 
@@ -44,9 +45,7 @@
 #weekday-item-2:checked ~ .weekday__list .slider__no-js--order2,
 #weekday-item-3:checked ~ .weekday__list .slider__no-js--order3,
 #weekday-item-4:checked ~ .weekday__list .slider__no-js--order4,
-#weekday-item-5:checked ~ .weekday__list .slider__no-js--order5,
-#weekday-item-6:checked ~ .weekday__list .slider__no-js--order6,
-#weekday-item-7:checked ~ .weekday__list .slider__no-js--order7 {
+#weekday-item-5:checked ~ .weekday__list .slider__no-js--order5 {
   display: block;
 }
 
@@ -55,9 +54,7 @@
 #weekday-item-2:checked ~ .slider__toggles label:nth-of-type(3),
 #weekday-item-3:checked ~ .slider__toggles label:nth-of-type(4),
 #weekday-item-4:checked ~ .slider__toggles label:nth-of-type(5),
-#weekday-item-5:checked ~ .slider__toggles label:nth-of-type(6),
-#weekday-item-6:checked ~ .slider__toggles label:nth-of-type(7),
-#weekday-item-7:checked ~ .slider__toggles label:nth-of-type(1) {
+#weekday-item-5:checked ~ .slider__toggles label:nth-of-type(1) {
   display: block;
   background-image: url("../img/arrow-right.svg");
   background-repeat: no-repeat;
@@ -65,13 +62,11 @@
   float: right;
 }
 
-#weekday-item-1:checked ~ .slider__toggles label:nth-of-type(7),
+#weekday-item-1:checked ~ .slider__toggles label:nth-of-type(5),
 #weekday-item-2:checked ~ .slider__toggles label:nth-of-type(1),
 #weekday-item-3:checked ~ .slider__toggles label:nth-of-type(2),
 #weekday-item-4:checked ~ .slider__toggles label:nth-of-type(3),
-#weekday-item-5:checked ~ .slider__toggles label:nth-of-type(4),
-#weekday-item-6:checked ~ .slider__toggles label:nth-of-type(5),
-#weekday-item-7:checked ~ .slider__toggles label:nth-of-type(6) {
+#weekday-item-5:checked ~ .slider__toggles label:nth-of-type(4) {
   display: block;
   background-image: url("../img/arrow-left.svg");
   background-repeat: no-repeat;
@@ -79,16 +74,12 @@
   float: left;
 }
 
-
-
 @media (max-width: @tablet-width) and (min-width: 480px) {
   #weekday-item-1:checked ~ .slider__toggles label:nth-of-type(2),
   #weekday-item-2:checked ~ .slider__toggles label:nth-of-type(3),
   #weekday-item-3:checked ~ .slider__toggles label:nth-of-type(4),
   #weekday-item-4:checked ~ .slider__toggles label:nth-of-type(5),
-  #weekday-item-5:checked ~ .slider__toggles label:nth-of-type(6),
-  #weekday-item-6:checked ~ .slider__toggles label:nth-of-type(7),
-  #weekday-item-7:checked ~ .slider__toggles label:nth-of-type(1) {
+  #weekday-item-5:checked ~ .slider__toggles label:nth-of-type(1) {
     display: block;
     background-image: url("../img/arrow-right.svg");
     background-repeat: no-repeat;
@@ -98,13 +89,11 @@
 }
 
 @media (max-width: @tablet-width) and (min-width: 480px) {
-  #weekday-item-1:checked ~ .slider__toggles label:nth-of-type(7),
+  #weekday-item-1:checked ~ .slider__toggles label:nth-of-type(5),
   #weekday-item-2:checked ~ .slider__toggles label:nth-of-type(1),
   #weekday-item-3:checked ~ .slider__toggles label:nth-of-type(2),
   #weekday-item-4:checked ~ .slider__toggles label:nth-of-type(3),
-  #weekday-item-5:checked ~ .slider__toggles label:nth-of-type(4),
-  #weekday-item-6:checked ~ .slider__toggles label:nth-of-type(5),
-  #weekday-item-7:checked ~ .slider__toggles label:nth-of-type(6) {
+  #weekday-item-5:checked ~ .slider__toggles label:nth-of-type(4) {
     display: block;
     background-image: url("../img/arrow-left.svg");
     background-repeat: no-repeat;
@@ -118,9 +107,7 @@
   #weekday-item-2:checked ~ .slider__toggles label:nth-of-type(3),
   #weekday-item-3:checked ~ .slider__toggles label:nth-of-type(4),
   #weekday-item-4:checked ~ .slider__toggles label:nth-of-type(5),
-  #weekday-item-5:checked ~ .slider__toggles label:nth-of-type(6),
-  #weekday-item-6:checked ~ .slider__toggles label:nth-of-type(7),
-  #weekday-item-7:checked ~ .slider__toggles label:nth-of-type(1) {
+  #weekday-item-5:checked ~ .slider__toggles label:nth-of-type(1) {
     display: block;
     position: absolute;
     top: 85px;
@@ -132,13 +119,11 @@
 }
 
 @media (max-width: @mobile-width) {
-  #weekday-item-1:checked ~ .slider__toggles label:nth-of-type(7),
+  #weekday-item-1:checked ~ .slider__toggles label:nth-of-type(5),
   #weekday-item-2:checked ~ .slider__toggles label:nth-of-type(1),
   #weekday-item-3:checked ~ .slider__toggles label:nth-of-type(2),
   #weekday-item-4:checked ~ .slider__toggles label:nth-of-type(3),
-  #weekday-item-5:checked ~ .slider__toggles label:nth-of-type(4),
-  #weekday-item-6:checked ~ .slider__toggles label:nth-of-type(5),
-  #weekday-item-7:checked ~ .slider__toggles label:nth-of-type(6) {
+  #weekday-item-5:checked ~ .slider__toggles label:nth-of-type(4) {
     display: block;
     position: absolute;
     top: 85px;
@@ -152,7 +137,7 @@
 
 .slider__list {
   position: relative;
-  width: 995px;
+  width: 1000px;
   margin: 0 auto;
   overflow: hidden;
 }

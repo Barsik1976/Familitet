@@ -33,12 +33,6 @@
   }
 }
 
-@media (max-width: @tablet-width) {
-  .site-list__item {
-    margin-top: 20px;
-  }
-}
-
 .site-list__link {
   font-family: AntiQuasi;
   font-size: 33px;
@@ -46,11 +40,13 @@
   text-align: left;
   color: #59361b;
   text-decoration: none;
-  cursor: pointer;
 }
 
-.site-list__link:hover {
-  color: #a51b57;
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .site-list__link {
+    display: block;
+    margin-top: 20px;
+  }
 }
 
 .site-list__link--active {
@@ -65,3 +61,15 @@
   color: #d73c2c;
   text-transform: uppercase;
 }
+
+.site-list a[href] {
+  &:hover {
+    color: #a51b57;
+  }
+
+  &:active {
+    color: #d71c6d;
+  }
+}
+
+
