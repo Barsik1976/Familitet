@@ -34,11 +34,11 @@
 .schedule__list::after {
   position: absolute;
   top: -25px;
-  left: 384px;
+  left: 385px;
   content: "";
   width: 13px;
-  height: 30px;
-  background: url("../img/circles-line-vertical.svg");
+  height: 995px;
+  background: url("../img/circles-line-vertical-long2.svg");
   background-repeat: no-repeat;
 }
 
@@ -50,13 +50,18 @@
 
 @media (max-width: @tablet-width) and (min-width: 480px) {
   .schedule__list::after {
-    display: none;
+    height: 1300px;
+    background: url("../img/circles-line-vertical-tabl.svg");
+    background-repeat: no-repeat;
     left: 0;
   }
 }
 
 @media (max-width: @mobile-width) {
   .schedule__list::after {
+    height: 1230px;
+    background: url("../img/circles-line-vertical-mobile.svg");
+    background-repeat: no-repeat;
     left: 15px;
   }
 }
@@ -194,56 +199,68 @@
   position: absolute;
   content: "";
   background-repeat: no-repeat;
-  z-index: 2;
-  top: 10px;
   text-align: center;
 }
 
-.schedule__item--item1::after {
-  content: "";
+.schedule__item--item1::after,
+.schedule__item--item2::after,
+.schedule__item--item5::after,
+.schedule__item--item6::after,
+.schedule__item--item8::after {
   width: 40px;
   height: 48px;
   background: url("../img/letter-future.svg");
-  background-repeat: no-repeat;
-  left: 376px;
 }
 
-.schedule__item:nth-child(even)::after {
+.schedule__item--item1::after,
+.schedule__item--item3::after,
+.schedule__item--item5::after {
+  top: 15px;
+  left: 375px;
+}
+
+.schedule__item--item2::after,
+.schedule__item--item4::after,
+.schedule__item--item6::after,
+.schedule__item--item8::after {
+  top: 20px;
   left: -55px;
 }
 
-.schedule__item:nth-child(odd)::after {
-  left: 376px;
-}
-
-.schedule__item--pregnant::after {
+.schedule__item--item3::after,
+.schedule__item--item4::after {
   content: "";
-  width: 42px;
+  width: 45px;
   height: 50px;
   background: url("../img/crescent-future.svg");
   background-repeat: no-repeat;
 }
 
-.schedule__item--mother::after {
+.schedule__item--item7::after {
   content: "";
   width: 52px;
   height: 50px;
   background: url("../img/star-future.svg");
   background-repeat: no-repeat;
+  left: 365px;
 }
 
 @media (max-width: @tablet-width) and (min-width: 480px) {
-  .schedule__item:nth-child(even)::after,
-  .schedule__item:nth-child(odd)::after {
-    top: 10px;
-    left: -67px;
+  .schedule__item::after {
+    top: 15px;
+    left: -60px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .schedule__item7::after {
+    left: -75px;
   }
 }
 
 @media (max-width: @mobile-width) {
-  .schedule__item:nth-child(even)::after,
-  .schedule__item:nth-child(odd)::after {
-    top: 10px;
+  .schedule__item::after {
+    top: 15px;
     left: -55px;
   }
 }
