@@ -37,8 +37,8 @@
   left: 384px;
   content: "";
   width: 13px;
-  height: 995px;
-  background: url("../img/pattern_schedule.png");
+  height: 30px;
+  background: url("../img/circles-line-vertical.svg");
   background-repeat: no-repeat;
 }
 
@@ -86,16 +86,24 @@
   flex-wrap: wrap;
 }
 
-.schedule__item--baby {
+.schedule__item--item1,
+.schedule__item--item2,
+.schedule__item--item5,
+.schedule__item--item6 {
   border: 1px #70b4a7 solid;
 }
 
-.schedule__item--pregnant {
+.schedule__item--item3,
+.schedule__item--item4 {
   border: 1px #f8ae47 solid;
 }
 
-.schedule__item--mother {
+.schedule__item--item7 {
   border: 1px #ec6a40 solid;
+}
+
+.schedule__item--item8 {
+  border: 1px #d71c6d solid;
 }
 
 .schedule__item:nth-child(even) {
@@ -191,12 +199,13 @@
   text-align: center;
 }
 
-.schedule__item--baby::after {
+.schedule__item--item1::after {
   content: "";
   width: 40px;
   height: 48px;
-  background: url("../img/pattern_schedule-a.png");
+  background: url("../img/letter-future.svg");
   background-repeat: no-repeat;
+  left: 376px;
 }
 
 .schedule__item:nth-child(even)::after {
@@ -211,7 +220,7 @@
   content: "";
   width: 42px;
   height: 50px;
-  background: url("../img/pattern_schedule-c.png");
+  background: url("../img/crescent-future.svg");
   background-repeat: no-repeat;
 }
 
@@ -219,7 +228,7 @@
   content: "";
   width: 52px;
   height: 50px;
-  background: url("../img/pattern_schedule-star.png");
+  background: url("../img/star-future.svg");
   background-repeat: no-repeat;
 }
 
@@ -227,7 +236,7 @@
   .schedule__item:nth-child(even)::after,
   .schedule__item:nth-child(odd)::after {
     top: 10px;
-    left: -55px;
+    left: -67px;
   }
 }
 

@@ -71,31 +71,28 @@
   display: block;
   content: "";
   height: 13px;
-  background: url("../img/pattern_circle-3.png");
-  background-repeat: no-repeat;
+  background: url("../img/circles-line-gorizontal.svg");
+  background-repeat: repeat-x;
   margin-top: 7px;
-  margin-left: -12px;
 }
 
 .meeting__title--title2::after {
   display: block;
   height: 13px;
   content: "";
-  background: url("../img/pattern_circle-3.png");
+  background: url("../img/circles-line-gorizontal.svg");
   background-repeat: repeat-x;
   margin-top: 7px;
-  margin-left: -10px;
 }
 
 @media (max-width: @mobile-width) {
   .meeting__title--title1::after {
-    margin-left: -5px;
+    background-repeat: no-repeat;
   }
 }
 
 @media (max-width: @mobile-width) {
   .meeting__title--title2::after {
-    margin-left: -5px;
     background-repeat: no-repeat;
   }
 }
