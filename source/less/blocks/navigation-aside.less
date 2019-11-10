@@ -52,11 +52,12 @@
 .navigation-aside__link--active::after {
   display: block;
   content: "";
-  width: 245px;
+  width: 255px;
   height: 13px;
   background: url("../img/circles-line-gorizontal.svg");
   background-repeat: no-repeat;
   margin-top: 7px;
+  margin-left: -12px;
   margin-bottom: 15px;
 }
 
@@ -118,5 +119,15 @@
   .navigation-aside--baza,
   .navigation-aside--program {
 
+  }
+}
+
+.navigation-aside__item > a[href] {
+  &:hover {
+    color: #a51b57;
+  }
+
+  &:active {
+    color: #811645;
   }
 }

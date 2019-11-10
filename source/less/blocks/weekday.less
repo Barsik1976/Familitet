@@ -56,10 +56,6 @@
   }
 }
 
-.weekday__item {
-
-}
-
 .weekday__day {
   display: block;
   width: 168px;
@@ -76,14 +72,6 @@
   padding-top: 23px;
   padding-bottom: 17px;
   background: transparent;
-}
-
-.weekday__day--active {
-  color: #ffffff;
-  padding-top: 23px;
-  padding-bottom: 17px;
-  background-color: #d71c6d;
-  border-radius: 50px;
 }
 
 @media (max-width: @tablet-width) and (min-width: 480px) {
@@ -107,19 +95,45 @@
   margin-top: 9px;
 }
 
+.weekday__day:focus {
+  color: ;
+}
+
+.weekday__day,
+.weekday__month {
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.weekday__day--active {
+  color: rgba(255, 255, 255, 1.0);
+  padding-top: 23px;
+  padding-bottom: 17px;
+  background-color: rgba(215, 28, 109, 1.0);
+  border-radius: 50px;
+}
+
 .weekday__month--active {
   font-size: 16px;
   font-weight: 700;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1.0);
   margin-top: 9px;
 }
 
-.weekday__day:focus,
-.weekday__day:hover {
-  color: #a51b57;
-}
+.weekday__day--active,
+.weekday__month--active {
+  &:hover {
+    opacity: 1.0;
+  }
 
-.weekday__day--active:hover {
-  color: rgba(255, 255, 255, 1.0);
 }
 

@@ -20,7 +20,19 @@
   font-weight: 700;
 }
 
-.communication__adress-scheme a {
+.communication__adress-scheme {
+  display: block;
   color: #59a8dd;
+  margin-top: 8px;
   cursor: pointer;
+}
+
+.communication a[href] {
+  &:hover {
+    color: #1a5b87;
+  }
+
+  &:active {
+    color: rgba(89, 168, 221, 0.5);
+  }
 }

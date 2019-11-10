@@ -131,14 +131,6 @@
   fill: #ffffff;
 }
 
-.contact__social-link--vkontakte {
-
-}
-
-.contact__social-link--instagram {
-
-}
-
 .contact__information {
   display: block;
   font-size: 16px;
@@ -150,6 +142,26 @@
 .contact__information--our-business {
   display: inline-block;
   text-decoration: underline;
+}
+
+.contact__social-item a[href] {
+  &:hover {
+    background-color: #a51b57;
+  }
+
+  &:active {
+    background-color: #811645;
+  }
+}
+
+.contact a[href] {
+  &:hover {
+    color: #1a5b87;
+  }
+
+  &:active {
+    color: rgba(89, 168, 221, 0.5);
+  }
 }
 
 
