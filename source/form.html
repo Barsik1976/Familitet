@@ -33,7 +33,7 @@
           <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Открыть меню"></button>
           <ul class="main-nav__list site-list">
             <li>
-              <a class="site-list__link site-list__link--active">Всё о нас</a>
+              <a class="site-list__link" href="about_familitet.html">Всё о нас</a>
               <p class="site-list__content">Работаем с 2011 года</p>
             </li>
             <li>
@@ -48,65 +48,50 @@
         </nav>
     </header>
     <main class="page-main">
-      <div class="information information--history">
-        <section class="information__content information__content--history">
-          <h1 class="information__title">Исторический день</h1>
-            <p class="information__text">17 июля 2011 года центр семейного развития «Фамилитет» открыл свои двери в Рязани. Праздничный день прошёл в формате презентации: наши специалисты предложили гостям протестировать некоторые <a class="information__link" href="#">программы</a> центра.</p>
-            <p class="information__text">«Дегустацию» прошли: лекция по <a class="information__link" href="#">грудному вскармливанию</a> для будущих родителей, <a class="information__link" href="#">фитнес для беременных</a> и «<a class="information__link" href="#">Мягкая школа</a>» для мам с малышами.
+      <div class="information">
+      <div class="information__content information__content--form">
+        <h1 class="information__title">Записаться на занятия!</h1>
+        <form class="form-users" action="" method="post">
+          <div class="">
+            <p class="form-users__field form-users__field--profiles field-item field-item--profiles field-item--program">Выберите интересующую программу:<span></span>
+              <select class="choice-user" name="choice-programs" required>
+                <option selected="selected"></option>
+                <option value="t1">Программа 1</option>
+                <option value="t2">Программа 2</option>
+                <option value="t3">Программа 3</option>
+              </select>
             </p>
 
-            <!--
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="information__image-history" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="панорама дня" width="320" height="137">
-              </picture>
-            -->
-
-                <img class="information__image" src="img/about.jpg" alt="наш коллектив" width="792" height="528">
-
-            <p class="information__text information__text--history">В этот день в адрес центра прозвучало немало прекрасных пожеланий, и, чтобы всё исполнялось с лёгкостью и настроением, мы пускали мыльные пузыри!</p>
-            <p class="information__subtitle">И вот что из этого получилось:</p>
-        </section>
-        <div class="navigation-aside">
-          <ul class="navigation-aside__list">
-            <li class="navigation-aside__item navigation-aside__item--active">
-              <a class="navigation-aside__link navigation-aside__link--active" href="about_familitet.html">Фамилитет</a>
-                <ul class="inner-aside">
-                  <li class="inner-aside__item inner-aside__item--active">
-                    <a>История центра</a>
-                  </li>
-                  <li class="inner-aside__item">
-                    <a href="about/our-mission_familitet.html">Наша миссия</a>
-                  </li>
-                </ul>
-            </li>
-          </ul>
-          <ul class="navigation-aside__list">
-            <li class="navigation-aside__item">
-              <a href="people_familitet.html">Специалисты</a>
-            </li>
-          </ul>
-          <ul class="navigation-aside__list">
-            <li class="navigation-aside__item">
-              <a href="useful-article.html">Полезные статьи</a>
-            </li>
-          </ul>
-          <ul class="navigation-aside__list">
-            <li class="navigation-aside__item">
-              <a href="video-material.html">Видео-материалы</a>
-            </li>
-          </ul>
-          <ul class="navigation-aside__list">
-            <li class="navigation-aside__item">
-              <a href="contacts_familitet.html">Контактная информация</a>
-            </li>
-          </ul>
-        </div>
+        <fieldset class="form-users__field form-users__field--profiles">
+          <p class="field-item field-item--profiles">
+              <label for="name">Ваши Фамилия, Имя и Отчество:</label>
+              <input id="name" name="full-name" type="text" placeholder="">
+            </p>
+            <p class="field-item field-item--profiles">
+              <label for="tel">Укажите Ваш номер телефона:</label>
+              <input id="tel" name="tel-number" type="tel" placeholder="">
+            </p>
+          </fieldset>
+          <fieldset class="form-users__field form-users__field--questions">
+            <p class="field-item field-item--questions">
+              <label for="questions">Дополнительная информация, вопросы или пожелания:</label>
+              <textarea name="questions" placeholder=""></textarea>
+            </p>
+          </fieldset>
+      <article class="discount discount--form">
+        <div class="discount__wrap">
+        <p class="discount__percent"> <span>15%</span> скидка</p>
+        <p class="discount__desc">Многодетным семьям, одиноким мамам и родителям-студентам на группов</p>
       </div>
-      <div class="progress progress--page-history">
+        <input class="discount__btn discount__btn--form button button--writeus" type="submit" value="Записаться!">
+      </article>
+    </div>
+        </form>
+    </div>
+      </div>
+      <div class="progress progress--page-baza">
         <div class="progress__wrapper">
-        <div class="progress__wrapp-blocks progress__wrapp-blocks--page-history">
+        <div class="progress__wrapp-blocks progress__wrapp-blocks--page-baza">
         <article class="progress__list progress__list--page-history">
           <p class="progress__lead"><span>8 лет</span> отвечаем на вопрос:<br> «Как родить без боли?»</p>
         </article>
@@ -120,13 +105,6 @@
           <p class="progress__lead"><span>576</span> дипломов выдано будущим мамам!</p>
          </article>
       </div>
-      <article class="discount discount--page-history">
-        <div class="discount__wrap">
-        <p class="discount__percent"> <span>15%</span> скидка</p>
-        <p class="discount__desc">Многодетным семьям, одиноким мамам и родителям-студентам на группов</p>
-      </div>
-        <a class="discount__btn button button--writeus" href="form.html">Записаться!</a>
-      </article>
     </div>
   </div>
     </main>
@@ -159,5 +137,7 @@
         </ul>
       </div>
     </footer>
-  </body>
+</body>
 </html>
+
+    </main>
