@@ -54,9 +54,10 @@
   }
 }
 
-.form-users__field--program select,
-.form-users__field--profiles input,
-.form-users__field--questions textarea {
+.form-users select,
+.form-users input[type="text"],
+.form-users input[type="tel"],
+.form-users textarea {
   position: relative;
   font-family: "Helios";
   font-size: 16px;
@@ -152,7 +153,7 @@
 
 @media (max-width: @tablet-width) and (min-width: 480px) {
   .form-users__field--profiles textarea {
-    width: 416px;
+    width: 396px;
     height: 179px;
     padding: 10px;
     margin-top: 15px;
@@ -167,9 +168,27 @@
   }
 }
 
+.form-users input[type="text"],
+.form-users input[type="tel"],
+.form-users select,
+.form-users textarea {
+  &:hover,
+  &:focus {
+    border-color: #8c873d;
+  }
+}
+
 
 
 /*
+
+.form-users input,
+.form-users select,
+.form-users textarea {
+   &:invalid {
+    border: 2px #e74246 solid;
+  }
+}
 
 p.form-users__field--program::after,
 p.form-users__field--profiles label::after {
@@ -205,11 +224,5 @@ p.form-users__field--profiles label::after {
     top: 64px;
     right: 0px;
   }
-}
 
 */
-
-
-
-
-
