@@ -54,7 +54,8 @@
 @media (max-width: @tablet-width) and (min-width: 480px) {
   .discount--page-history,
   .discount--page-people,
-  .discount--baza {
+  .discount--baza,
+  .discount--form {
     width: 440px;
     flex-direction: column;
     align-items: center;
@@ -65,12 +66,6 @@
   .discount--baza {
     position: absolute;
     bottom: 0;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .discount--page-history {
-
   }
 }
 
@@ -133,6 +128,11 @@
   }
 }
 
+.discount__btn--form {
+  white-space: normal;
+  border: 0;
+}
+
 .discount--baza {
   margin-top: 25px;
   margin-bottom: 70px;
@@ -154,9 +154,36 @@
   }
 }
 
+.discount--form {
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+
+@media (max-width: 1196px) and (min-width: 768px) {
+  .discount--form {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: @tablet-width) and (min-width: 480px) {
+  .discount--form {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .discount--form {
+    width: 300px;
+  }
+}
 
 .discount__btn {
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba(255, 255, 255, 0.5);
     background-color: #a51b57;
   }

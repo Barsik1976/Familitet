@@ -51,39 +51,41 @@
       <div class="information">
       <div class="information__content information__content--form">
         <h1 class="information__title">Записаться на занятия!</h1>
-
- <form class="form-users" action="" method="post">
-          <fieldset class="form-users__field field-profiles">
-            <legend class="visually-hidden">Фамилия имя отчество</legend>
-            <p class="information__text information__text--form field-profiles__item">
-              <label for="last-name">Выберите интересующую программу:</label>
-              <input class="field-profiles__field-name" id="last-name" name="last-name" type="text" placeholder="">
+        <form class="form-users" action="" method="post">
+            <p class="form-users__field form-users__field--program field-item field-item--profiles field-item--program">Выберите интересующую программу:<span></span>
+              <select class="choice-user" name="choice-programs" required>
+                <option selected="selected"></option>
+                <option value="t1">Программа 1</option>
+                <option value="t2">Программа 2</option>
+                <option value="t3">Программа 3</option>
+              </select>
+            </p><span class="field-item__required field-item__required--program">*</span>
+        <fieldset class="form-users__field form-users__field--profiles">
+          <p class="field-item field-item--profiles">
+              <label for="name">Ваши Фамилия, Имя и Отчество:</label><span class="field-item__required">*</span>
+              <input id="name" name="full-name" type="text" placeholder="" required>
             </p>
-            <p class="information__text information__text--form field-profiles__item">
-              <label for="first-name">Ваши Фамилия, Имя и Отчество:</label>
-              <input class="field-profiles__field-name" id="first-name" name="first-name" type="text" placeholder="">
-            </p>
-            <p class="information__text information__text--form field-profiles__item">
-              <label for="middle-name">Укажите Ваш номер телефона:</label>
-              <input class="field-profiles__field-name" id="middle-name" name="middle-name" type="number" placeholder="">
-            </p>
-          </fieldset>
-          <fieldset class="form-users__field field-questions">
-            <p class="information__text information__text--form field__item">
-              <label for="last-name">Дополнительная информация, вопросы или пожелания:</label>
-              <input class="field-profiles__field-name" id="last-name" name="last-name" type="text" placeholder="">
+            <p class="field-item field-item--profiles">
+              <label for="tel">Укажите Ваш номер телефона:</label><span class="field-item__required">*</span>
+              <input id="tel" name="tel-number" type="tel" placeholder="" required>
             </p>
           </fieldset>
-        </form>
-</div>
-
-      <article class="discount discount--baza">
+          <fieldset class="form-users__field form-users__field--profiles">
+            <p class="field-item field-item--questions">
+              <label for="questions">Дополнительная информация, вопросы или пожелания:</label>
+              <textarea name="questions" placeholder=""></textarea>
+            </p>
+          </fieldset>
+          <p class="field-item__notice">Поля, отмеченные <span>*</span>, обязательны для заполнения.<br> Нажимая на кнопку «Записаться», Вы даёте согласие на обработку Ваших персональных данных в соответствии с <a href="">указанными условиями</a>.</p>
+      <article class="discount discount--form">
         <div class="discount__wrap">
         <p class="discount__percent"> <span>15%</span> скидка</p>
         <p class="discount__desc">Многодетным семьям, одиноким мамам и родителям-студентам на группов</p>
       </div>
-        <button class="discount__btn button button--writeus">Записаться!</button>
+        <input class="discount__btn discount__btn--form button button--writeus" type="submit" value="Записаться!">
       </article>
+        </form>
+    </div>
       </div>
       <div class="progress progress--page-baza">
         <div class="progress__wrapper">
