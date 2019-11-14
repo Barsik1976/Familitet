@@ -265,10 +265,29 @@
   }
 }
 
-.schedule__list > .schedule__item:active {
-  opacity: 0.2;
-}
-
 .schedule__item--active {
   opacity: 0.5;
 }
+
+.schedule__item {
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.schedule__link {
+  &:focus {
+    opacity: 0.5;
+    outline: none;
+  }
+}
+
+

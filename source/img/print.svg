@@ -1,18 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Creator: CorelDRAW 2018 (64-Bit) -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="158px" height="142px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 158 142"
- xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <style type="text/css">
-   <![CDATA[
-    .fil0 {fill:#59361B}
-   ]]>
-  </style>
- </defs>
- <g id="Слой_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"/>
-  <path class="fil0" d="M134.22 39.44l-110.44 0c-13.06,0 -23.67,10.61 -23.67,23.67l0 47.33 31.56 0 0 31.56 94.66 0 0 -31.56 31.56 0 0 -47.33c0,-13.06 -10.61,-23.67 -23.67,-23.67zm-23.66 86.78l-63.12 0 0 -39.44 63.12 0 0 39.44 0 0zm23.66 -55.22c-4.38,0 -7.89,-3.51 -7.89,-7.89 0,-4.38 3.51,-7.89 7.89,-7.89 4.38,0 7.89,3.51 7.89,7.89 0,4.38 -3.51,7.89 -7.89,7.89zm-7.89 -71l-94.66 0 0 31.56 94.66 0 0 -31.56z"/>
- </g>
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="158px" height="142px" viewBox="0 0 158 142" enable-background="new 0 0 158 142" xml:space="preserve">
+<g id="Слой_x0020_1">
+	<path fill="#59361B" d="M134.221,39.44H23.78c-13.06,0-23.67,10.61-23.67,23.67v47.33h31.56V142h94.66v-31.561h31.561V63.11
+		C157.891,50.05,147.279,39.44,134.221,39.44z M110.561,126.221H47.44V86.779h63.121V126.221L110.561,126.221z M134.221,71
+		c-4.381,0-7.891-3.51-7.891-7.89s3.51-7.89,7.891-7.89c4.379,0,7.889,3.51,7.889,7.89S138.6,71,134.221,71z M126.33,0H31.67v31.56
+		h94.66V0z"/>
+</g>
 </svg>
