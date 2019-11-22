@@ -1,99 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="290px" height="13px" viewBox="0 0 290 13" enable-background="new 0 0 290 13" xml:space="preserve">
-<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00        ">
-   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-      <rdf:Description rdf:about=""
-            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
-            xmlns:xmpGImg="http://ns.adobe.com/xap/1.0/g/img/">
-         <xmp:CreatorTool>Adobe Illustrator CS5.1</xmp:CreatorTool>
-         <xmp:CreateDate>2019-10-08T12:39:36+03:00</xmp:CreateDate>
-         <xmp:Thumbnails>
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="290px" height="13px" viewBox="0 0 290 13" enable-background="new 0 0 290 13" xml:space="preserve">
+  <metadata>
+    <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00        ">
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpGImg="http://ns.adobe.com/xap/1.0/g/img/">
+          <xmp:CreatorTool>Adobe Illustrator CS5.1</xmp:CreatorTool>
+          <xmp:CreateDate>2019-10-08T12:39:36+03:00</xmp:CreateDate>
+          <xmp:Thumbnails>
             <rdf:Alt>
-               <rdf:li rdf:parseType="Resource">
-                  <xmpGImg:width>256</xmpGImg:width>
-                  <xmpGImg:height>12</xmpGImg:height>
-                  <xmpGImg:format>JPEG</xmpGImg:format>
-                  <xmpGImg:image>/9j/4AAQSkZJRgABAgEASABIAAD/7QAsUGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAASAAAAAEA&#xA;AQBIAAAAAQAB/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoK&#xA;DBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8f&#xA;Hx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgADAEAAwER&#xA;AAIRAQMRAf/EAaIAAAAHAQEBAQEAAAAAAAAAAAQFAwIGAQAHCAkKCwEAAgIDAQEBAQEAAAAAAAAA&#xA;AQACAwQFBgcICQoLEAACAQMDAgQCBgcDBAIGAnMBAgMRBAAFIRIxQVEGE2EicYEUMpGhBxWxQiPB&#xA;UtHhMxZi8CRygvElQzRTkqKyY3PCNUQnk6OzNhdUZHTD0uIIJoMJChgZhJRFRqS0VtNVKBry4/PE&#xA;1OT0ZXWFlaW1xdXl9WZ2hpamtsbW5vY3R1dnd4eXp7fH1+f3OEhYaHiImKi4yNjo+Ck5SVlpeYmZ&#xA;qbnJ2en5KjpKWmp6ipqqusra6voRAAICAQIDBQUEBQYECAMDbQEAAhEDBCESMUEFURNhIgZxgZEy&#xA;obHwFMHR4SNCFVJicvEzJDRDghaSUyWiY7LCB3PSNeJEgxdUkwgJChgZJjZFGidkdFU38qOzwygp&#xA;0+PzhJSktMTU5PRldYWVpbXF1eX1RlZmdoaWprbG1ub2R1dnd4eXp7fH1+f3OEhYaHiImKi4yNjo&#xA;+DlJWWl5iZmpucnZ6fkqOkpaanqKmqq6ytrq+v/aAAwDAQACEQMRAD8A7TN531gX7SJxW3VqC2Ki&#xA;nEHu1OVfpzjZ9u5/EsVw/wA39vN6OPZeLgo/V3s/RuSK1KcgDQ9q52MTYt50ii33wodirRPxBfEE&#xA;1+WKrLhzFBJKoqY1L06VoK0wxFmmMjQtUHTAycTQE+GKtcBSh3Pj3xTbYr3xQtlfhE70rxUtTxoK&#xA;5GcqBKYizS6mSQ0DUkeBp+FcAKVo5OqtyKkgHjtT6e+SYugkMkKSMvEsoJWtaE++2JFFYmw6VmHE&#xA;LtyYAt4Dr/ZkJEpXBQvSv0kn9eGqVsmgwq7FXYqotK31tYSvwGMvy8SCBT6K4L3Z16b81VjQV+Q+&#xA;84WIbxQ4mgxKuoP7cFK7CrRPxAeIJ+6mKrS5EqpSoZWavhxIH8cNbIvdq4eRI6xryYsi/IMwUt/s&#xA;Qa4GcQCd1wTiSQSSetSTii12KHYqxmf/AAX+mj6vD65z+P7fpepX9r9ivj28c0OT8h4+9cd+dX9z&#xA;tYfmvC2+n4XX3smzfOqUpKep8PL1KCvCnSvfltkJc/NV8VOApWn+VWv44Y8lbam3j2ySrJ+HEc68&#xA;KjlTp9PtX/OmEIkqYEuxVShr9WFPU6Hjzpzp2rXv/rfTiylzVFpx2/zPfFBbanE8ulN6+GAoC1Ps&#xA;d/bl1/z+eCPJJ5trSm2EILTV96d6U/28khcKUHHp2p0pgS5qU36YCrQp7/TXFWz0wq0KV7+1cUt4&#xA;oUp+Hw1r6lf3fH7Vadq7fftgLKNui5V+PnXtz4/8aYhZeSrhYuOKrRy9L9rlT/J5V/4jkd6/H9jL&#xA;quyTFbJ9navL9nj1/Hb78IQVsVKmvL1KDlypWn0bfdiUBUNKGvTvgZNCle/44q3irtq4q//Z</xmpGImg:image>
-               </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <xmpGImg:width>256</xmpGImg:width>
+                <xmpGImg:height>12</xmpGImg:height>
+                <xmpGImg:format>JPEG</xmpGImg:format>
+                <xmpGImg:image>/9j/4AAQSkZJRgABAgEASABIAAD/7QAsUGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAASAAAAAEA&#xA;AQBIAAAAAQAB/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoK&#xA;DBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8f&#xA;Hx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgADAEAAwER&#xA;AAIRAQMRAf/EAaIAAAAHAQEBAQEAAAAAAAAAAAQFAwIGAQAHCAkKCwEAAgIDAQEBAQEAAAAAAAAA&#xA;AQACAwQFBgcICQoLEAACAQMDAgQCBgcDBAIGAnMBAgMRBAAFIRIxQVEGE2EicYEUMpGhBxWxQiPB&#xA;UtHhMxZi8CRygvElQzRTkqKyY3PCNUQnk6OzNhdUZHTD0uIIJoMJChgZhJRFRqS0VtNVKBry4/PE&#xA;1OT0ZXWFlaW1xdXl9WZ2hpamtsbW5vY3R1dnd4eXp7fH1+f3OEhYaHiImKi4yNjo+Ck5SVlpeYmZ&#xA;qbnJ2en5KjpKWmp6ipqqusra6voRAAICAQIDBQUEBQYECAMDbQEAAhEDBCESMUEFURNhIgZxgZEy&#xA;obHwFMHR4SNCFVJicvEzJDRDghaSUyWiY7LCB3PSNeJEgxdUkwgJChgZJjZFGidkdFU38qOzwygp&#xA;0+PzhJSktMTU5PRldYWVpbXF1eX1RlZmdoaWprbG1ub2R1dnd4eXp7fH1+f3OEhYaHiImKi4yNjo&#xA;+DlJWWl5iZmpucnZ6fkqOkpaanqKmqq6ytrq+v/aAAwDAQACEQMRAD8A7TN531gX7SJxW3VqC2Ki&#xA;nEHu1OVfpzjZ9u5/EsVw/wA39vN6OPZeLgo/V3s/RuSK1KcgDQ9q52MTYt50ii33wodirRPxBfEE&#xA;1+WKrLhzFBJKoqY1L06VoK0wxFmmMjQtUHTAycTQE+GKtcBSh3Pj3xTbYr3xQtlfhE70rxUtTxoK&#xA;5GcqBKYizS6mSQ0DUkeBp+FcAKVo5OqtyKkgHjtT6e+SYugkMkKSMvEsoJWtaE++2JFFYmw6VmHE&#xA;LtyYAt4Dr/ZkJEpXBQvSv0kn9eGqVsmgwq7FXYqotK31tYSvwGMvy8SCBT6K4L3Z16b81VjQV+Q+&#xA;84WIbxQ4mgxKuoP7cFK7CrRPxAeIJ+6mKrS5EqpSoZWavhxIH8cNbIvdq4eRI6xryYsi/IMwUt/s&#xA;Qa4GcQCd1wTiSQSSetSTii12KHYqxmf/AAX+mj6vD65z+P7fpepX9r9ivj28c0OT8h4+9cd+dX9z&#xA;tYfmvC2+n4XX3smzfOqUpKep8PL1KCvCnSvfltkJc/NV8VOApWn+VWv44Y8lbam3j2ySrJ+HEc68&#xA;KjlTp9PtX/OmEIkqYEuxVShr9WFPU6Hjzpzp2rXv/rfTiylzVFpx2/zPfFBbanE8ulN6+GAoC1Ps&#xA;d/bl1/z+eCPJJ5trSm2EILTV96d6U/28khcKUHHp2p0pgS5qU36YCrQp7/TXFWz0wq0KV7+1cUt4&#xA;oUp+Hw1r6lf3fH7Vadq7fftgLKNui5V+PnXtz4/8aYhZeSrhYuOKrRy9L9rlT/J5V/4jkd6/H9jL&#xA;quyTFbJ9navL9nj1/Hb78IQVsVKmvL1KDlypWn0bfdiUBUNKGvTvgZNCle/44q3irtq4q//Z</xmpGImg:image>
+              </rdf:li>
             </rdf:Alt>
-         </xmp:Thumbnails>
-      </rdf:Description>
-      <rdf:Description rdf:about=""
-            xmlns:xmpTPg="http://ns.adobe.com/xap/1.0/t/pg/"
-            xmlns:stDim="http://ns.adobe.com/xap/1.0/sType/Dimensions#"
-            xmlns:xmpG="http://ns.adobe.com/xap/1.0/g/">
-         <xmpTPg:MaxPageSize rdf:parseType="Resource">
+          </xmp:Thumbnails>
+        </rdf:Description>
+        <rdf:Description rdf:about="" xmlns:xmpTPg="http://ns.adobe.com/xap/1.0/t/pg/" xmlns:stDim="http://ns.adobe.com/xap/1.0/sType/Dimensions#" xmlns:xmpG="http://ns.adobe.com/xap/1.0/g/">
+          <xmpTPg:MaxPageSize rdf:parseType="Resource">
             <stDim:w>290.000000</stDim:w>
             <stDim:h>13.000000</stDim:h>
             <stDim:unit>Pixels</stDim:unit>
-         </xmpTPg:MaxPageSize>
-         <xmpTPg:NPages>1</xmpTPg:NPages>
-         <xmpTPg:HasVisibleTransparency>True</xmpTPg:HasVisibleTransparency>
-         <xmpTPg:HasVisibleOverprint>False</xmpTPg:HasVisibleOverprint>
-         <xmpTPg:PlateNames>
+          </xmpTPg:MaxPageSize>
+          <xmpTPg:NPages>1</xmpTPg:NPages>
+          <xmpTPg:HasVisibleTransparency>True</xmpTPg:HasVisibleTransparency>
+          <xmpTPg:HasVisibleOverprint>False</xmpTPg:HasVisibleOverprint>
+          <xmpTPg:PlateNames>
             <rdf:Seq>
-               <rdf:li>Cyan</rdf:li>
-               <rdf:li>Magenta</rdf:li>
-               <rdf:li>Yellow</rdf:li>
-               <rdf:li>Black</rdf:li>
+              <rdf:li>Cyan</rdf:li>
+              <rdf:li>Magenta</rdf:li>
+              <rdf:li>Yellow</rdf:li>
+              <rdf:li>Black</rdf:li>
             </rdf:Seq>
-         </xmpTPg:PlateNames>
-         <xmpTPg:SwatchGroups>
+          </xmpTPg:PlateNames>
+          <xmpTPg:SwatchGroups>
             <rdf:Seq>
-               <rdf:li rdf:parseType="Resource">
-                  <xmpG:groupName>Группа образцов по умолчанию</xmpG:groupName>
-                  <xmpG:groupType>0</xmpG:groupType>
-               </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <xmpG:groupName>Группа образцов по умолчанию</xmpG:groupName>
+                <xmpG:groupType>0</xmpG:groupType>
+              </rdf:li>
             </rdf:Seq>
-         </xmpTPg:SwatchGroups>
-      </rdf:Description>
-      <rdf:Description rdf:about=""
-            xmlns:dc="http://purl.org/dc/elements/1.1/">
-         <dc:format>image/svg+xml</dc:format>
-      </rdf:Description>
-   </rdf:RDF>
-</x:xmpmeta>
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
-<?xpacket end="w"?>
-	</metadata>
-<path fill="none" d="z"/>
-<image overflow="visible" enable-background="new    " width="290" height="13" id="Объект_738" xlink:href="C742CED6.png" >
-</image>
-<circle fill="#F7A93B" cx="4.833" cy="6.916" r="4.5"/>
-<circle fill="#FFFFFF" cx="25.75" cy="6.667" r="4.583"/>
-<circle fill="#FFFFFF" cx="123" cy="7.33" r="4.583"/>
-<circle fill="#FFFFFF" cx="244.999" cy="6.915" r="4.583"/>
-<circle fill="#FFFFFF" cx="265.833" cy="6.5" r="4.583"/>
-<circle fill="#FFFFFF" cx="147.5" cy="6.5" r="4.583"/>
-<circle fill="#FFFFFF" cx="165.5" cy="6.916" r="4.375"/>
-<circle fill="#FFFFFF" cx="286.108" cy="6.624" r="3.892"/>
-<circle fill="#FFFFFF" cx="47.583" cy="6.917" r="5.999"/>
-<circle fill="#FFFFFF" cx="77.917" cy="6.916" r="5.999"/>
-<circle fill="#FFFFFF" cx="192.083" cy="6" r="6"/>
-<circle fill="#FFFFFF" cx="222.083" cy="6.916" r="6"/>
-<circle fill="#FFFFFF" cx="105.167" cy="6.916" r="5.999"/>
+          </xmpTPg:SwatchGroups>
+        </rdf:Description>
+        <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/">
+          <dc:format>image/svg+xml</dc:format>
+        </rdf:Description>
+      </rdf:RDF>
+    </x:xmpmeta>
+    <?xpacket end="w"?>
+  </metadata>
+  <path fill="none" d="z" />
+  <image overflow="visible" enable-background="new    " width="290" height="13" id="Объект_738" xlink:href="C742CED6.png">
+  </image>
+  <circle fill="#F7A93B" cx="4.833" cy="6.916" r="4.5" />
+  <circle fill="#FFFFFF" cx="25.75" cy="6.667" r="4.583" />
+  <circle fill="#FFFFFF" cx="123" cy="7.33" r="4.583" />
+  <circle fill="#FFFFFF" cx="244.999" cy="6.915" r="4.583" />
+  <circle fill="#FFFFFF" cx="265.833" cy="6.5" r="4.583" />
+  <circle fill="#FFFFFF" cx="147.5" cy="6.5" r="4.583" />
+  <circle fill="#FFFFFF" cx="165.5" cy="6.916" r="4.375" />
+  <circle fill="#FFFFFF" cx="286.108" cy="6.624" r="3.892" />
+  <circle fill="#FFFFFF" cx="47.583" cy="6.917" r="5.999" />
+  <circle fill="#FFFFFF" cx="77.917" cy="6.916" r="5.999" />
+  <circle fill="#FFFFFF" cx="192.083" cy="6" r="6" />
+  <circle fill="#FFFFFF" cx="222.083" cy="6.916" r="6" />
+  <circle fill="#FFFFFF" cx="105.167" cy="6.916" r="5.999" />
 </svg>
