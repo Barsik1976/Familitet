@@ -18,7 +18,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .information {
     flex-direction: column;
     width: 440px;
@@ -36,7 +36,7 @@
 }
 
 @media (max-width: @mobile-width) {
-  .information--history {
+  .information--about {
     margin-top: 30px;
   }
 }
@@ -62,7 +62,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .information__content {
     width: 440px;
   }
@@ -74,7 +74,7 @@
   }
 }
 
-.information__content--history,
+.information__content--about,
 .information__content--people {
   display: flex;
   flex-direction: column;
@@ -91,15 +91,15 @@
 }
 
 @media (max-width: 1196px) and (min-width: 781px) {
-  .information__content--history,
+  .information__content--about,
   .information__content--people {
     width: 720px;
     order: 2;
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
-  .information__content--history,
+@media (max-width: 780px) and (min-width: 481px) {
+  .information__content--about,
   .information__content--people {
     width: 440px;
     order: 2;
@@ -107,7 +107,7 @@
 }
 
 @media (max-width: @mobile-width) {
-  .information__content--history,
+  .information__content--about,
   .information__content--people {
     width: 300px;
     order: 2;
@@ -128,14 +128,14 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .information__content--page-baza {
     width: 440px;
     margin-top: 560px;
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .information__content--page-program {
     width: 440px;
     margin-top: 580px;
@@ -156,7 +156,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .information__content--form {
     width: 440px;
   }
@@ -168,102 +168,13 @@
   }
 }
 
-.information__title {
-  font-family: AntiQuasi;
-  font-size: 42px;
-  line-height: 45px;
-  font-weight: normal;
-  letter-spacing: -0.1px;
-  text-align: left;
-  color: #59361b;
-  margin: 0;
-  margin-bottom: 27px;
-}
 
-@media (max-width: @mobile-width) {
-  .information__title {
-    font-size: 38px;
-    line-height: 42px;
-    margin-bottom: 27px;
-  }
-}
 
-@media (max-width: 1196px) and (min-width: 781px) {
-  .information__title--baza-tablet {
-    width: 550px;
-  }
-}
 
-.information__subtitle {
-  font-family: AntiQuasi;
-  font-size: 38px;
-  line-height: 42px;
-  letter-spacing: -0.1px;
-  text-align: left;
-  color: #59361b;
-  margin: 0;
-  margin-bottom: 27px;
-}
 
-.information__text {
-  font-family: "Helios";
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 300;
-  letter-spacing: -0.3px;
-  text-align: left;
-  color: #59361b;
-  margin: 0;
-  margin-bottom: 32px;
-}
 
-.information__text--history {
-  margin-bottom: 62px;
-}
 
-.information__text--baza,
-.information__text--program {
-  font-size: 20px;
-  line-height: 24px;
-}
 
-.information__text--form {
-  margin-bottom: 0;
-}
-
-.information__text--baza span {
-  font-family: "Helios";
-  font-weight: 700;
-}
-
-.information__text--pay span {
-  font-family: "Helios";
-  font-weight: 700;
-  color: #d71c6d;
-}
-
-.information__link {
-  display: inline-block;
-  font-family: "Helios";
-  font-size: 24px;
-  font-weight: 300;
-  color: #59a8dd;
-  cursor: pointer;
-}
-
-.information__link--desc {
-  margin-bottom: 35px;
-}
-
-@media (max-width: @tablet-width) and (min-width: 481px) {
-  .information__text--subscription {
-    margin-bottom: 0;
-  }
-}
-
-.information__image {
-  margin-bottom: 50px;
-}
 
 .information__person {
   margin-top: 18px;
@@ -276,7 +187,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .information__person {
     width: 480px;
   }
@@ -304,7 +215,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .information__person-item {
     width: 440px;
     margin-left: 0;
@@ -330,7 +241,7 @@
 }
 
 .information__person-name {
-  font-family: AntiQuasi;
+  font-family: "AntiQuasi";
   font-size: 25px;
   line-height: 25px;
   font-weight: normal;
@@ -351,7 +262,7 @@
 }
 
 .information__person-work {
-  font-family: AntiQuasi;
+  font-family: "AntiQuasi";
   font-size: 14px;
   line-height: 20px;
   text-align: left;
@@ -362,16 +273,13 @@
   margin-bottom: 20px;
 }
 
-@media (max-width: @mobile-width) {
-  .information__subtitle,
-  .information__subtitle--person-subtitle {
-    font-size: 34px;
-    line-height: 36px;
-  }
-}
+
+
+
+
 
 .information__text--person-description1 {
-  font-family: Helios;
+  font-family: inherit;
   font-size: 17px;
   line-height: 24px;
   font-weight: 300;
@@ -403,7 +311,7 @@
 }
 
 .information__text--person-description2 {
-  font-family: Helios;
+  font-family: inherit;
   font-size: 17px;
   line-height: 24px;
   font-weight: 300;
@@ -479,7 +387,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .information__person-item::before {
     display: block;
     position: absolute;
@@ -512,68 +420,9 @@
   margin-bottom: 23px;
 }
 
-.information__list-program {
-  position: relative;
-  font-family: "Helios";
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 300;
-  color: #59361b;
-  list-style: none;
-  margin: 0;
-  margin-bottom: 30px;
-  padding-left: 25px;
-}
 
-.information__program::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  border-radius: 50%;
-  margin-top: 7px;
-}
 
-.information__program--1::before {
-  width: 9px;
-  height: 9px;
-  background-color: #f7a93b;
-}
 
-.information__program--2::before {
-  width: 11px;
-  height: 11px;
-  background-color: #c4d985;
-}
-
-.information__program--3::before {
-  width: 14px;
-  height: 14px;
-  background-color: #59a8dd;
-}
-
-.information__program--4::before {
-  width: 14px;
-  height: 14px;
-  background-color: #d71c6d;
-}
-
-.information__program--5::before {
-  width: 14px;
-  height: 14px;
-  background-color: #f7a93b;
-}
-
-.information__program--6::before {
-  width: 11px;
-  height: 11px;
-  background-color: #59a8dd;
-}
-
-.information__program--7::before {
-  width: 11px;
-  height: 11px;
-  background-color: #c4d985;
-}
 
 .information__content a[href] {
   &:focus,

@@ -1,0 +1,50 @@
+.button-record {
+  display: block;
+  width: 362px;
+  height: 94px;
+  font-family: "AntiQuasi";
+  font-size: 50px;
+  line-height: 94px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #d71c6d;
+  border-radius: 50px;
+  white-space: normal;
+  border: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 780px) and (min-width: 481px) {
+  .button-record {
+    font-size: 35px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .button-record {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .button-record {
+    width: 280px;
+    font-size: 35px;
+    margin-top: 20px;
+  }
+}
+
+.button-record {
+  &:hover,
+  &:focus {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #a51b57;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.2);
+  }
+}

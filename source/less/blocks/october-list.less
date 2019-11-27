@@ -1,0 +1,56 @@
+.october-list {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 780px) and (min-width: 481px) {
+  .october-list {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .october-list {
+    flex-direction: column;
+  }
+}
+
+.october-list__item {
+  position: relative;
+  font-family: "AntiQuasi";
+  font-size: 42px;
+  line-height: 45px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.october-list__item::after {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  content: url("../img/star-date.svg");
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+}
+
+@media (max-width: @mobile-width) {
+  .october-list__item::after {
+    top: -28px;
+    left: calc(50% - 95px / 2);
+  }
+}
+
+.october-list__month {
+  display: block;
+  font-family: "AntiQuasi";
+  font-size: 24px;
+  line-height: 30px;
+  color: #70b4a7;
+  text-align: center;
+  margin: 0;
+  margin-top: 23px;
+}

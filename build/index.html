@@ -10,14 +10,14 @@
   <link rel="preload" href="fonts/helioslight-webfont.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="bubbles-main">
+<body class="bubbles bubbles__main">
   <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__communication communication">
         <p class="communication__number">+7 (4912) <span>95-24-55</span><br> +7 (4912) <span>99-51-36</span></p>
         <a class="communication__adress-scheme" href="#">Адрес и схема проезда</a>
       </div>
-      <a class="main-nav__logo-link" href="index.html" title="логотип фамилитет">
+      <a class="logo" href="index.html" title="логотип фамилитет">
         <!--
         <picture>
           <source type="image/webp" media="(max-width: 480px)" srcset="img/logo_familitet-mobile@1x.webp 1x, img/logo_familitet-mobile@2x.webp 2x">
@@ -27,11 +27,11 @@
           <source media="(max-width: 768px)" srcset="img/logo_familitet-tablet@1x.png 1x, img/logo_familitet-tablet@2x.png 2x">
         </picture>
       -->
-        <img class="main-nav__logo-img" src="img/logo.svg" srcset="img/logo.svg" alt="логотип фамилитета" width="300" height="130">
+        <img class="logo__img" src="img/logo.svg" srcset="img/logo.svg" alt="логотип фамилитета" width="300" height="130">
       </a>
-      <p class="main-nav__center">Центр семейного<br> развития</p>
+      <p class="logo__under-logo">Центр семейного<br> развития</p>
       <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Открыть меню"></button>
-      <ul class="main-nav__list site-list">
+      <ul class="site-list">
         <li>
           <a class="site-list__link" href="about_familitet.html">Всё о нас</a>
           <p class="site-list__content">Работаем с 2011 года</p>
@@ -49,24 +49,24 @@
   </header>
   <main class="page-main">
     <div class="information">
-      <section class="information__content">
-        <h1 class="information__title">Для своего ребёнка вы — самые лучшие мама и папа на свете!</h1>
-        <p class="information__text">Вы хотите, чтобы он родился здоровым, рос сильным, был умным, талантливым и счастливым. Это действительно в ваших руках.</p>
-        <p class="information__text">Вместе с «Фамилитетом» познавайте увлекательную науку и самое важное<br> из искусств – быть родителями!</p>
-        <a class="information__link information__link--desc" href="about_familitet.html">Подробно о нашем центре</a>
-        <p class="information__text information__text--subscription">Подписывайтесь: <a class="information__link" href="https://vk.com">ВКонтакте</a> и <a class="information__link" href="https://www.instagram.com/?hl=ru">Инстаграме</a>
+      <section class="basic-article">
+        <h1 class="basic-article__title">Для своего ребёнка вы — самые лучшие мама и папа на свете!</h1>
+        <p class="basic-article__text">Вы хотите, чтобы он родился здоровым, рос сильным, был умным, талантливым и счастливым. Это действительно в ваших руках.</p>
+        <p class="basic-article__text">Вместе с «Фамилитетом» познавайте увлекательную науку и самое важное<br> из искусств – быть родителями!</p>
+        <a class="basic-article__link basic-article__link--desc" href="about_familitet.html">Подробно о нашем центре</a>
+        <p class="basic-article__text basic-article__text--subscription">Подписывайтесь: <a class="basic-article__link" href="https://vk.com">ВКонтакте</a> и <a class="basic-article__link" href="https://www.instagram.com/?hl=ru">Инстаграме</a>
         </p>
       </section>
       <div class="calendar">
-        <article class="calendar__list">
-          <p class="calendar__data calendar__data--data1">29 <span class="calendar__month">сентября</span> </p>
+        <article class="september-list">
+          <p class="september-list__item">29 <span class="september-list__month">сентября</span> </p>
           <section class="calendar__item meeting">
             <h4 class="meeting__title meeting__title--title1">Встреча с неонатологом</h4>
             <p class="meeting__text">Приглашаем всех желающих на однодневный семинар, который проведёт кандидат медицинских наук, практикующий неонатолог Наталья Римская. Начало в 17.00.</p>
           </section>
         </article>
-        <article class="calendar__list">
-          <p class="calendar__data calendar__data--data2">1 <span class="calendar__month calendar__month--october">октября</span> </p>
+        <article class="october-list">
+          <p class="october-list__item">1 <span class="october-list__month">октября</span> </p>
           <section class="calendar__item meeting meeting--october">
             <h4 class="meeting__title meeting__title--title2">Женский круг с Татьяной Гшвенд</h4>
             <p class="meeting__text">Теория йогатерапевтические приёмы для здоровья молочных желёз. Начало в 11.00.</p>
@@ -75,10 +75,9 @@
       </div>
     </div>
     <div class="progress">
-      <div class="progress__wrapper">
-        <div class="progress__wrapp-blocks progress__wrapp-blocks--diplom">
-          <article class="progress__list">
-            <p class="progress__lead"><span>8 лет</span> отвечаем на вопрос:<br> «Как родить без боли?»</p>
+      <div class="progress__wrapper progress__wrapper--main">
+          <article class="list-program">
+            <p class="list-program__statistics"><span>8 лет</span> отвечаем на вопрос:<br> «Как родить без боли?»</p>
             <div class="features features--pregnant">
               <div class="features__block-title">
                 <a class="features__title" href="baza_familitet.html">Беременным</a>
@@ -115,8 +114,8 @@
               </ul>
             </div>
           </article>
-          <article class="progress__list">
-            <p class="progress__lead"><span>1447</span> молодых семей научили быть родителями</p>
+          <article class="list-program">
+            <p class="list-program__statistics"><span>1447</span> молодых семей научили быть родителями</p>
             <div class="features features--young-mother">
               <div class="features__block-title">
                 <a class="features__title" href="program_familitet.html">Молодым мамам</a>
@@ -156,8 +155,8 @@
               </ul>
             </div>
           </article>
-          <article class="progress__list">
-            <p class="progress__lead"><span>468</span> человек повзрослели вместе с нами</p>
+          <article class="list-program">
+            <p class="list-program__statistics"><span>468</span> человек повзрослели вместе с нами</p>
             <div class="features features--kids">
               <div class="features__block-title">
                 <a class="features__title" href="baby_familitet.html">Малышам</a>
@@ -197,8 +196,8 @@
               </ul>
             </div>
           </article>
-          <article class="progress__list progress__list--diploma">
-            <p class="progress__lead"><span>576</span> дипломов выдано будущим мамам!</p>
+          <article class="list-program">
+            <p class="list-program__statistics"><span>576</span> дипломов выдано будущим мамам!</p>
           </article>
         </div>
         <article class="discount">
@@ -206,9 +205,8 @@
             <p class="discount__percent"> <span>15%</span> скидка</p>
             <p class="discount__desc">Многодетным семьям, одиноким мамам и родителям-студентам на группов</p>
           </div>
-          <a class="discount__btn button button--writeus" href="form.html">Записаться!</a>
+          <a class="button-record" href="form.html">Записаться!</a>
         </article>
-      </div>
     </div>
   </main>
   <footer class="page-footer">
@@ -220,17 +218,17 @@
         </p>
       </div>
       <a class="contact__information" href="#contact">Контактная информация</a>
-      <ul class="contact__social-list">
-        <li class="contact__social-item">
-          <a class="contact__social-link contact__social-link--vkontakte" href="#vkontakte">
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a class="social-icon__link social-icon__link--vkontakte" href="#vkontakte">
             <span class="visually-hidden">Мы в контакте</span>
             <svg width="22" height="13">
               <use xlink:href="img/symbols.svg#vk"></use>
             </svg>
           </a>
         </li>
-        <li class="contact__social-item">
-          <a class="contact__social-link contact__social-link--instagram" href="#instagram">
+        <li class="social-icon__item">
+          <a class="social-icon__link social-icon__link--instagram" href="#instagram">
             <span class="visually-hidden">Мы в инстаграм</span>
             <svg width="19" height="19">
               <use xlink:href="img/symbols.svg#instagram"></use>

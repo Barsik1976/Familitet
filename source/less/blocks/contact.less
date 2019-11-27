@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 109px;
+  padding-bottom: 109px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 45px;
@@ -16,7 +16,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .contact {
     width: 440px;
     text-align: center;
@@ -33,11 +33,10 @@
 }
 
 .contact--page-about {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .contact--page-people {
-  margin-bottom: 0;
   padding-bottom: 50px;
 }
 
@@ -51,7 +50,13 @@
   margin-bottom: 14px;
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
+  .contact__text {
+    text-align: center;
+  }
+}
+
+@media (max-width: @mobile-width) {
   .contact__text {
     text-align: center;
   }
@@ -62,6 +67,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-align: center;
 }
 
 @media (max-width: 1196px) and (min-width: 781px) {
@@ -70,7 +76,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .contact__item {
     width: 440px;
     flex-direction: column;
@@ -89,41 +95,6 @@
   display: block;
 }
 
-.contact__social-list {
-  position: relative;
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-}
-
-@media (max-width: @tablet-width) and (min-width: 481px) {
-  .contact__social-list {
-    justify-content: center;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .contact__social-list {
-    justify-content: center;
-  }
-}
-
-.contact__social-link {
-  display: flex;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  margin-right: 5px;
-  background-color: #59361b;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact__social-link svg {
-  fill: #ffffff;
-}
-
 .contact__information {
   display: block;
   font-size: 16px;
@@ -135,17 +106,6 @@
 .contact__information--our-business {
   display: inline-block;
   text-decoration: underline;
-}
-
-.contact__social-item a[href] {
-  &:hover,
-  &:focus {
-    background-color: #a51b57;
-  }
-
-  &:active {
-    background-color: #811645;
-  }
 }
 
 .contact a[href] {

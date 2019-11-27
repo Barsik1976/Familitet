@@ -1,3 +1,17 @@
+.features {
+  width: 260px;
+}
+
+@media (max-width: 780px) and (min-width: 481px) {
+  .features {
+     width: 200px;
+  }
+}
+
+
+
+
+
 @media (max-width: @mobile-width) {
   .features a
   .features p {
@@ -34,7 +48,7 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .features--pregnant::before {
     background: url(../img/pregnancy.svg);
     background-size: 85% 85%;
@@ -42,7 +56,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .features--young-mother::before {
     background: url("../img/young-mother.svg");
     background-size: 85% 85%;
@@ -50,7 +64,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .features--kids::before {
     background: url("../img/baby.svg");
     background-size: 85% 85%;
@@ -84,7 +98,7 @@
 
 .features__title {
   display: block;
-  font-family: AntiQuasi;
+  font-family: "AntiQuasi";
   font-size: 33px;
   line-height: 33px;
   text-align: left;
@@ -109,7 +123,7 @@
 }
 
 .features__item {
-  font-family: "Helios";
+  font-family: inherit;
   font-size: 20px;
   line-height: 30px;
   font-weight: 300;
@@ -118,7 +132,7 @@
   color: #59361b;
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .features__item {
     font-size: 18px;
     line-height: 24px;
@@ -165,7 +179,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .features--baza-nav {
     width: 100%;
     flex-direction: column;
@@ -182,7 +196,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .features__block-title {
     margin-top: 20px;
   }
@@ -225,7 +239,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .features--pregnant-baza,
   .features--young-mother-program {
     position: absolute;

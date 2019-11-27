@@ -16,7 +16,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .progress {
     background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 96%, transparent);
     background-repeat: repeat-x, repeat-x, repeat-x;
@@ -34,7 +34,7 @@
   }
 }
 
-.progress--page-history {
+.progress--page-about {
   position: relative;
   background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 90%, transparent);
   background-repeat: repeat-x, repeat-x, repeat-x;
@@ -44,7 +44,7 @@
 }
 
 @media (max-width: 1196px) and (min-width: 781px) {
-  .progress--page-history {
+  .progress--page-about {
     background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 90%, transparent);
     background-repeat: repeat-x, repeat-x, repeat-x;
     background-position: 0 0, 0 605px, 0 670px, 0 0;
@@ -52,17 +52,17 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
-  .progress--page-history {
+@media (max-width: 780px) and (min-width: 481px) {
+  .progress--page-about {
     background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 90%, transparent);
     background-repeat: repeat-x, repeat-x, repeat-x;
-    background-position: 0 0, 0 730px, 0 795px, 0 0;
-    min-height: 1060px;
+    background-position: 0 0, 0 770px, 0 830px, 0 0;
+    min-height: 1095px;
   }
 }
 
 @media (max-width: @mobile-width) {
-  .progress--page-history {
+  .progress--page-about {
     background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 96%, transparent);
     background-repeat: repeat-x, repeat-x, repeat-x;
     background-position: 0 0, 0 1100px, 0 1160px, 0 0;
@@ -87,7 +87,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .progress--people {
     position: relative;
     background: url("../img/wave-center-people.png"), url("../img/wave-center-people.png"), url("../img/background-circles.png"), linear-gradient(to top, #f6f0f7 96%, transparent);
@@ -125,7 +125,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
+@media (max-width: 780px) and (min-width: 481px) {
   .progress--page-baza {
     background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 90%, transparent);
     background-repeat: repeat-x, repeat-x, repeat-x;
@@ -144,35 +144,6 @@
 }
 
 .progress__wrapper {
-  width: 1140px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media (max-width: 1196px) and (min-width: 781px) {
-  .progress__wrapper {
-    width: 720px;
-  }
-}
-
-@media (max-width: @tablet-width) and (min-width: 481px) {
-  .progress__wrapper {
-    width: 440px;
-    padding-top: 0;
-    padding-bottom: 20px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .progress__wrapper {
-    width: 300px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-.progress__wrapp-blocks {
   position: relative;
   width: 1140px;
   display: flex;
@@ -180,41 +151,52 @@
   justify-content: space-between;
   padding-top: 65px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (max-width: 1196px) and (min-width: 781px) {
-  .progress__wrapp-blocks {
-    flex-wrap: wrap;
+  .progress__wrapper {
     width: 620px;
+    flex-wrap: wrap;
     padding-top: 20px;
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
-  .progress__wrapp-blocks {
+@media (max-width: 780px) and (min-width: 481px) {
+  .progress__wrapper {
     width: 440px;
-    justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 15px;
+    padding-top: 45px;
+    padding-bottom: 20px;
   }
 }
 
 @media (max-width: @mobile-width) {
-  .progress__wrapp-blocks {
-    width: 260px;
+  .progress__wrapper {
+    width: 300px;
+    flex-wrap: wrap;
     flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 15px;
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
-  .progress__wrapp-blocks--page-history,
-  .progress__wrapp-blocks--page-baza {
+
+
+
+
+
+
+@media (max-width: 780px) and (min-width: 481px) {
+  .progress__wrapper--page-about,
+  .progress__wrapper--page-baza {
     padding-top: 45px;
   }
 }
 
-.progress__wrapp-blocks--diplom::after {
+.progress__wrapper--main::after {
   position: absolute;
   top: 120px;
   left: 800px;
@@ -222,14 +204,14 @@
 }
 
 @media (max-width: 1196px) and (min-width: 781px) {
-  .progress__wrapp-blocks--diplom::after {
+  .progress__wrapper--main::after {
     top: 1020px;
     left: 215px;
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
-  .progress__wrapp-blocks--diplom::after {
+@media (max-width:780px) and (min-width: 481px) {
+  .progress__wrapper--main::after {
     top: 1085px;
     left: 180px;
     content: url("../img/diploma-planshet.png");
@@ -237,92 +219,17 @@
 }
 
 @media (max-width: @mobile-width) {
-  .progress__wrapp-blocks--diplom::after {
+  .progress__wrapper--main::after {
     top: 2770px;
     left: -30px;
     content: url("../img/diploma-mobile.png");
   }
 }
 
-.progress__list {
-  width: 260px;
-}
 
-@media (max-width: 1196px) and (min-width: 781px) {
-  .progress__list {
-    margin-top: 55px;
-  }
-}
 
-@media (max-width: @tablet-width) and (min-width: 481px) {
-  .progress__list {
-    width: 200px;
-    margin-top: 55px;
-  }
-}
 
-@media (max-width: @mobile-width) {
-  .progress__list {
-    width: 260px;
-    margin-top: 75px;
-  }
-}
 
-@media (max-width: @mobile-width) {
-  .progress__list:first-of-type {
-    margin-top: 55px;
-  }
-}
-
-@media (max-width: 1196px) and (min-width: 781px) {
-  .progress__list--page-history,
-  .progress__list--person {
-    margin-top: 35px;
-  }
-}
-
-@media (max-width: @tablet-width) and (min-width: 481px) {
-  .progress__list--page-history {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .progress__list--page-history,
-  .progress__list--person {
-    width: 260px;
-    margin-top: 35px;
-  }
-}
-
-.progress__lead {
-  font-family: AntiQuasi;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: -0.3px;
-  text-align: left;
-  color: #d71c6d;
-  margin: 0;
-  margin-bottom: 38px;
-}
-
-@media (max-width: @tablet-width) and (min-width: 481px) {
-  .progress__lead {
-    min-height: 130px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .progress__lead {
-    min-height: 92px;
-  }
-}
-
-.progress__lead span {
-  display: block;
-  font-size: 75px;
-  margin-bottom: 30px;
-}
 
 .progress__icon {
   margin-top: 38px;
