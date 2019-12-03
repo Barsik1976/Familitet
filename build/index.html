@@ -18,18 +18,11 @@
         <a class="communication__adress-scheme" href="#">Адрес и схема проезда</a>
       </div>
       <a class="logo" href="index.html" title="логотип фамилитет">
-        <!--
-        <picture>
-          <source type="image/webp" media="(max-width: 480px)" srcset="img/logo_familitet-mobile@1x.webp 1x, img/logo_familitet-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 768px)" srcset="img/logo_familitet-tablet@1x.webp 1x, img/logo_familitet-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/logo_familitet@1x.webp 1x, img/logo_familitet@2x.webp 2x">
-          <source media="(max-width: 480px)" srcset="img/logo_familitet-mobile@1x.png 1x, img/logo_familitet-mobile@2x.png 2x">
-          <source media="(max-width: 768px)" srcset="img/logo_familitet-tablet@1x.png 1x, img/logo_familitet-tablet@2x.png 2x">
-        </picture>
-      -->
-        <img class="logo__img" src="img/logo.svg" srcset="img/logo.svg" alt="логотип фамилитета" width="300" height="130">
+        <svg width="300" height="131">
+          <use xlink:href="img/symbols.svg#logo-familitet"></use>
+        </svg>
       </a>
-      <p class="logo__under-logo">Центр семейного<br> развития</p>
+      <p class="main-nav__under-logo">Центр семейного<br> развития</p>
       <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Открыть меню"></button>
       <ul class="site-list">
         <li>
@@ -79,9 +72,9 @@
           <article class="list-program">
             <p class="list-program__statistics"><span>8 лет</span> отвечаем на вопрос:<br> «Как родить без боли?»</p>
             <div class="features features--pregnant">
-              <div class="features__block-title">
-                <a class="features__title" href="baza_familitet.html">Беременным</a>
-                <p class="features__subtitle subtitle">Подготовка к родам</p>
+              <div class="header-features">
+                <a class="header-features__title" href="baza_familitet.html">Беременным</a>
+                <p class="header-features__subtitle subtitle">Подготовка к родам</p>
               </div>
               <ul class="features__list">
                 <li class="features__item">
@@ -117,9 +110,9 @@
           <article class="list-program">
             <p class="list-program__statistics"><span>1447</span> молодых семей научили быть родителями</p>
             <div class="features features--young-mother">
-              <div class="features__block-title">
-                <a class="features__title" href="program_familitet.html">Молодым мамам</a>
-                <p class="features__subtitle subtitle">Поддержка материнства</p>
+              <div class="header-features">
+                <a class="header-features__title" href="program_familitet.html">Молодым мамам</a>
+                <p class="header-features__subtitle subtitle">Поддержка материнства</p>
               </div>
               <ul class="features__list">
                 <li class="features__item features__item">
@@ -158,9 +151,9 @@
           <article class="list-program">
             <p class="list-program__statistics"><span>468</span> человек повзрослели вместе с нами</p>
             <div class="features features--kids">
-              <div class="features__block-title">
-                <a class="features__title" href="baby_familitet.html">Малышам</a>
-                <p class="features__subtitle subtitle">Развивающие занятия</p>
+              <div class="header-features">
+                <a class="header-features__title" href="baby_familitet.html">Малышам</a>
+                <p class="header-features__subtitle subtitle">Развивающие занятия</p>
               </div>
               <ul class="features__list">
                 <li class="features__item features__item">

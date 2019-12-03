@@ -31,7 +31,7 @@
   }
 }
 
-.schedule__list::after {
+.schedule::after {
   position: absolute;
   top: -25px;
   left: 385px;
@@ -43,13 +43,13 @@
 }
 
 @media (max-width: 1196px) and (min-width: 781px) {
-  .schedule__list::after {
+  .schedule::after {
     left: 355px;
   }
 }
 
 @media (max-width: 780px) and (min-width: 481px) {
-  .schedule__list::after {
+  .schedule::after {
     height: 1300px;
     background: url("../img/circles-line-vertical-tabl.svg");
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
 }
 
 @media (max-width: @mobile-width) {
-  .schedule__list::after {
+  .schedule::after {
     height: 1230px;
     background: url("../img/circles-line-vertical-mobile.svg");
     background-repeat: no-repeat;
@@ -66,18 +66,12 @@
   }
 }
 
-.schedule__list time {
+.schedule__time {
   font-family: "AntiQuasi";
   font-size: 16px;
   line-height: 20px;
   color: #59361b;
   margin-right: 25px;
-}
-
-@media (max-width: @mobile-width) {
-  .schedule__list time {
-    margin-right: 15px;
-  }
 }
 
 .schedule__item {
@@ -89,6 +83,12 @@
   padding-left: 28px;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@media (max-width: @mobile-width) {
+  .schedule__time {
+    margin-right: 15px;
+  }
 }
 
 .schedule__item--item1,
@@ -252,16 +252,16 @@
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
-  .schedule__item7::after {
-    left: -75px;
-  }
-}
-
 @media (max-width: @mobile-width) {
   .schedule__item::after {
     top: 15px;
     left: -55px;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 481px) {
+  .schedule__item7::after {
+    left: -75px;
   }
 }
 
@@ -270,10 +270,7 @@
 }
 
 .schedule__item {
-  &:focus {
-    opacity: 0.5;
-  }
-
+  &:focus,
   &:hover {
     opacity: 0.5;
   }

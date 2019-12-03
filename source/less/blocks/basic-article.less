@@ -119,23 +119,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .basic-article__title {
   font-family: "AntiQuasi";
   font-size: 42px;
@@ -251,3 +234,27 @@
 .basic-article__image {
   margin-bottom: 50px;
 }
+
+.basic-article a[href] {
+  &:focus,
+  &:hover {
+    color: #1a5b87;
+  }
+
+  &:active {
+    color: rgba(89, 168, 221, 0.5);
+  }
+}
+
+.basic-article--page-baza a[href] {
+  &:focus,
+  &:hover {
+    color: rgba(129, 22, 69, 1.0);
+  }
+
+  &:active {
+    color: rgba(129, 22, 69, 0.5);
+  }
+}
+
+

@@ -18,18 +18,11 @@
         <a class="communication__adress-scheme" href="#">Адрес и схема проезда</a>
       </div>
       <a class="logo" href="index.html" title="логотип фамилитет">
-        <!--
-        <picture>
-          <source type="image/webp" media="(max-width: 480px)" srcset="img/logo_familitet-mobile@1x.webp 1x, img/logo_familitet-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 768px)" srcset="img/logo_familitet-tablet@1x.webp 1x, img/logo_familitet-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/logo_familitet@1x.webp 1x, img/logo_familitet@2x.webp 2x">
-          <source media="(max-width: 480px)" srcset="img/logo_familitet-mobile@1x.png 1x, img/logo_familitet-mobile@2x.png 2x">
-          <source media="(max-width: 768px)" srcset="img/logo_familitet-tablet@1x.png 1x, img/logo_familitet-tablet@2x.png 2x">
-        </picture>
-      -->
-        <img class="logo__img" src="img/logo.svg" srcset="img/logo.svg" alt="логотип фамилитета" width="300" height="130">
+        <svg width="300" height="131">
+          <use xlink:href="img/symbols.svg#logo-familitet"></use>
+        </svg>
       </a>
-      <p class="logo__under-logo">Центр семейного<br> развития</p>
+      <p class="main-nav__under-logo">Центр семейного<br> развития</p>
       <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Открыть меню"></button>
       <ul class="site-list">
         <li class="site-list__item">
@@ -86,54 +79,54 @@
           </li>
         </ul>
       </section>
-      <div class="schedule schedule__list">
+      <div class="schedule">
         <article class="schedule__item schedule__item--item1 schedule__item--active">
           <a class="schedule__link" href="baza_familitet.html">
-            <time datetime="2019-04-15T10:00">10.00</time>Малышам
+            <time class="schedule__time" datetime="2019-04-15T10:00">10.00</time>Малышам
             <p class="schedule__subtitle">Чудеса в ладошках (2-3 года)</p>
           </a>
         </article>
         <article class="schedule__item schedule__item--item2">
           <a class="schedule__link" href="baza_familitet.html">
-            <time datetime="2019-04-15T11:15">11.15</time>Малышам
+            <time class="schedule__time" datetime="2019-04-15T11:15">11.15</time>Малышам
             <p class="schedule__subtitle">Вместе с мамой (1,5-2 года)</p>
           </a>
         </article>
         <article class="schedule__item schedule__item--item3">
           <a class="schedule__link" href="baza_familitet.html">
-            <time datetime="2019-04-15T14:00">>14.00</time>Беременным
+            <time class="schedule__time" datetime="2019-04-15T14:00">14.00</time>Беременным
             <p class="schedule__title">Базовый курс. Теория</p>
             <p class="schedule__subtitle">Грудное вскармливание</p>
           </a>
         </article>
         <article class="schedule__item schedule__item--item4">
           <a class="schedule__link" href="baza_familitet.html">
-            <time datetime="2019-04-15T15:30">15.30</time>Беременным
+            <time class="schedule__time" datetime="2019-04-15T15:30">15.30</time>Беременным
             <p class="schedule__subtitle">Фитбол для беременных</p>
           </a>
         </article>
         <article class="schedule__item schedule__item--item5">
           <a class="schedule__link" href="baza_familitet.html">
-            <time datetime="2019-04-15T17:00">17.00</time>Малышам
+            <time class="schedule__time" datetime="2019-04-15T17:00">17.00</time>Малышам
             <p class="schedule__subtitle">Чудеса в ладошках (4-5 лет)</p>
           </a>
         </article>
         <article class="schedule__item schedule__item--item6">
           <a class="schedule__link" href="baza_familitet.html">
-            <time datetime="2019-04-15T18:30">18.30</time>Малышам
+            <time class="schedule__time" datetime="2019-04-15T18:30">18.30</time>Малышам
             <p class="schedule__subtitle">Подготовка к школе</p>
           </a>
         </article>
         <article class="schedule__item schedule__item--item7">
           <a class="schedule__link" href="baza_familitet.html">
-            <time datetime="2019-04-15T18:30">18.30</time>Молодым мамам
+            <time class="schedule__time" datetime="2019-04-15T18:30">18.30</time>Молодым мамам
             <p class="schedule__title">Женский круг</p>
             <p class="schedule__subtitle">Здоровье груди</p>
           </a>
         </article>
         <article class="schedule__item schedule__item--item8">
           <a class="schedule__link" href="baza_familitet.html">
-            <time datetime="2019-04-15T19:30">19.30</time>Малышам
+            <time class="schedule__time" datetime="2019-04-15T19:30">19.30</time>Малышам
             <p class="schedule__subtitle">Нейрокоррекция</p>
           </a>
         </article>

@@ -18,18 +18,11 @@
         <a class="communication__adress-scheme" href="#">Адрес и схема проезда</a>
       </div>
       <a class="logo" href="index.html" title="логотип фамилитет">
-        <!--
-        <picture>
-          <source type="image/webp" media="(max-width: 480px)" srcset="img/logo_familitet-mobile@1x.webp 1x, img/logo_familitet-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 768px)" srcset="img/logo_familitet-tablet@1x.webp 1x, img/logo_familitet-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/logo_familitet@1x.webp 1x, img/logo_familitet@2x.webp 2x">
-          <source media="(max-width: 480px)" srcset="img/logo_familitet-mobile@1x.png 1x, img/logo_familitet-mobile@2x.png 2x">
-          <source media="(max-width: 768px)" srcset="img/logo_familitet-tablet@1x.png 1x, img/logo_familitet-tablet@2x.png 2x">
-        </picture>
-      -->
-        <img class="logo__img" src="img/logo.svg" srcset="img/logo.svg" alt="логотип фамилитета" width="300" height="130">
+        <svg width="300" height="131">
+          <use xlink:href="img/symbols.svg#logo-familitet"></use>
+        </svg>
       </a>
-      <p class="logo__under-logo">Центр семейного<br> развития</p>
+      <p class="main-nav__under-logo">Центр семейного<br> развития</p>
       <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Открыть меню"></button>
       <ul class="site-list">
         <li>
