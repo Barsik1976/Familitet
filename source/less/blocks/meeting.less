@@ -1,7 +1,6 @@
 .meeting {
   width: 413px;
   margin-left: 21px;
-  padding-top: 34px;
   text-align: left;
 }
 
@@ -42,7 +41,7 @@
 }
 
 .meeting__text {
-  font-family: inherit;
+  font-family: "Helios";
   font-size: 17px;
   line-height: 20px;
   font-weight: 300;
@@ -53,13 +52,13 @@
 }
 
 @media (max-width: @mobile-width) {
-  .meeting__title--title1 {
+  .meeting__title--september {
     margin: 0;
   }
 }
 
 @media (max-width: @mobile-width) {
-  .meeting__title--title2 {
+  .meeting__title--october {
     line-height: 26px;
     padding-left: 0;
     padding-right: 0;
@@ -77,12 +76,12 @@
   margin-left: -12px;
 }
 
-.meeting__title--title1::after {
+.meeting__title--september::after {
   width: 300px;
 }
 
 @media (max-width: 780px) and (min-width: 481px) {
-  .meeting__title--title2::after {
+  .meeting__title--october::after {
     width: 320px;
   }
 }
