@@ -7,7 +7,7 @@
   overflow-x: hidden;
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .progress {
     background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 98%, transparent);
     background-repeat: repeat-x, repeat-x, repeat-x;
@@ -16,7 +16,7 @@
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .progress {
     background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 96%, transparent);
     background-repeat: repeat-x, repeat-x, repeat-x;
@@ -43,7 +43,7 @@
   overflow-x: hidden;
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .progress--page-about {
     background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 90%, transparent);
     background-repeat: repeat-x, repeat-x, repeat-x;
@@ -52,7 +52,7 @@
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .progress--page-about {
     background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 90%, transparent);
     background-repeat: repeat-x, repeat-x, repeat-x;
@@ -78,7 +78,7 @@
   min-height: 680px;
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .progress--people {
     background: url("../img/wave-center-people.png"), url("../img/wave-center-people.png"), url("../img/background-circles.png"), linear-gradient(to top, #f6f0f7 90%, transparent);
     background-repeat: repeat-x, repeat-x, repeat-x;
@@ -87,7 +87,7 @@
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .progress--people {
     position: relative;
     background: url("../img/wave-center-people.png"), url("../img/wave-center-people.png"), url("../img/background-circles.png"), linear-gradient(to top, #f6f0f7 96%, transparent);
@@ -116,7 +116,7 @@
   overflow-x: hidden;
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .progress--page-baza {
     background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 90%, transparent);
     background-repeat: repeat-x, repeat-x, repeat-x;
@@ -125,7 +125,7 @@
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width){
   .progress--page-baza {
     background: url("../img/wave-center-down.png"), url("../img/wave-center-down.png"), url("../img/pattern-crop.jpg"), linear-gradient(to top, #f6f8e2 90%, transparent);
     background-repeat: repeat-x, repeat-x, repeat-x;
@@ -155,7 +155,7 @@
   padding-right: 20px;
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .progress__wrapper {
     width: 620px;
     flex-wrap: wrap;
@@ -163,7 +163,7 @@
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .progress__wrapper {
     width: 440px;
     flex-wrap: wrap;
@@ -183,13 +183,7 @@
   }
 }
 
-
-
-
-
-
-
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .progress__wrapper--page-about,
   .progress__wrapper--page-baza {
     padding-top: 45px;
@@ -203,14 +197,14 @@
   content: url("../img/diploma.png");
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .progress__wrapper--main::after {
     top: 1020px;
     left: 215px;
   }
 }
 
-@media (max-width:780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .progress__wrapper--main::after {
     top: 1085px;
     left: 180px;
@@ -225,11 +219,6 @@
     content: url("../img/diploma-mobile.png");
   }
 }
-
-
-
-
-
 
 .progress__icon {
   margin-top: 38px;

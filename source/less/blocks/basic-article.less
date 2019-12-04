@@ -2,18 +2,13 @@
   width: 560px;
 }
 
-
-.basic-article {
-  width: 560px;
-}
-
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .basic-article {
     width: 720px;
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .basic-article {
     width: 440px;
   }
@@ -41,7 +36,7 @@
   width: 812px;
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .basic-article--about,
   .basic-article--people {
     width: 720px;
@@ -49,7 +44,7 @@
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .basic-article--about,
   .basic-article--people {
     width: 440px;
@@ -65,28 +60,28 @@
   }
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .basic-article--page-baza {
     width: 720px;
     margin-top: 600px;
   }
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .basic-article--page-program {
     width: 720px;
     margin-top: 645px;
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .basic-article--page-baza {
     width: 440px;
     margin-top: 560px;
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .basic-article--page-program {
     width: 440px;
     margin-top: 580px;
@@ -101,13 +96,13 @@
   }
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .basic-article--form {
     width: 720px;
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .basic-article--form {
     width: 440px;
   }
@@ -139,9 +134,16 @@
   }
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
-  .basic-article__title--baza-tablet {
+@media (max-width: @desktop-width) {
+  .basic-article__title--baza {
     width: 550px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .basic-article__title--baza {
+    width: 440px;
+    margin-top: 75px;
   }
 }
 
@@ -225,7 +227,7 @@
   margin-bottom: 35px;
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .basic-article__text--subscription {
     margin-bottom: 0;
   }

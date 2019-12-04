@@ -12,13 +12,13 @@
   margin-top: -30px;
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .information {
     width: 720px;
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .information {
     flex-direction: column;
     width: 440px;
@@ -52,142 +52,18 @@
   padding: 0;
 }
 
-.information__content {
-  width: 560px;
-}
-
-@media (max-width: 1196px) and (min-width: 781px) {
-  .information__content {
-    width: 720px;
-  }
-}
-
-@media (max-width: 780px) and (min-width: 481px) {
-  .information__content {
-    width: 440px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .information__content {
-    width: 300px;
-  }
-}
-
-.information__content--about,
-.information__content--people {
-  display: flex;
-  flex-direction: column;
-  width: 800px;
-}
-
-.information__content--page-baza,
-.information__content--page-program {
-  width: 820px;
-}
-
-.information__content--form {
-  width: 812px;
-}
-
-@media (max-width: 1196px) and (min-width: 781px) {
-  .information__content--about,
-  .information__content--people {
-    width: 720px;
-    order: 2;
-  }
-}
-
-@media (max-width: 780px) and (min-width: 481px) {
-  .information__content--about,
-  .information__content--people {
-    width: 440px;
-    order: 2;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .information__content--about,
-  .information__content--people {
-    width: 300px;
-    order: 2;
-  }
-}
-
-@media (max-width: 1196px) and (min-width: 781px) {
-  .information__content--page-baza {
-    width: 720px;
-    margin-top: 600px;
-  }
-}
-
-@media (max-width: 1196px) and (min-width: 781px) {
-  .information__content--page-program {
-    width: 720px;
-    margin-top: 645px;
-  }
-}
-
-@media (max-width: 780px) and (min-width: 481px) {
-  .information__content--page-baza {
-    width: 440px;
-    margin-top: 560px;
-  }
-}
-
-@media (max-width: 780px) and (min-width: 481px) {
-  .information__content--page-program {
-    width: 440px;
-    margin-top: 580px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .information__content--page-baza,
-  .information__content--page-program {
-    width: 300px;
-    margin-top: 650px;
-  }
-}
-
-@media (max-width: 1196px) and (min-width: 781px) {
-  .information__content--form {
-    width: 720px;
-  }
-}
-
-@media (max-width: 780px) and (min-width: 481px) {
-  .information__content--form {
-    width: 440px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .information__content--form {
-    width: 300px;
-  }
-}
-
-
-
-
-
-
-
-
-
 .information__person {
   margin-top: 18px;
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .information__person {
     width: 720px;
     margin-top: 0;
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .information__person {
     width: 480px;
   }
@@ -207,7 +83,7 @@
   padding-top: 7px;
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .information__person-item {
     width: 720px;
     margin-left: 0;
@@ -215,7 +91,7 @@
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .information__person-item {
     width: 440px;
     margin-left: 0;
@@ -272,11 +148,6 @@
   margin-top: 10px;
   margin-bottom: 20px;
 }
-
-
-
-
-
 
 .information__text--person-description1 {
   font-family: inherit;
@@ -373,7 +244,7 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .information__person-item::before {
     display: block;
     position: absolute;
@@ -387,7 +258,7 @@
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .information__person-item::before {
     display: block;
     position: absolute;
@@ -419,10 +290,6 @@
   font-size: 33px;
   margin-bottom: 23px;
 }
-
-
-
-
 
 .information__content a[href] {
   &:focus,

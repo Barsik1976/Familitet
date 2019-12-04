@@ -2,15 +2,11 @@
   width: 260px;
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .features {
      width: 200px;
   }
 }
-
-
-
-
 
 @media (max-width: @mobile-width) {
   .features a
@@ -48,7 +44,7 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .features--pregnant::before {
     background: url(../img/pregnancy.svg);
     background-size: 85% 85%;
@@ -56,7 +52,7 @@
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .features--young-mother::before {
     background: url("../img/young-mother.svg");
     background-size: 85% 85%;
@@ -64,7 +60,7 @@
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .features--kids::before {
     background: url("../img/baby.svg");
     background-size: 85% 85%;
@@ -113,7 +109,7 @@
   color: #59361b;
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .features__item {
     font-size: 18px;
     line-height: 24px;
@@ -154,24 +150,18 @@
   margin-bottom: 35px;
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .features--baza-nav {
     width: 720px;
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .features--baza-nav {
     width: 100%;
     flex-direction: column;
   }
 }
-
-
-
-
-
-
 
 .features--pregnant-baza {
   position: absolute;
@@ -185,7 +175,7 @@
   top: 35px;
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .features--pregnant-baza,
   .features--young-mother-program {
     position: absolute;
@@ -194,7 +184,7 @@
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .features--pregnant-baza,
   .features--young-mother-program {
     position: absolute;

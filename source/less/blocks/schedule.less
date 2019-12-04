@@ -10,13 +10,13 @@
   margin-top: 45px;
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .schedule {
     width: 720px;
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .schedule {
     width: 400px;
     margin-bottom: 5px;
@@ -42,13 +42,13 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .schedule::after {
     left: 355px;
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .schedule::after {
     height: 1300px;
     background: url("../img/circles-line-vertical-tabl.svg");
@@ -124,7 +124,7 @@
   margin-top: 110px;
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .schedule__item:nth-child(even),
   .schedule__item:nth-child(odd) {
     margin: 0;
@@ -245,7 +245,7 @@
   left: 365px;
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .schedule__item::after {
     top: 15px;
     left: -60px;
@@ -259,7 +259,7 @@
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .schedule__item7::after {
     left: -75px;
   }

@@ -4,13 +4,13 @@
   width: 1140px;
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .slider {
     width: 720px;
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .slider {
     width: 440px;
   }
@@ -74,7 +74,7 @@
   float: left;
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   #weekday-item-1:checked ~ .slider__toggles label:nth-of-type(2),
   #weekday-item-2:checked ~ .slider__toggles label:nth-of-type(3),
   #weekday-item-3:checked ~ .slider__toggles label:nth-of-type(4),
@@ -88,7 +88,7 @@
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   #weekday-item-1:checked ~ .slider__toggles label:nth-of-type(5),
   #weekday-item-2:checked ~ .slider__toggles label:nth-of-type(1),
   #weekday-item-3:checked ~ .slider__toggles label:nth-of-type(2),
@@ -142,13 +142,13 @@
   overflow: hidden;
 }
 
-@media (max-width: 1196px) and (min-width: 781px) {
+@media (max-width: @desktop-width) {
   .slider__list {
     width: 500px;
   }
 }
 
-@media (max-width: 780px) and (min-width: 481px) {
+@media (max-width: @tablet-width) {
   .slider__list {
     width: 208px;
     margin: 0 auto;
