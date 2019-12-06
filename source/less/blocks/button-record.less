@@ -15,6 +15,19 @@
   cursor: pointer;
 }
 
+.button-record {
+  &:hover,
+  &:focus {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #a51b57;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.2);
+  }
+}
+
 @media (max-width: @tablet-width) {
   .button-record {
     font-size: 35px;
@@ -27,18 +40,5 @@
     width: 280px;
     font-size: 35px;
     margin-top: 20px;
-  }
-}
-
-.button-record {
-  &:hover,
-  &:focus {
-    color: rgba(255, 255, 255, 0.5);
-    background-color: #a51b57;
-    outline: none;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.2);
   }
 }

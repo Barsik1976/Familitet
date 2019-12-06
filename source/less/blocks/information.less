@@ -12,42 +12,6 @@
   margin-top: -30px;
 }
 
-@media (max-width: @desktop-width) {
-  .information {
-    width: 720px;
-  }
-}
-
-@media (max-width: @tablet-width) {
-  .information {
-    flex-direction: column;
-    width: 440px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .information {
-    width: 300px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 45px;
-    padding-top: 0;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .information--about {
-    margin-top: 30px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .information__page-people {
-    padding-top: 45px;
-    margin-top: 0;
-  }
-}
-
 .information p {
   padding: 0;
 }
@@ -56,57 +20,12 @@
   margin-top: 18px;
 }
 
-@media (max-width: @desktop-width) {
-  .information__person {
-    width: 720px;
-    margin-top: 0;
-  }
-}
-
-@media (max-width: @tablet-width) {
-  .information__person {
-    width: 480px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .information__person {
-    margin: 0;
-  }
-}
-
 .information__person-item {
   position: relative;
   width: 520px;
   margin-left: 300px;
   margin-bottom: 40px;
   padding-top: 7px;
-}
-
-@media (max-width: @desktop-width) {
-  .information__person-item {
-    width: 720px;
-    margin-left: 0;
-    margin-top: 250px;
-  }
-}
-
-@media (max-width: @tablet-width) {
-  .information__person-item {
-    width: 440px;
-    margin-left: 0;
-    margin-top: 250px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .information__person-item {
-    width: 280px;
-    margin-top: 225px;
-    margin-left: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 }
 
 .information__person-list {
@@ -245,6 +164,114 @@
   background-repeat: no-repeat;
 }
 
+.information__title--subtitle-program {
+  font-size: 33px;
+  margin-bottom: 23px;
+}
+
+.information__content a[href] {
+  &:focus,
+  &:hover {
+    color: #1a5b87;
+  }
+
+  &:active {
+    color: rgba(89, 168, 221, 0.5);
+  }
+}
+
+.information__content--page-baza a[href] {
+  &:focus,
+  &:hover {
+    color: rgba(129, 22, 69, 1.0);
+  }
+
+  &:active {
+    color: rgba(129, 22, 69, 0.5);
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .information {
+    width: 720px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .information {
+    flex-direction: column;
+    width: 440px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .information {
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 45px;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .information--about {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .information__page-people {
+    padding-top: 45px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .information__person {
+    width: 720px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .information__person {
+    width: 480px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .information__person {
+    margin: 0;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .information__person-item {
+    width: 720px;
+    margin-left: 0;
+    margin-top: 250px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .information__person-item {
+    width: 440px;
+    margin-left: 0;
+    margin-top: 250px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .information__person-item {
+    width: 280px;
+    margin-top: 225px;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 @media (max-width: @desktop-width) {
   .information__person-item::before {
     display: block;
@@ -284,32 +311,5 @@
     top: -210px;
     background-position: 50% 20%;
     background-size: 110% 110%;
-  }
-}
-
-.information__title--subtitle-program {
-  font-size: 33px;
-  margin-bottom: 23px;
-}
-
-.information__content a[href] {
-  &:focus,
-  &:hover {
-    color: #1a5b87;
-  }
-
-  &:active {
-    color: rgba(89, 168, 221, 0.5);
-  }
-}
-
-.information__content--page-baza a[href] {
-  &:focus,
-  &:hover {
-    color: rgba(129, 22, 69, 1.0);
-  }
-
-  &:active {
-    color: rgba(129, 22, 69, 0.5);
   }
 }

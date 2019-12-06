@@ -5,24 +5,6 @@
   margin-top: 10px;
 }
 
-@media (max-width: @desktop-width) {
-  .weekday {
-    width: 720px;
-  }
-}
-
-@media (max-width: @tablet-width) {
-  .weekday {
-    width: 440px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .weekday {
-    width: 300px;
-  }
-}
-
 .weekday__list {
   width: 1140px;
   display: flex;
@@ -32,24 +14,6 @@
   margin-bottom: 45px;
   padding-left: 0;
   list-style: none;
-}
-
-@media (max-width: @desktop-width) {
-  .weekday__list {
-    width: 500px;
-  }
-}
-
-@media (max-width: @tablet-width) {
-  .weekday__list {
-    width: 220px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .weekday__list {
-    width: 220px;
-  }
 }
 
 .weekday__day {
@@ -68,12 +32,6 @@
   padding-top: 23px;
   padding-bottom: 17px;
   background: transparent;
-}
-
-@media (max-width: @mobile-width) {
-  .weekday__day {
-    width: 168px;
-  }
 }
 
 .weekday__month {
@@ -116,5 +74,47 @@
 
   &:active {
     opacity: 0.2;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .weekday {
+    width: 720px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .weekday {
+    width: 440px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .weekday {
+    width: 300px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .weekday__list {
+    width: 500px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .weekday__list {
+    width: 220px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .weekday__list {
+    width: 220px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .weekday__day {
+    width: 168px;
   }
 }

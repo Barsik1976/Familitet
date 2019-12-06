@@ -4,24 +4,8 @@
   text-align: left;
 }
 
-@media (max-width: @mobile-width) {
-  .meeting {
-    width: 300px;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
 .meeting--october {
   margin-left: 27px;
-}
-
-@media (max-width: @mobile-width) {
-  .meeting--october {
-    margin-left: 0;
-  }
 }
 
 .meeting__title {
@@ -34,12 +18,6 @@
   margin-bottom: 5px;
 }
 
-@media (max-width: @mobile-width) {
-  .meeting__title {
-    text-align: center;
-  }
-}
-
 .meeting__text {
   font-family: "Helios";
   font-size: 17px;
@@ -49,21 +27,6 @@
   color: #59361b;
   margin: 0;
   margin-top: 20px;
-}
-
-@media (max-width: @mobile-width) {
-  .meeting__title--september {
-    margin: 0;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .meeting__title--october {
-    line-height: 26px;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0;
-  }
 }
 
 .meeting__title::after {
@@ -89,5 +52,42 @@
 @media (max-width: @mobile-width) {
   .meeting__title::after {
     margin-left: -7px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .meeting {
+    width: 300px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .meeting--october {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .meeting__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .meeting__title--september {
+    margin: 0;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .meeting__title--october {
+    line-height: 26px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
   }
 }
