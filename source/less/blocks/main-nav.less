@@ -11,49 +11,9 @@
   justify-content: flex-start;
 }
 
-@media (max-width: 1196px) and (min-width: 768px) {
-  .main-nav {
-    width: 720px;
-  }
-}
-
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .main-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 440px;
-    padding-top: 120px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .main-nav {
-    width: 300px;
-    padding-top: 120px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
 .main-nav p {
   margin: 0;
   padding: 0;
-}
-
-.main-nav__logo-link {
-  display: block;
-  width: 300px;
-}
-
-.main-nav__logo-img {
-  width: 100%;
-  height: auto;
-}
-
-@media (max-width: @mobile-width) {
-  .main-nav__logo-img {
-    width: 280px;
-  }
 }
 
 .main-nav__communication {
@@ -62,30 +22,11 @@
   right: 35px;
 }
 
-@media (max-width: 1196px) and (min-width: 768px) {
-  .main-nav__communication {
-    right: 37px;
-  }
-}
-
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .main-nav__communication {
-    left: 20px;
-    margin: 0;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .main-nav__communication {
-    left: 20px;
-  }
-}
-
-.main-nav__center {
+.main-nav__under-logo {
   position: absolute;
   top: 185px;
   left: 55px;
-  font-family: "Helios";
+  font-family: inherit;
   font-size: 21px;
   line-height: 25px;
   font-weight: 300;
@@ -95,14 +36,14 @@
   margin-left: 38px;
 }
 
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .main-nav__center {
+@media (max-width: @tablet-width) {
+  .main-nav__under-logo {
     top: 250px;
   }
 }
 
 @media (max-width: @mobile-width) {
-  .main-nav__center {
+  .main-nav__under-logo {
     top: 250px;
     left: 39px;
   }
@@ -122,5 +63,48 @@
   font-size: 0;
   border: none;
   cursor: pointer;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .main-nav {
+    width: 720px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 440px;
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .main-nav {
+    width: 300px;
+    padding-top: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .main-nav__communication {
+    right: 37px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .main-nav__communication {
+    left: 20px;
+    margin: 0;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .main-nav__communication {
+    left: 20px;
   }
 }

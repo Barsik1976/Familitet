@@ -5,24 +5,6 @@
   margin-top: 10px;
 }
 
-@media (max-width: 1196px) and (min-width: 768px) {
-  .weekday {
-    width: 720px;
-  }
-}
-
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .weekday {
-    width: 440px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .weekday {
-    width: 300px;
-  }
-}
-
 .weekday__list {
   width: 1140px;
   display: flex;
@@ -34,28 +16,10 @@
   list-style: none;
 }
 
-@media (max-width: 1196px) and (min-width: 768px) {
-  .weekday__list {
-    width: 500px;
-  }
-}
-
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .weekday__list {
-    width: 220px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .weekday__list {
-    width: 220px;
-  }
-}
-
 .weekday__day {
   display: block;
   width: 168px;
-  font-family: AntiQuasi;
+  font-family: "AntiQuasi";
   font-size: 25px;
   line-height: 17px;
   font-weight: normal;
@@ -70,33 +34,13 @@
   background: transparent;
 }
 
-@media (max-width: @mobile-width) {
-  .weekday__day {
-    width: 168px;
-  }
-}
-
 .weekday__month {
   display: block;
-  font-family: Helios;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   color: #59361b;
   margin-top: 9px;
-}
-
-.weekday__item a[href] {
-  &:focus {
-    opacity: 0.5;
-  }
-
-  &:hover {
-    opacity: 0.5;
-  }
-
-  &:active {
-    opacity: 0.2;
-  }
 }
 
 .weekday__day--active {
@@ -114,8 +58,63 @@
   margin-top: 9px;
 }
 
-.weekday__item--active {
+.weekday__item--active:hover {
+  opacity: 1.0;
+}
+
+.weekday__item a[href] {
+  &:focus {
+    opacity: 0.5;
+    outline: none;
+  }
+
   &:hover {
-    opacity: 1.0;
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .weekday {
+    width: 720px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .weekday {
+    width: 440px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .weekday {
+    width: 300px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .weekday__list {
+    width: 500px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .weekday__list {
+    width: 220px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .weekday__list {
+    width: 220px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .weekday__day {
+    width: 168px;
   }
 }

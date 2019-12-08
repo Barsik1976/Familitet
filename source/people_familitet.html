@@ -10,26 +10,19 @@
   <link rel="preload" href="fonts/helioslight-webfont.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="bubbles-people">
+<body class="bubbles bubbles__people">
   <header class="page-header page-header--people">
     <nav class="main-nav">
       <div class="main-nav__communication communication">
         <p class="communication__number">+7 (4912) <span>95-24-55</span><br> +7 (4912) <span>99-51-36</span></p>
         <a class="communication__adress-scheme" href="#">Адрес и схема проезда</a>
       </div>
-      <a class="main-nav__logo-link" href="index.html" title="логотип фамилитет">
-        <!--
-        <picture>
-          <source type="image/webp" media="(max-width: 480px)" srcset="img/logo_familitet-mobile@1x.webp 1x, img/logo_familitet-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 768px)" srcset="img/logo_familitet-tablet@1x.webp 1x, img/logo_familitet-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/logo_familitet@1x.webp 1x, img/logo_familitet@2x.webp 2x">
-          <source media="(max-width: 480px)" srcset="img/logo_familitet-mobile@1x.png 1x, img/logo_familitet-mobile@2x.png 2x">
-          <source media="(max-width: 768px)" srcset="img/logo_familitet-tablet@1x.png 1x, img/logo_familitet-tablet@2x.png 2x">
-        </picture>
-      -->
-        <img class="main-nav__logo-img" src="img/logo.svg" srcset="img/logo.svg" alt="логотип фамилитета" width="300" height="130">
+      <a class="logo" href="index.html" title="логотип фамилитет">
+        <svg width="300" height="131">
+          <use xlink:href="img/symbols.svg#logo-familitet"></use>
+        </svg>
       </a>
-      <p class="main-nav__center">Центр семейного<br> развития</p>
+      <p class="main-nav__under-logo">Центр семейного<br> развития</p>
       <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Открыть меню"></button>
       <ul class="main-nav__list site-list">
         <li>
@@ -49,8 +42,8 @@
   </header>
   <main class="page-main page-main--people">
     <div class="information information__page-people">
-      <section class="information__content information__content--people">
-        <h1 class="information__title">Специалисты «Фамилитета»</h1>
+      <section class="basic-article basic-article--people">
+        <h1 class="basic-article__title">Специалисты «Фамилитета»</h1>
         <div class="information__person">
           <section class="information__person-item information__person-item--item1">
             <h4 class="information__person-name"><span>Татьяна</span> Гшвенд <a class="information__person-name information__person-name--mail" href="#gschwend.ru">gschwend.ru</a></h4>
@@ -145,7 +138,7 @@
               <li class="information__text information__text--person-description2">гимнастика с фитболом для беременных.</li>
             </ul>
           </section>
-          <p class="information__subtitle information__subtitle--person-subtitle">И это всё о нас:</p>
+          <p class="basic-article__subtitle basic-article__subtitle--person-subtitle">И это всё о нас:</p>
         </div>
       </section>
       <div class="navigation-aside">
@@ -186,29 +179,27 @@
     </div>
     <div class="progress progress--people">
       <div class="progress__wrapper">
-        <div class="progress__wrapp-blocks">
-          <article class="progress__list progress__list--person">
-            <p class="progress__lead"><span>8 лет</span> отвечаем на вопрос:<br> «Как родить без боли?»</p>
+          <article class="list-program list-program--page-about">
+            <p class="list-program__statistics"><span>8 лет</span> отвечаем на вопрос:<br> «Как родить без боли?»</p>
           </article>
-          <article class="progress__list progress__list--person">
-            <p class="progress__lead"><span>1447</span> молодых семей научили быть родителями</p>
+          <article class="list-program list-program--page-about">
+            <p class="list-program__statistics"><span>1447</span> молодых семей научили быть родителями</p>
           </article>
-          <article class="progress__list progress__list--person">
-            <p class="progress__lead"><span>468</span> человек повзрослели вместе с нами</p>
+          <article class="list-program list-program--page-about">
+            <p class="list-program__statistics"><span>468</span> человек повзрослели вместе с нами</p>
           </article>
-          <article class="progress__list progress__list--person">
-            <p class="progress__lead"><span>576</span> дипломов выдано будущим мамам!</p>
+          <article class="list-program list-program--page-about">
+            <p class="list-program__statistics"><span>576</span> дипломов выдано будущим мамам!</p>
           </article>
-        </div>
-        <article class="discount discount--page-people">
+      </div>
+        <article class="discount discount--page-about">
           <div class="discount__wrap">
             <p class="discount__percent"> <span>15%</span> скидка</p>
             <p class="discount__desc">Многодетным семьям, одиноким мамам и родителям-студентам на группов</p>
           </div>
-          <a class="discount__btn button button--writeus" href="form.html">Записаться!</a>
+          <a class="button-record" href="form.html">Записаться!</a>
         </article>
       </div>
-    </div>
   </main>
   <footer class="page-footer">
     <div class="contact contact--page-people">
@@ -219,17 +210,17 @@
         </p>
       </div>
       <a class="contact__information" href="#contact">Контактная информация</a>
-      <ul class="contact__social-list">
-        <li class="contact__social-item">
-          <a class="contact__social-link contact__social-link--vkontakte" href="#vkontakte">
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a class="social-icon__link social-icon__link--vkontakte" href="#vkontakte">
             <span class="visually-hidden">Мы в контакте</span>
             <svg width="22" height="13">
               <use xlink:href="img/symbols.svg#vk"></use>
             </svg>
           </a>
         </li>
-        <li class="contact__social-item">
-          <a class="contact__social-link contact__social-link--instagram" href="#instagram">
+        <li class="social-icon__item">
+          <a class="social-icon__link social-icon__link--instagram" href="#instagram">
             <span class="visually-hidden">Мы в инстаграм</span>
             <svg width="19" height="19">
               <use xlink:href="img/symbols.svg#instagram"></use>

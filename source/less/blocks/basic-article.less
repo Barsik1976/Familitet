@@ -1,0 +1,261 @@
+.basic-article {
+  width: 560px;
+}
+
+.basic-article--about,
+.basic-article--people {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+.basic-article--page-baza,
+.basic-article--page-program {
+  width: 820px;
+}
+
+.basic-article--form {
+  width: 812px;
+}
+
+.basic-article__title {
+  font-family: "AntiQuasi";
+  font-size: 42px;
+  line-height: 45px;
+  font-weight: normal;
+  letter-spacing: -0.1px;
+  text-align: left;
+  color: #59361b;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+@media (max-width: @mobile-width) {
+  .basic-article__title {
+    font-size: 38px;
+    line-height: 42px;
+    margin-bottom: 27px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .basic-article__title--baza {
+    width: 550px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .basic-article__title--baza {
+    width: 440px;
+    margin-top: 75px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .basic-article__title--baza {
+    width: 300px;
+    margin-top: 0;
+  }
+}
+
+.basic-article__subtitle {
+  font-family: "AntiQuasi";
+  font-size: 38px;
+  line-height: 42px;
+  letter-spacing: -0.1px;
+  text-align: left;
+  color: #59361b;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+@media (max-width: @mobile-width) {
+  .basic-article__subtitle,
+  .basic-article__subtitle--person-subtitle {
+    font-size: 34px;
+    line-height: 36px;
+  }
+}
+
+.basic-article__text {
+  font-family: inherit;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #59361b;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.basic-article__text--about {
+  margin-bottom: 62px;
+}
+
+.basic-article__text--baza,
+.basic-article__text--program {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.basic-article__text--form {
+  margin-bottom: 0;
+}
+
+.basic-article__text span {
+  font-weight: 700;
+  color: #d71c6d;
+}
+
+.basic-article__text--baza span {
+  font-family: inherit;
+  font-weight: 700;
+  color: #59361b;
+}
+
+.basic-article__link {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 300;
+  color: #59a8dd;
+  cursor: pointer;
+}
+
+.basic-article__link--program {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #d71c6d;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.basic-article__link--desc {
+  margin-bottom: 35px;
+}
+
+@media (max-width: @tablet-width) {
+  .basic-article__text--subscription {
+    margin-bottom: 0;
+  }
+}
+
+.basic-article__image {
+  margin-bottom: 50px;
+}
+
+.basic-article a[href] {
+  &:focus,
+  &:hover {
+    color: #1a5b87;
+  }
+
+  &:active {
+    color: rgba(89, 168, 221, 0.5);
+  }
+}
+
+.basic-article--page-baza a[href] {
+  &:focus,
+  &:hover {
+    color: rgba(129, 22, 69, 1.0);
+  }
+
+  &:active {
+    color: rgba(129, 22, 69, 0.5);
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .basic-article {
+    width: 720px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .basic-article {
+    width: 440px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .basic-article {
+    width: 300px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .basic-article--about,
+  .basic-article--people {
+    width: 720px;
+    order: 2;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .basic-article--about,
+  .basic-article--people {
+    width: 440px;
+    order: 2;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .basic-article--about,
+  .basic-article--people {
+    width: 300px;
+    order: 2;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .basic-article--page-baza {
+    width: 720px;
+    margin-top: 600px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .basic-article--page-program {
+    width: 720px;
+    margin-top: 645px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .basic-article--page-baza,
+  .basic-article--page-program {
+    width: 440px;
+    margin-top: 560px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .basic-article--page-baza,
+  .basic-article--page-program {
+    width: 300px;
+    margin-top: 650px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .basic-article--form {
+    width: 720px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .basic-article--form {
+    width: 440px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .basic-article--form {
+    width: 300px;
+  }
+}

@@ -2,77 +2,33 @@
   display: flex;
   justify-content: space-between;
   width: 590px;
-  text-align: ;
-  margin-left: 158px;
+  margin: 0 auto;
   margin-top: 77px;
   margin-bottom: 27px;
+  padding-right: 250px;
 }
 
-@media (max-width: 1196px) and (min-width: 768px) {
-  .discount {
-    margin-left: 0;
-    margin-top: 145px;
-  }
-}
-
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .discount {
-    width: 440px;
-    margin: 0 auto;
-    margin-top: 90px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .discount {
-    width: 300px;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    margin-top: 450px;
-  }
-}
-
-.discount--page-history,
+.discount--page-about,
 .discount--page-people {
   margin-top: 32px;
 }
 
-@media (max-width: 1196px) and (min-width: 768px) {
-  .discount--page-history,
-  .discount--page-people,
-  .discount--baza {
-    margin: 0 auto;
-    margin-top: 32px;
-  }
+.discount--baza {
+  margin-top: 25px;
+  margin-bottom: 70px;
 }
 
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .discount--page-history,
-  .discount--page-people,
-  .discount--baza,
-  .discount--form {
-    width: 440px;
-    flex-direction: column;
-    align-items: center;
-  }
+.discount--form {
+  margin-top: 50px;
+  margin-bottom: 120px;
 }
 
-@media (max-width: @mobile-width) {
-  .discount--baza {
-    position: absolute;
-    bottom: 0;
-  }
-}
-
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .discount__wrap {
-    display: block;
-  }
+.discount__wrap {
+  width: 190px;
 }
 
 .discount__percent {
-  font-family: AntiQuasi;
+  font-family: "AntiQuasi";
   font-size: 33px;
   line-height: 40px;
   letter-spacing: -0.1px;
@@ -93,7 +49,7 @@
 
 .discount__desc {
   width: 190px;
-  font-family: "Helios";
+  font-family: inherit;
   font-size: 17px;
   line-height: 20px;
   font-weight: 300;
@@ -104,57 +60,80 @@
   margin-top: 18px;
 }
 
-.discount__btn {
-  width: 362px;
-  height: 70px;
-  color: #ffffff;
-  background-color: #d71c6d;
+@media (max-width: @desktop-width) {
+  .discount {
+    margin-top: 145px;
+    padding: 0;
+  }
 }
 
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .discount__btn {
-    margin-top: 20px;
+@media (max-width: @tablet-width) {
+  .discount {
+    width: 440px;
+    margin: 0 auto;
+    margin-top: 90px;
+    padding: 0;
   }
 }
 
 @media (max-width: @mobile-width) {
-  .discount__btn {
-    width: 280px;
-    margin-top: 20px;
+  .discount {
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 450px;
+    padding: 0;
   }
 }
 
-.discount__btn--form {
-  white-space: normal;
-  border: 0;
+@media (max-width: @desktop-width) {
+  .discount--page-about,
+  .discount--page-people {
+    margin: 0 auto;
+    margin-top: 32px;
+  }
 }
 
-.discount--baza {
-  margin-top: 25px;
-  margin-bottom: 70px;
+@media (max-width: @tablet-width) {
+  .discount--page-about,
+  .discount--page-people,
+  .discount--form {
+    width: 440px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-@media (max-width: 1196px) and (min-width: 768px) {
+@media (max-width: @desktop-width) {
   .discount--baza {
-    position: absolute;
-    left: calc(50% - 300px);
-    bottom: 0;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    order: 3;
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 480px) {
+@media (max-width: @tablet-width) {
   .discount--baza {
-    position: absolute;
-    bottom: 0;
+    width: 440px;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-.discount--form {
-  margin-top: 50px;
-  margin-bottom: 120px;
+@media (max-width: @mobile-width) {
+  .discount--baza {
+    width: 300px;
+  }
 }
 
-@media (max-width: 1196px) and (min-width: 768px) {
+@media (max-width: @mobile-width) {
+  .discount--page-about {
+    width: 300px;
+  }
+}
+
+@media (max-width: @desktop-width) {
   .discount--form {
     margin: 0 auto;
     margin-top: 50px;
@@ -162,7 +141,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 480px) {
+@media (max-width: @tablet-width) {
   .discount--form {
     margin: 0 auto;
     margin-top: 50px;
@@ -176,15 +155,8 @@
   }
 }
 
-.discount__btn {
-  &:hover,
-  &:focus {
-    color: rgba(255, 255, 255, 0.5);
-    background-color: #a51b57;
-    outline: none;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.2);
+@media (max-width: @tablet-width) {
+  .discount__wrap {
+    display: block;
   }
 }

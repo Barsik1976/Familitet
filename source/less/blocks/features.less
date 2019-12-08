@@ -1,8 +1,5 @@
-@media (max-width: @mobile-width) {
-  .features a
-  .features p {
-    text-align: center;
-  }
+.features {
+  width: 260px;
 }
 
 .features::before {
@@ -34,73 +31,6 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .features--pregnant::before {
-    background: url(../img/pregnancy.svg);
-    background-size: 85% 85%;
-    background-repeat: no-repeat;
-  }
-}
-
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .features--young-mother::before {
-    background: url("../img/young-mother.svg");
-    background-size: 85% 85%;
-    background-repeat: no-repeat;
-  }
-}
-
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .features--kids::before {
-    background: url("../img/baby.svg");
-    background-size: 85% 85%;
-    background-repeat: no-repeat;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .features--pregnant::before {
-    background: url("../img/pregnancy.svg");
-    background-size: 85% 85%;
-    background-repeat: no-repeat;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .features--young-mother::before {
-    background: url("../img/young-mother.svg");
-    background-size: 85% 85%;
-    background-repeat: no-repeat;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .features--kids::before {
-    background: url("../img/baby.svg");
-    background-size: 85% 85%;
-    background-repeat: no-repeat;
-  }
-}
-
-.features__title {
-  display: block;
-  font-family: AntiQuasi;
-  font-size: 33px;
-  line-height: 33px;
-  text-align: left;
-  color: #59361b;
-  text-decoration: none;
-  margin-bottom: 10px;
-}
-
-.features__title--active {
-  color: #d71c6d;
-}
-
-.features__subtitle {
-  margin: 0;
-}
-
 .features__list {
   list-style-type: none;
   padding: 0;
@@ -109,20 +39,13 @@
 }
 
 .features__item {
-  font-family: "Helios";
+  font-family: inherit;
   font-size: 20px;
   line-height: 30px;
   font-weight: 300;
   letter-spacing: -0.3px;
   text-align: left;
   color: #59361b;
-}
-
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .features__item {
-    font-size: 18px;
-    line-height: 24px;
-  }
 }
 
 .features__item a {
@@ -159,51 +82,6 @@
   margin-bottom: 35px;
 }
 
-@media (max-width: 1196px) and (min-width: 768px) {
-  .features--baza-nav {
-    width: 720px;
-  }
-}
-
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .features--baza-nav {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-
-.features__block-title {
-  width: 210px;
-}
-
-@media (max-width: 1196px) and (min-width: 768px) {
-  .features__block-title {
-    width: 195px;
-  }
-}
-
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .features__block-title {
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .features__block-title {
-    margin-top: 20px;
-  }
-}
-
-.features__block-title:nth-child(2) {
-  width: 250px;
-}
-
-@media (max-width: 1196px) and (min-width: 768px) {
-  .features__block-title:nth-child(2) {
-    width: 210px;
-  }
-}
-
 .features--pregnant-baza {
   position: absolute;
   right: 0;
@@ -216,7 +94,7 @@
   top: 35px;
 }
 
-@media (max-width: 1196px) and (min-width: 768px) {
+@media (max-width: @desktop-width) {
   .features--pregnant-baza,
   .features--young-mother-program {
     position: absolute;
@@ -225,7 +103,7 @@
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 480px) {
+@media (max-width: @tablet-width) {
   .features--pregnant-baza,
   .features--young-mother-program {
     position: absolute;
@@ -240,5 +118,86 @@
     position: absolute;
     top: 345px;
     left: 30px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .features {
+     width: 200px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .features a
+  .features p {
+    text-align: center;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .features--pregnant::before {
+    background: url(../img/pregnancy.svg);
+    background-size: 85% 85%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .features--young-mother::before {
+    background: url("../img/young-mother.svg");
+    background-size: 85% 85%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .features--kids::before {
+    background: url("../img/baby.svg");
+    background-size: 85% 85%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .features--pregnant::before {
+    background: url("../img/pregnancy.svg");
+    background-size: 85% 85%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .features--young-mother::before {
+    background: url("../img/young-mother.svg");
+    background-size: 85% 85%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .features--kids::before {
+    background: url("../img/baby.svg");
+    background-size: 85% 85%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .features__item {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .features--baza-nav {
+    width: 720px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .features--baza-nav {
+    width: 100%;
+    flex-direction: column;
   }
 }

@@ -2,24 +2,6 @@
   width: 1050px;
 }
 
-@media (max-width: 1196px) and (min-width: 768px) {
-  .form-users {
-    width: 720px;
-  }
-}
-
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .form-users {
-    width: 440px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .form-users {
-    width: 300px;
-  }
-}
-
 .form-users__field {
   width: 100%;
   margin: 0;
@@ -33,33 +15,12 @@
   margin-bottom: 12px;
 }
 
-@media (max-width: 1196px) and (min-width: 768px) {
-  .form-users__field--program,
-  .form-users__field--profiles {
-    width: 720px;
-  }
-}
-
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .form-users__field--program,
-  .form-users__field--profiles {
-    width: 440px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .form-users__field--program,
-  .form-users__field--profiles {
-    width: 300px;
-  }
-}
-
 .form-users select,
 .form-users input[type="text"],
 .form-users input[type="tel"],
 .form-users textarea {
   position: relative;
-  font-family: "Helios";
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 300;
@@ -81,27 +42,6 @@
   background-color: transparent;
 }
 
-@media (max-width: 1196px) and (min-width: 768px) {
-  .form-users__field--profiles input {
-    width: 686px;
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .form-users__field--profiles input {
-    width: 406px;
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .form-users__field--profiles input {
-    width: 266px;
-    margin-top: 15px;
-  }
-}
-
 .form-users__field--program select {
   box-sizing: content-box;
   display: flex;
@@ -113,27 +53,6 @@
     -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-@media (max-width: 1196px) and (min-width: 768px) {
-  .form-users__field--program select {
-    width: 696px;
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: @tablet-width) and (min-width: 480px) {
-  .form-users__field--program select {
-    width: 416px;
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .form-users__field--program select {
-    width: 276px;
-    margin-top: 15px;
-  }
 }
 
 .form-users__field--profiles textarea {
@@ -148,14 +67,105 @@
   margin-bottom: 12px;
 }
 
-@media (max-width: 1196px) and (min-width: 768px) {
+.form-users input[type="text"],
+.form-users input[type="tel"],
+.form-users select,
+.form-users textarea {
+  &:hover,
+  &:focus {
+    border-color: #8c873d;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .form-users {
+    width: 720px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .form-users {
+    width: 440px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .form-users {
+    width: 300px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .form-users__field--program,
+  .form-users__field--profiles {
+    width: 720px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .form-users__field--program,
+  .form-users__field--profiles {
+    width: 440px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .form-users__field--program,
+  .form-users__field--profiles {
+    width: 300px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .form-users__field--profiles input {
+    width: 686px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .form-users__field--profiles input {
+    width: 406px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .form-users__field--profiles input {
+    width: 266px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .form-users__field--program select {
+    width: 696px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .form-users__field--program select {
+    width: 416px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .form-users__field--program select {
+    width: 276px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: @desktop-width) {
   .form-users__field--profiles textarea {
     width: 656px;
     margin-top: 15px;
   }
 }
 
-@media (max-width: @tablet-width) and (min-width: 480px) {
+@media (max-width: @tablet-width) {
   .form-users__field--profiles textarea {
     width: 396px;
     height: 179px;
@@ -172,15 +182,6 @@
   }
 }
 
-.form-users input[type="text"],
-.form-users input[type="tel"],
-.form-users select,
-.form-users textarea {
-  &:hover,
-  &:focus {
-    border-color: #8c873d;
-  }
-}
 
 /*
 
