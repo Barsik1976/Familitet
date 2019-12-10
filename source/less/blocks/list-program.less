@@ -13,18 +13,6 @@
   margin-bottom: 38px;
 }
 
-@media (max-width: @tablet-width) {
-  .list-program__statistics {
-    min-height: 130px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .list-program__statistics {
-    min-height: 92px;
-  }
-}
-
 .list-program__statistics span {
   display: block;
   font-size: 75px;
@@ -55,6 +43,25 @@
 @media (max-width: @mobile-width) {
   .list-program:first-of-type {
     margin-top: 55px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .list-program__statistics {
+    min-height: 130px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .list-program__statistics {
+    min-height: 92px;
+    text-align: center;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .list-program__statistics--index {
+    text-align: left;
   }
 }
 

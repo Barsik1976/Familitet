@@ -60,6 +60,12 @@
   }
 }
 
+@media (max-width: @mobile-width) {
+  .site-list {
+    align-items: center;
+  }
+}
+
 @media (max-width: @tablet-width) {
   .site-list li {
     margin-top: 20px;
@@ -75,5 +81,11 @@
 @media (max-width: @tablet-width) {
   .site-list__link {
     display: block;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .site-list__content {
+    text-align: center;
   }
 }
