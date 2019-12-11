@@ -11,25 +11,18 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header page-header--about">
     <nav class="main-nav">
       <div class="main-nav__communication communication">
         <p class="communication__number">+7 (4912) <span>95-24-55</span><br> +7 (4912) <span>99-51-36</span></p>
         <a class="communication__adress-scheme" href="#">Адрес и схема проезда</a>
       </div>
       <a class="logo" href="index.html" title="логотип фамилитет">
-        <!--
-        <picture>
-          <source type="image/webp" media="(max-width: 480px)" srcset="img/logo_familitet-mobile@1x.webp 1x, img/logo_familitet-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 768px)" srcset="img/logo_familitet-tablet@1x.webp 1x, img/logo_familitet-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/logo_familitet@1x.webp 1x, img/logo_familitet@2x.webp 2x">
-          <source media="(max-width: 480px)" srcset="img/logo_familitet-mobile@1x.png 1x, img/logo_familitet-mobile@2x.png 2x">
-          <source media="(max-width: 768px)" srcset="img/logo_familitet-tablet@1x.png 1x, img/logo_familitet-tablet@2x.png 2x">
-        </picture>
-      -->
-        <img class="logo__img" src="img/logo.svg" srcset="img/logo.svg" alt="логотип фамилитета" width="300" height="130">
+        <svg width="300" height="131">
+          <use xlink:href="img/symbols.svg#logo-familitet"></use>
+        </svg>
       </a>
-      <p class="logo__under-logo">Центр семейного<br> развития</p>
+      <p class="main-nav__under-logo">Центр семейного<br> развития</p>
       <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Открыть меню"></button>
       <ul class="site-list">
         <li>
@@ -49,8 +42,8 @@
   </header>
   <main class="page-main">
     <div class="information">
-      <div class="information__content information__content--form">
-        <h1 class="information__title">Записаться на занятия!</h1>
+      <div class="basic-article basic-article--form">
+        <h1 class="basic-article__title">Записаться на занятия!</h1>
         <form class="form-users" action="https://familitet.ru" method="post">
           <p class="form-users__field form-users__field--program field-item field-item--profiles field-item--program">Выберите интересующую программу:<span></span>
             <select class="choice-user" size="1" name="choice-programs" required>
@@ -82,27 +75,25 @@
               <p class="discount__percent"> <span>15%</span> скидка</p>
               <p class="discount__desc">Многодетным семьям, одиноким мамам и родителям-студентам на группов</p>
             </div>
-            <input class="discount__btn discount__btn--form button button--writeus" type="submit" value="Записаться!">
+            <input class="button-record" type="submit" value="Записаться!">
           </article>
         </form>
       </div>
     </div>
     <div class="progress progress--page-baza">
       <div class="progress__wrapper">
-        <div class="progress__wrapp-blocks progress__wrapp-blocks--page-baza">
-          <article class="progress__list progress__list--page-history">
-            <p class="progress__lead"><span>8 лет</span> отвечаем на вопрос:<br> «Как родить без боли?»</p>
-          </article>
-          <article class="progress__list progress__list--page-history">
-            <p class="progress__lead"><span>1447</span> молодых семей научили быть родителями</p>
-          </article>
-          <article class="progress__list progress__list--page-history">
-            <p class="progress__lead"><span>468</span> человек повзрослели вместе с нами</p>
-          </article>
-          <article class="progress__list progress__list--page-history">
-            <p class="progress__lead"><span>576</span> дипломов выдано будущим мамам!</p>
-          </article>
-        </div>
+        <article class="list-program list-program--page-about">
+          <p class="list-program__statistics"><span>8 лет</span> отвечаем на вопрос:<br> «Как родить без боли?»</p>
+        </article>
+        <article class="list-program list-program--page-about">
+          <p class="list-program__statistics"><span>1447</span> молодых семей научили быть родителями</p>
+        </article>
+        <article class="list-program list-program--page-about">
+          <p class="list-program__statistics"><span>468</span> человек повзрослели вместе с нами</p>
+        </article>
+        <article class="list-program list-program--page-about">
+          <p class="list-program__statistics"><span>576</span> дипломов выдано будущим мамам!</p>
+        </article>
       </div>
     </div>
   </main>

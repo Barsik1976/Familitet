@@ -68,10 +68,15 @@
 }
 
 @media (max-width: @tablet-width) {
-  .discount {
+  .discount,
+  .discount--page-about,
+  .discount--baza,
+  .discount--page-people {
     width: 440px;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
-    margin-top: 90px;
+    margin-top: 35px;
     padding: 0;
   }
 }
@@ -95,16 +100,6 @@
   }
 }
 
-@media (max-width: @tablet-width) {
-  .discount--page-about,
-  .discount--page-people,
-  .discount--form {
-    width: 440px;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 @media (max-width: @desktop-width) {
   .discount--baza {
     margin: 0 auto;
@@ -113,29 +108,8 @@
   }
 }
 
-@media (max-width: @tablet-width) {
-  .discount--baza {
-    width: 440px;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .discount--baza {
-    width: 300px;
-  }
-}
-
-@media (max-width: @mobile-width) {
-  .discount--page-about {
-    width: 300px;
-  }
-}
-
 @media (max-width: @desktop-width) {
   .discount--form {
-    margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 120px;
   }
@@ -143,6 +117,9 @@
 
 @media (max-width: @tablet-width) {
   .discount--form {
+    width: 440px;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 100px;
@@ -150,6 +127,8 @@
 }
 
 @media (max-width: @mobile-width) {
+  .discount--page-about,
+  .discount--baza,
   .discount--form {
     width: 300px;
   }

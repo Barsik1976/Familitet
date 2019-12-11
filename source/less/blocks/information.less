@@ -308,9 +308,17 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    left: 0;
+    left: calc(50% - 200px / 2);
     top: -210px;
     background-position: 50% 20%;
     background-size: 110% 110%;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .information__person-name,
+  .information__person-name span,
+  .information__person-work {
+    text-align: center;
   }
 }
