@@ -1,15 +1,14 @@
-.communication p {
+.communication__number {
   margin: 0;
   padding: 0;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 300;
-  text-align: left;
-}
-
-.communication__number {
   color: #59361b;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .communication__number span {
@@ -23,7 +22,7 @@
   cursor: pointer;
 }
 
-.communication a[href] {
+.communication__adress-scheme {
   &:focus,
   &:hover {
     color: #1a5b87;
@@ -32,5 +31,17 @@
 
   &:active {
     color: rgba(89, 168, 221, 0.5);
+  }
+}
+
+.communication__number {
+  &:focus,
+  &:hover {
+    color: #361f0d;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(103, 58, 23, 0.7);
   }
 }

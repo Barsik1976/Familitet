@@ -14,7 +14,8 @@
   <header class="page-header page-header--about">
     <nav class="main-nav">
       <div class="main-nav__communication communication">
-        <p class="communication__number">+7 (4912) <span>95-24-55</span><br> +7 (4912) <span>99-51-36</span></p>
+        <a class="communication__number" href="tel:+7 (4912) 95-24-55">+7 (4912) <span>95-24-55</span></a><br>
+        <a class="communication__number" href="tel:+7 (4912) 99-51-36">+7 (4912) <span>99-51-36</span></a>
         <a class="communication__adress-scheme" href="#">Адрес и схема проезда</a>
       </div>
       <a class="logo" href="index.html" title="логотип фамилитет">
@@ -42,8 +43,8 @@
   </header>
   <main class="page-main">
     <div class="information">
-      <div class="basic-article basic-article--form">
-        <h1 class="basic-article__title">Записаться на занятия!</h1>
+      <div class="basic-form">
+        <h1 class="basic-form__title">Записаться на занятия!</h1>
         <form class="form-users" action="https://familitet.ru" method="post">
           <p class="form-users__field form-users__field--program field-item field-item--profiles field-item--program">Выберите интересующую программу:<span></span>
             <select class="choice-user" size="1" name="choice-programs" required>
@@ -64,10 +65,10 @@
             </p>
           </fieldset>
           <fieldset class="form-users__field form-users__field--profiles">
-            <p class="field-item field-item--questions">
+            <div class="field-item field-item--questions">
               <label for="questions">Дополнительная информация, вопросы или пожелания:</label>
               <textarea id="questions" name="questions" placeholder=""></textarea>
-            </p>
+            </div>
           </fieldset>
           <p class="field-item__notice">Поля, отмеченные <span>*</span>, обязательны для заполнения.<br> Нажимая на кнопку «Записаться», Вы даёте согласие на обработку Ваших персональных данных в соответствии с <a href="">указанными условиями</a>.</p>
           <article class="discount discount--form">
