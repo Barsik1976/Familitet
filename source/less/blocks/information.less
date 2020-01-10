@@ -17,14 +17,29 @@
 }
 
 .information__person {
-  margin-top: 18px;
+  margin-top: 10px;
 }
 
 .information__person-item {
+  display: flex;
   position: relative;
-  width: 520px;
-  margin-left: 300px;
-  margin-bottom: 40px;
+  width: 840px;
+  margin-top: 10px;
+}
+
+.information__person-item:last-of-type {
+  margin-bottom: 70px;
+}
+
+.information__person-item img {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.information__person-item section {
+  margin-left: 30px;
   padding-top: 7px;
 }
 
@@ -33,6 +48,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 .information__person-name {
@@ -92,6 +109,13 @@
   margin-top: 6px;
 }
 
+.information__person-item ul > span {
+  font-size: 17px;
+  line-height: 24px;
+  color: #59361b;
+  margin-left: 20px;
+}
+
 .information__text--direction {
   font-size: 17px;
   line-height: 24px;
@@ -125,14 +149,8 @@
   margin-top: 6px;
 }
 
-.information__person-item::before {
-  position: absolute;
-  width: 270px;
-  height: 270px;
-  border-radius: 50%;
-  left: -300px;
-  top: -7px;
-}
+
+/*
 
 .information__person-item--item1::before {
   content: "";
@@ -163,6 +181,10 @@
   background: url("../img/liliya_vinogradova.png");
   background-repeat: no-repeat;
 }
+
+*/
+
+
 
 .information__title--subtitle-program {
   font-size: 33px;
@@ -250,8 +272,9 @@
 @media (max-width: @desktop-width) {
   .information__person-item {
     width: 720px;
+    flex-direction: column;
     margin-left: 0;
-    margin-top: 250px;
+    margin-top: 35px;
   }
 }
 
@@ -259,19 +282,49 @@
   .information__person-item {
     width: 440px;
     margin-left: 0;
-    margin-top: 250px;
   }
 }
 
 @media (max-width: @mobile-width) {
   .information__person-item {
     width: 280px;
-    margin-top: 225px;
     margin-left: 0;
     padding-left: 10px;
     padding-right: 10px;
   }
 }
+
+@media (max-width: @desktop-width) {
+  .information__person-item section {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .information__person-item img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .information__person-item img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .information__person-name,
+  .information__person-name span,
+  .information__person-work {
+    text-align: center;
+  }
+}
+
+
+
+/*
 
 @media (max-width: @desktop-width) {
   .information__person-item::before {
@@ -315,10 +368,4 @@
   }
 }
 
-@media (max-width: @mobile-width) {
-  .information__person-name,
-  .information__person-name span,
-  .information__person-work {
-    text-align: center;
-  }
-}
+*/
