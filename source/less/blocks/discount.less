@@ -1,0 +1,148 @@
+.discount {
+  display: flex;
+  justify-content: space-between;
+  width: 590px;
+  margin: 0 auto;
+  margin-top: 77px;
+  margin-bottom: 27px;
+  padding-right: 250px;
+}
+
+.discount--page-about,
+.discount--page-people {
+  margin-top: 32px;
+}
+
+.discount--baza {
+  margin-top: 25px;
+  margin-bottom: 70px;
+}
+
+.discount--form {
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+
+.discount__wrap {
+  width: 190px;
+}
+
+.discount__percent {
+  font-family: "AntiQuasi";
+  font-size: 33px;
+  line-height: 40px;
+  letter-spacing: -0.1px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #d73c2c;
+  margin: 0;
+}
+
+.discount__percent span {
+  display: block;
+  font-size: 75px;
+  font-weight: 400;
+  letter-spacing: -2px;
+  color: #59361b;
+  margin-bottom: 20px;
+}
+
+.discount__desc {
+  width: 190px;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #59361b;
+  margin: 0;
+  margin-top: 18px;
+}
+
+@media (max-width: @desktop-width) {
+  .discount {
+    margin-top: 145px;
+    padding: 0;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .discount,
+  .discount--page-about,
+  .discount--baza,
+  .discount--page-people {
+    width: 440px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 35px;
+    padding: 0;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .discount {
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 450px;
+    padding: 0;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .discount--page-about,
+  .discount--page-people {
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .discount--baza {
+    margin: 0 auto;
+    margin-bottom: 70px;
+    order: 3;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .discount--form {
+    margin-top: 50px;
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .discount--form {
+    width: 440px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .discount--page-about,
+  .discount--baza,
+  .discount--form {
+    width: 300px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .discount__wrap {
+    display: block;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .discount__percent,
+  .discount__desc {
+    text-align: center;
+  }
+}

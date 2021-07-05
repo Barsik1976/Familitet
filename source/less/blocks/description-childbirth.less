@@ -1,0 +1,209 @@
+.description-childbirth {
+  width: 737px;
+  margin-top: 27px;
+  margin-bottom: 45px;
+  padding-left: 53px;
+}
+
+.description-childbirth__list {
+  position: relative;
+  margin-bottom: 15px;
+  color: #59361b;
+}
+
+
+/*  Нумерация содержания Базового курса */
+
+.description-childbirth__list::before {
+  position: absolute;
+  top: 0;
+  left: -58px;
+  font-family: "AntiQuasi";
+  font-size: 58px;
+  text-align: left;
+  color: #d71c6d;
+}
+
+.description-childbirth__list--1::before {
+  content: "1";
+}
+
+.description-childbirth__list--2::before {
+  content: "2";
+}
+
+.description-childbirth__list--3::before {
+  content: "3";
+}
+
+.description-childbirth__list--4::before {
+  content: "4";
+}
+
+.description-childbirth__list--5::before {
+  content: "5";
+}
+
+.description-childbirth__list--6::before {
+  content: "6";
+}
+
+.description-childbirth__list--7::before {
+  content: "7";
+}
+
+.description-childbirth__list--8::before {
+  content: "8";
+}
+
+.description-childbirth__list--9::before {
+  content: "9";
+}
+
+.description-childbirth__title,
+.description-childbirth__no-man {
+  font-family: "AntiQuasi";
+  font-size: 25px;
+  line-height: 27px;
+  font-weight: normal;
+  letter-spacing: -0.1px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.description-childbirth__title::after {
+  display: inline-block;
+  content: "";
+  width: 42px;
+  height: 35px;
+  background: url("../img/mother-father.svg");
+  background-repeat: no-repeat;
+  margin-left: 20px;
+}
+
+.description-childbirth__text {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.description-childbirth__link {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #d71c6d;
+  text-decoration: none;
+  margin: 0;
+}
+
+.description-childbirth__link--pay {
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: underline;
+}
+
+.description-childbirth__text--notice {
+  font-size: 16px;
+  line-height: 20px;
+  color: #59361b;
+}
+
+.description-childbirth__text--notice::before {
+  display: inline-block;
+  content: "";
+  width: 42px;
+  height: 35px;
+  background: url("../img/mother-father.svg");
+  background-repeat: no-repeat;
+  margin-left: -55px;
+}
+
+@media (max-width: 780px) and (min-width: 481px) {
+  .description-childbirth__text--notice::before {
+    background-size: 90% 90%;
+    background-position: 0 70%;
+  }
+}
+
+.description-childbirth__link--pay {
+  &:hover {
+    color: #a51b57;
+  }
+
+  &:active {
+    color: rgba(129, 22, 69, 1.0);
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .description-childbirth {
+    width: 667px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .description-childbirth {
+    width: 387px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .description-childbirth {
+    width: 242px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .description-childbirth__list::before {
+    font-size: 50px;
+    top: -10px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .description-childbirth__title {
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: normal;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .description-childbirth__title::after {
+    background-size: 90% 90%;
+    background-position: 0 80%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .description-childbirth__title::after {
+    display: block;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .description-childbirth__text,
+  .description-childbirth__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .description-childbirth__text--notice::before {
+    background-size: 80% 80%;
+    background-position: 0 80%;
+  }
+}

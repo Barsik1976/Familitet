@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Familitet</title>
+  <link rel="preload" href="fonts/antiquasi_regular-webfont.woff2" as="font">
+  <link rel="preload" href="fonts/helios-bold-webfont.woff2" as="font">
+  <link rel="preload" href="fonts/helioslight-webfont.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="page-header page-header--about">
+    <nav class="main-nav">
+      <div class="main-nav__communication communication">
+        <a class="communication__number" href="tel:+7 (4912) 95-24-55">+7 (4912) <span>95-24-55</span></a><br>
+        <a class="communication__number" href="tel:+7 (4912) 99-51-36">+7 (4912) <span>99-51-36</span></a>
+        <a class="communication__adress-scheme" href="#">Адрес и схема проезда</a>
+      </div>
+      <a class="logo" href="index.html" title="логотип фамилитет">
+        <svg width="300" height="131">
+          <use xlink:href="img/symbols.svg#logo-familitet"></use>
+        </svg>
+      </a>
+      <p class="main-nav__under-logo">Центр семейного<br> развития</p>
+      <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Открыть меню"></button>
+      <ul class="site-list">
+        <li>
+          <a class="site-list__link" href="about_familitet.html">Всё о нас</a>
+          <p class="site-list__content">Работаем с 2011 года</p>
+        </li>
+        <li>
+          <a class="site-list__link" href="baza_familitet.html">Программы</a>
+          <p class="site-list__content">Беременность, роды,<br> материнство</p>
+        </li>
+        <li>
+          <a class="site-list__link" href="schedule_familitet.html">Расписание</a>
+          <p class="site-list__content">Групповых занятий</p>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <div class="information">
+      <div class="basic-form">
+        <h1 class="basic-form__title">Записаться на занятия!</h1>
+        <form class="form-users" action="https://familitet.ru" method="post">
+          <p class="form-users__field form-users__field--program field-item field-item--profiles field-item--program">Выберите интересующую программу:<span></span>
+            <select class="choice-user" size="1" name="choice-programs" required>
+              <option value="" selected>&nbsp;</option>
+              <option value="p1">Программа 1</option>
+              <option value="p2">Программа 2</option>
+              <option value="p3">Программа 3</option>
+            </select>
+          </p><span class="field-item__required field-item__required--program">*</span>
+          <fieldset class="form-users__field form-users__field--profiles">
+            <p class="field-item field-item--profiles">
+              <label for="name">Ваши Фамилия, Имя и Отчество:</label><span class="field-item__required">*</span>
+              <input id="name" name="full-name" type="text" placeholder="" required>
+            </p>
+            <p class="field-item field-item--profiles">
+              <label for="tel">Укажите Ваш номер телефона:</label><span class="field-item__required">*</span>
+              <input id="tel" name="tel-number" type="tel" placeholder="" required>
+            </p>
+          </fieldset>
+          <fieldset class="form-users__field form-users__field--profiles">
+            <div class="field-item field-item--questions">
+              <label for="questions">Дополнительная информация, вопросы или пожелания:</label>
+              <textarea id="questions" name="questions" placeholder=""></textarea>
+            </div>
+          </fieldset>
+          <p class="field-item__notice">Поля, отмеченные <span>*</span>, обязательны для заполнения.<br> Нажимая на кнопку «Записаться», Вы даёте согласие на обработку Ваших персональных данных в соответствии с <a href="">указанными условиями</a>.</p>
+          <article class="discount discount--form">
+            <div class="discount__wrap">
+              <p class="discount__percent"> <span>15%</span> скидка</p>
+              <p class="discount__desc">Многодетным семьям, одиноким мамам и родителям-студентам на группов</p>
+            </div>
+            <input class="button-record" type="submit" value="Записаться!">
+          </article>
+        </form>
+      </div>
+    </div>
+    <div class="progress progress--page-baza">
+      <div class="progress__wrapper">
+        <article class="list-program list-program--page-about">
+          <p class="list-program__statistics"><span>8 лет</span> отвечаем на вопрос:<br> «Как родить без боли?»</p>
+        </article>
+        <article class="list-program list-program--page-about">
+          <p class="list-program__statistics"><span>1447</span> молодых семей научили быть родителями</p>
+        </article>
+        <article class="list-program list-program--page-about">
+          <p class="list-program__statistics"><span>468</span> человек повзрослели вместе с нами</p>
+        </article>
+        <article class="list-program list-program--page-about">
+          <p class="list-program__statistics"><span>576</span> дипломов выдано будущим мамам!</p>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="contact contact--page-about">
+      <div class="contact__item">
+        <p class="contact__text">© 2011-2019. Фамилитет<br> Россия, Рязань, ул. Есенина, 45</p>
+        <p class="contact__text contact__text--our-business">В вашем бизнесе всё
+          <a class="contact__information contact__information--our-business" href="#work">работает само</a>
+        </p>
+      </div>
+      <a class="contact__information" href="#contact">Контактная информация</a>
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a class="social-icon__link social-icon__link--vkontakte" href="#vkontakte">
+            <span class="visually-hidden">Мы в контакте</span>
+            <svg width="22" height="13">
+              <use xlink:href="img/symbols.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link social-icon__link--instagram" href="#instagram">
+            <span class="visually-hidden">Мы в инстаграм</span>
+            <svg width="19" height="19">
+              <use xlink:href="img/symbols.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

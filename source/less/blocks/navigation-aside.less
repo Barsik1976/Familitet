@@ -1,0 +1,129 @@
+.navigation-aside {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  margin-left: 20px;
+}
+
+.navigation-aside__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-aside__item {
+  position: relative;
+  list-style-type: none;
+  margin-top: 12px;
+}
+
+.navigation-aside__link {
+  font-family: "AntiQuasi";
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: -0.1px;
+  text-align: left;
+  margin: 0;
+  text-decoration: none;
+  color: #59361b;
+}
+
+.navigation-aside__link--active::after {
+  display: block;
+  content: "";
+  width: 255px;
+  height: 13px;
+  background: url("../img/circles-line-gorizontal.svg");
+  background-repeat: no-repeat;
+  margin-top: 7px;
+  margin-left: -12px;
+  margin-bottom: 15px;
+}
+
+.navigation-aside--baza,
+.navigation-aside--program {
+  margin-top: 450px;
+}
+
+.navigation-aside--baza .navigation-aside__list,
+.navigation-aside--program .navigation-aside__list {
+  margin-top: 52px;
+}
+
+.navigation-aside__item > a[href] {
+  &:focus,
+  &:hover {
+    color: #a51b57;
+    outline: none;
+  }
+
+  &:active {
+    color: #811645;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .navigation-aside {
+    margin-bottom: 60px;
+    order: 1;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .navigation-aside {
+    margin-bottom: 60px;
+    order: 1;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .navigation-aside {
+    margin-bottom: 60px;
+    order: 1;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .navigation-aside__lessons {
+    display: block;
+    width: 150px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .navigation-aside--baza,
+  .navigation-aside--program {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    order: 1;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .navigation-aside--baza,
+  .navigation-aside--program {
+    width: 240px;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: -30px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .navigation-aside__item--baza {
+    text-align: center;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .navigation-aside__lessons {
+    width: 240px;
+    text-align: center;
+  }
+}

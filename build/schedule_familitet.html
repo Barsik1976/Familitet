@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Familitet</title>
+  <link rel="preload" href="fonts/antiquasi_regular-webfont.woff2" as="font">
+  <link rel="preload" href="fonts/helios-bold-webfont.woff2" as="font">
+  <link rel="preload" href="fonts/helioslight-webfont.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="bubbles bubbles__schedule">
+  <header class="page-header page-header--schedule">
+    <nav class="main-nav">
+      <div class="main-nav__communication communication">
+        <a class="communication__number" href="tel:+7 (4912) 95-24-55">+7 (4912) <span>95-24-55</span></a><br>
+        <a class="communication__number" href="tel:+7 (4912) 99-51-36">+7 (4912) <span>99-51-36</span></a>
+        <a class="communication__adress-scheme" href="#">Адрес и схема проезда</a>
+      </div>
+      <a class="logo" href="index.html" title="логотип фамилитет">
+        <svg width="300" height="131">
+          <use xlink:href="img/symbols.svg#logo-familitet"></use>
+        </svg>
+      </a>
+      <p class="main-nav__under-logo">Центр семейного<br> развития</p>
+      <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Открыть меню"></button>
+      <ul class="site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="about_familitet.html">Всё о нас</a>
+          <p class="site-list__content">Работаем с 2011 года</p>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="program_familitet.html">Программы</a>
+          <p class="site-list__content">Беременность, роды,<br> материнство</p>
+        </li>
+        <li>
+          <a class="site-list__link site-list__link--active">Расписание</a>
+          <p class="site-list__content">Групповых занятий</p>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <div class="weekday">
+      <section class="weekday__wrapper slider">
+        <h2 class="visually-hidden">Расписание на неделю</h2>
+        <input class="visually-hidden" type="radio" id="weekday-item-1" name="toggle" checked="">
+        <input class="visually-hidden" type="radio" id="weekday-item-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="weekday-item-3" name="toggle">
+        <input class="visually-hidden" type="radio" id="weekday-item-4" name="toggle">
+        <input class="visually-hidden" type="radio" id="weekday-item-5" name="toggle">
+        <div class="slider__toggles">
+          <label class="slider__item slider__item--item1" for="weekday-item-1">Понедельник</label>
+          <label class="slider__item slider__item--item2" for="weekday-item-2">Вторник</label>
+          <label class="slider__item slider__item--item3" for="weekday-item-3">Среда</label>
+          <label class="slider__item slider__item--item4" for="weekday-item-4">Четверг</label>
+          <label class="slider__item slider__item--item5" for="weekday-item-5">Пятница</label>
+        </div>
+        <ul class="weekday__list slider__list">
+          <li class="weekday__item weekday__item--active slider__group-no-js  slider__group-no-js--group1
+          slider__no-js slider__no-js--order1">
+            <a class="weekday__day weekday__day--active">понедельник<span class="weekday__month weekday__month--active">15 апреля</span></a>
+          </li>
+          <li class="weekday__item slider__group-no-js  slider__group-no-js--group1
+          slider__no-js slider__no-js--order2">
+            <a class="weekday__day" href="tuesday.html">вторник<span class="weekday__month">16 апреля</span></a>
+          </li>
+          <li class="weekday__item slider__group-no-js  slider__group-no-js--group1
+          slider__no-js slider__no-js--order3">
+            <a class="weekday__day" href="wednesday.html">среда<span class="weekday__month">17 апреля</span></a>
+          </li>
+          <li class="weekday__item slider__group-no-js  slider__group-no-js--group1
+          slider__no-js slider__no-js--order4">
+            <a class="weekday__day" href="thursday.html">четверг<span class="weekday__month">18 апреля</span></a>
+          </li>
+          <li class="weekday__item slider__group-no-js  slider__group-no-js--group1
+          slider__no-js slider__no-js--order5">
+            <a class="weekday__day" href="friday.html">пятница<span class="weekday__month">19 апреля</span></a>
+          </li>
+        </ul>
+      </section>
+      <div class="schedule">
+        <article class="schedule__item schedule__item--item1 schedule__item--active">
+          <a class="schedule__link" href="baza_familitet.html">
+            <time class="schedule__time" datetime="2019-04-15T10:00">10.00</time>Малышам
+            <p class="schedule__subtitle">Чудеса в ладошках (2-3 года)</p>
+          </a>
+        </article>
+        <article class="schedule__item schedule__item--item2">
+          <a class="schedule__link" href="baza_familitet.html">
+            <time class="schedule__time" datetime="2019-04-15T11:15">11.15</time>Малышам
+            <p class="schedule__subtitle">Вместе с мамой (1,5-2 года)</p>
+          </a>
+        </article>
+        <article class="schedule__item schedule__item--item3">
+          <a class="schedule__link" href="baza_familitet.html">
+            <time class="schedule__time" datetime="2019-04-15T14:00">14.00</time>Беременным
+            <p class="schedule__title">Базовый курс. Теория</p>
+            <p class="schedule__subtitle">Грудное вскармливание</p>
+          </a>
+        </article>
+        <article class="schedule__item schedule__item--item4">
+          <a class="schedule__link" href="baza_familitet.html">
+            <time class="schedule__time" datetime="2019-04-15T15:30">15.30</time>Беременным
+            <p class="schedule__subtitle">Фитбол для беременных</p>
+          </a>
+        </article>
+        <article class="schedule__item schedule__item--item5">
+          <a class="schedule__link" href="baza_familitet.html">
+            <time class="schedule__time" datetime="2019-04-15T17:00">17.00</time>Малышам
+            <p class="schedule__subtitle">Чудеса в ладошках (4-5 лет)</p>
+          </a>
+        </article>
+        <article class="schedule__item schedule__item--item6">
+          <a class="schedule__link" href="baza_familitet.html">
+            <time class="schedule__time" datetime="2019-04-15T18:30">18.30</time>Малышам
+            <p class="schedule__subtitle">Подготовка к школе</p>
+          </a>
+        </article>
+        <article class="schedule__item schedule__item--item7">
+          <a class="schedule__link" href="baza_familitet.html">
+            <time class="schedule__time" datetime="2019-04-15T18:30">18.30</time>Молодым мамам
+            <p class="schedule__title">Женский круг</p>
+            <p class="schedule__subtitle">Здоровье груди</p>
+          </a>
+        </article>
+        <article class="schedule__item schedule__item--item8">
+          <a class="schedule__link" href="baza_familitet.html">
+            <time class="schedule__time" datetime="2019-04-15T19:30">19.30</time>Малышам
+            <p class="schedule__subtitle">Нейрокоррекция</p>
+          </a>
+        </article>
+      </div>
+      <section class="user">
+        <h2 class="visually-hidden">Распечатать или скачать</h2>
+        <a class="user__print" href="form-print.html">
+          <img class="" src="img/print.svg" alt="print" width="44" height="40">Распечатать
+        </a>
+        <a class="user__download" href="form-download.html">
+          <img class="" src="img/download.svg" alt="print" width="50" height="35">Скачать</a>
+      </section>
+    </div>
+    <div class="progress progress--page-baza">
+      <div class="progress__wrapper">
+        <article class="list-program list-program--page-about">
+          <p class="list-program__statistics"><span>8 лет</span> отвечаем на вопрос:<br> «Как родить без боли?»</p>
+        </article>
+        <article class="list-program list-program--page-about">
+          <p class="list-program__statistics"><span>1447</span> молодых семей научили быть родителями</p>
+        </article>
+        <article class="list-program list-program--page-about">
+          <p class="list-program__statistics"><span>468</span> человек повзрослели вместе с нами</p>
+        </article>
+        <article class="list-program list-program--page-about">
+          <p class="list-program__statistics"><span>576</span> дипломов выдано будущим мамам!</p>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="contact contact--page-about">
+      <div class="contact__item">
+        <p class="contact__text">© 2011-2019. Фамилитет<br> Россия, Рязань, ул. Есенина, 45</p>
+        <p class="contact__text contact__text--our-business">В вашем бизнесе всё
+          <a class="contact__information contact__information--our-business" href="#work">работает само</a>
+        </p>
+      </div>
+      <a class="contact__information" href="#contact">Контактная информация</a>
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a class="social-icon__link social-icon__link--vkontakte" href="#vkontakte">
+            <span class="visually-hidden">Мы в контакте</span>
+            <svg width="22" height="13">
+              <use xlink:href="img/symbols.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link social-icon__link--instagram" href="#instagram">
+            <span class="visually-hidden">Мы в инстаграм</span>
+            <svg width="19" height="19">
+              <use xlink:href="img/symbols.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
